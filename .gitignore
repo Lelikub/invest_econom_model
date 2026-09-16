@@ -1,6 +1,6 @@
 .worktrees/
 app/.python-packages/
-app/.test-tmp/
+app/.test-tmp*/
 app/output/
 app/logs/
 .pytest_cache/

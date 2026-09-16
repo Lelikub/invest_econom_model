@@ -196,3 +196,31 @@ class MonteCarloResult:
     quantiles: dict[float, float]
     probability_negative: float
 
+
+@dataclass(frozen=True)
+class HarnessEntry:
+    """One observed issue or explicit model decision in the Harness Log."""
+
+    number: int
+    stage: str
+    task: str
+    code_fragment: str
+    detected_issue: str
+    cause: str
+    correction: str
+    recheck_result: str
+
+
+@dataclass(frozen=True)
+class ReportContext:
+    """All finalized values used to build audit and Word artifacts."""
+
+    data: ProjectData
+    base: FinancialResult
+    boundary_tests: tuple[ScenarioTestResult, ...]
+    monte_carlo: MonteCarloResult
+    stress: StressResult
+    comparison: ComparisonResult
+    charts: tuple[Path, Path]
+    harness_entries: tuple[HarnessEntry, ...]
+
