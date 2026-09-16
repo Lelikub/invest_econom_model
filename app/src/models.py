@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 
 @dataclass(frozen=True)
@@ -143,4 +144,55 @@ class ComparisonResult:
     all_match: bool
     max_absolute_difference: float
     max_relative_deviation_percent: float
+
+
+@dataclass(frozen=True)
+class ScenarioTestResult:
+    """Result of one mandatory mathematical boundary test."""
+
+    code: str
+    name: str
+    inputs: str
+    expected_property: str
+    actual_result: str
+    passed: bool
+    comment: str
+
+
+@dataclass(frozen=True)
+class ScenarioMetricComparison:
+    """Base-to-stress comparison for one metric."""
+
+    name: str
+    base_value: float | None
+    stress_value: float | None
+    absolute_change: float | None
+    relative_change_percent: float | None
+
+
+@dataclass(frozen=True)
+class StressResult:
+    """Base and prescribed stress-scenario calculations."""
+
+    base: FinancialResult
+    stress: FinancialResult
+    comparisons: tuple[ScenarioMetricComparison, ...]
+
+
+@dataclass(frozen=True)
+class MonteCarloResult:
+    """Seeded Monte Carlo sample and its descriptive statistics."""
+
+    npv_values: Any
+    iterations: int
+    seed: int
+    capex_cv: float
+    revenue_cv: float
+    mean: float
+    median: float
+    standard_deviation: float
+    minimum: float
+    maximum: float
+    quantiles: dict[float, float]
+    probability_negative: float
 
