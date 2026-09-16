@@ -224,3 +224,24 @@ class ReportContext:
     charts: tuple[Path, Path]
     harness_entries: tuple[HarnessEntry, ...]
 
+
+@dataclass(frozen=True)
+class PipelineResult:
+    """Successful end-to-end pipeline outcome and generated artifacts."""
+
+    success: bool
+    data: ProjectData
+    base: FinancialResult
+    boundary_tests: tuple[ScenarioTestResult, ...]
+    monte_carlo: MonteCarloResult
+    stress: StressResult
+    comparison: ComparisonResult
+    artifacts: tuple[Path, ...]
+    word_report: Path
+
+    @property
+    def max_relative_deviation_percent(self) -> float:
+        """Expose the controlling Excel comparison deviation."""
+
+        return self.comparison.max_relative_deviation_percent
+

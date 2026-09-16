@@ -166,6 +166,51 @@ def write_comparison_sheet(path: Path, comparison) -> None:
     workbook.save(path)
 
 
+def write_comparison_workbook(comparison, path: Path) -> Path:
+    """Save the Python-to-Excel comparison as a standalone workbook."""
+
+    destination = Path(path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "Сравнение результатов"
+    sheet.append(("Показатель", "Python", "Excel", "Абсолютное отклонение", "Относительное отклонение", "Статус"))
+    for item in comparison.items:
+        sheet.append(
+            (
+                item.name,
+                item.python_value,
+                item.excel_value,
+                item.absolute_difference,
+                None if item.relative_difference_percent is None else item.relative_difference_percent / 100,
+                item.status,
+            )
+        )
+        for column in (2, 3, 4):
+            sheet.cell(sheet.max_row, column).number_format = MONEY_FORMAT
+        sheet.cell(sheet.max_row, 5).number_format = PERCENT_FORMAT
+    for cell in sheet[1]:
+        cell.fill = HEADER_FILL
+        cell.font = WHITE_FONT
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    for row in sheet.iter_rows():
+        for cell in row:
+            cell.border = THIN_BORDER
+            cell.alignment = Alignment(vertical="top", wrap_text=True)
+    widths = (25, 18, 18, 23, 24, 18)
+    for index, width in enumerate(widths, start=1):
+        sheet.column_dimensions[get_column_letter(index)].width = width
+    sheet.freeze_panes = "A2"
+    sheet.auto_filter.ref = sheet.dimensions
+    sheet.conditional_formatting.add(
+        f"F2:F{max(2, sheet.max_row)}",
+        CellIsRule(operator="equal", formula=['"НЕ СОВПАДАЕТ"'], fill=WARNING_FILL),
+    )
+    workbook.save(destination)
+    return destination
+
+
+
 def _write_inputs(sheet, data: ProjectData) -> None:
     sheet.append(("Параметр", "Значение", "Единица / пояснение"))
     parameter_rows = [
