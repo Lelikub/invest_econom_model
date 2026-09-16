@@ -1,0 +1,33 @@
+﻿Category,Item,Value
+Equipment_Cost,Планетарная мельница тонкого помола и механохимического синтеза,18.5
+Equipment_Cost,Высокотемпературный вакуумный реактор спекания керамических электролитов,34.0
+Equipment_Cost,Перчаточные боксы с инертной атмосферой аргона (2 станции),24.0
+Equipment_Cost,Аналитический комплекс: СЭМ (Сканирующий электронный микроскоп) и спектрометр,62.0
+Equipment_Cost,"Оборудование сухой комнаты (Dry Room, точка росы -40°C, ISO 5)",48.0
+Equipment_Cost,Автоматизированная ячейка сборки тестовых твердотельных аккумуляторов,28.5
+Equipment_Cost,Импедансный спектрометр электрохимического анализа (4 канала),15.0
+Parameter,lang_factor,3.63
+Parameter,working_capital_share,0.15
+Parameter,wacc,0.12
+Parameter,tax_rate,0.2
+Parameter,project_lifetime_years,10.0
+Revenue_Profile,Year_1,0.0
+OPEX_Profile,Year_1,55.0
+Revenue_Profile,Year_2,0.0
+OPEX_Profile,Year_2,65.0
+Revenue_Profile,Year_3,45.0
+OPEX_Profile,Year_3,95.0
+Revenue_Profile,Year_4,180.0
+OPEX_Profile,Year_4,150.0
+Revenue_Profile,Year_5,320.0
+OPEX_Profile,Year_5,190.0
+Revenue_Profile,Year_6,410.0
+OPEX_Profile,Year_6,220.0
+Revenue_Profile,Year_7,450.0
+OPEX_Profile,Year_7,230.0
+Revenue_Profile,Year_8,470.0
+OPEX_Profile,Year_8,235.0
+Revenue_Profile,Year_9,480.0
+OPEX_Profile,Year_9,240.0
+Revenue_Profile,Year_10,490.0
+OPEX_Profile,Year_10,240.0
