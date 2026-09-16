@@ -1,2 +1,8 @@
 .worktrees/
+app/.python-packages/
+app/output/
+app/logs/
+.pytest_cache/
+__pycache__/
+*.py[cod]
 
