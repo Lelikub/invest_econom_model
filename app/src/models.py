@@ -56,3 +56,91 @@ class ProjectData:
 
         return tuple(range(1, self.project_lifetime_years + 1))
 
+
+@dataclass(frozen=True)
+class CapitalEstimate:
+    """Lang-factor capital estimate in the source monetary scale."""
+
+    equipment_cost: float
+    fci: float
+    tci: float
+
+
+@dataclass(frozen=True)
+class DCFRow:
+    """One operating year of the deterministic DCF model."""
+
+    year: int
+    revenue: float
+    opex: float
+    depreciation: float
+    ebit: float
+    nopat: float
+    capex: float
+    delta_nwc: float
+    fcf: float
+    discount_factor: float
+    discounted_fcf: float
+    cumulative_discounted_cash_flow: float
+
+
+@dataclass(frozen=True)
+class MetricOutcome:
+    """A financial metric with an explicit availability status."""
+
+    value: float | None
+    status: str
+
+
+@dataclass(frozen=True)
+class FinancialResult:
+    """Complete deterministic model output."""
+
+    capital: CapitalEstimate
+    rows: tuple[DCFRow, ...]
+    cash_flows: tuple[float, ...]
+    npv: float
+    irr: MetricOutcome
+    pi: MetricOutcome
+    dpbp: MetricOutcome
+
+    def numeric_metrics(self) -> dict[str, float | None]:
+        """Return stable metric keys used by Excel comparison."""
+
+        metrics: dict[str, float | None] = {
+            "FCI": self.capital.fci,
+            "TCI": self.capital.tci,
+            "NPV": self.npv,
+            "IRR": self.irr.value,
+            "PI": self.pi.value,
+            "DPBP": self.dpbp.value,
+        }
+        for row in self.rows:
+            metrics[f"Амортизация_{row.year}"] = row.depreciation
+            metrics[f"EBIT_{row.year}"] = row.ebit
+            metrics[f"NOPAT_{row.year}"] = row.nopat
+            metrics[f"FCF_{row.year}"] = row.fcf
+        return metrics
+
+
+@dataclass(frozen=True)
+class MetricComparison:
+    """One Python-to-Excel metric comparison."""
+
+    name: str
+    python_value: float | None
+    excel_value: float | None
+    absolute_difference: float | None
+    relative_difference_percent: float | None
+    status: str
+
+
+@dataclass(frozen=True)
+class ComparisonResult:
+    """Aggregate result of numerical comparison."""
+
+    items: tuple[MetricComparison, ...]
+    all_match: bool
+    max_absolute_difference: float
+    max_relative_deviation_percent: float
+
