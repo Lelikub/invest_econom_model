@@ -16,6 +16,18 @@ if LOCAL_PACKAGES.is_dir():
 import pytest
 
 
+def build_pytest_args() -> list[str]:
+    """Keep all pytest-generated files within the application directory."""
+
+    return [
+        str(APP_DIR / "tests"),
+        "-v",
+        "-o",
+        f"cache_dir={APP_DIR / '.pytest_cache'}",
+        f"--basetemp={APP_DIR / '.test-tmp'}",
+    ]
+
+
 if __name__ == "__main__":
-    raise SystemExit(pytest.main([str(APP_DIR / "tests"), "-v"]))
+    raise SystemExit(pytest.main(build_pytest_args()))
 

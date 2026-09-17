@@ -1,6 +1,6 @@
 # Project Layout Relocation Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Move all implemented project materials beneath `1/` and preserve the user's formatted Word report as a versioned project deliverable.
 
@@ -30,7 +30,7 @@
 - Consumes: current test file location and the existing user report in `app/output/`.
 - Produces: executable assertions for the assignment root and protected report destination.
 
-- [ ] **Step 1: Record the source report checksum**
+- [x] **Step 1: Record the source report checksum**
 
 Run:
 
@@ -41,7 +41,7 @@ Get-Item -LiteralPath 'app\output\Итоговый_отчет_ФИП_оформ�
 
 Expected: SHA-256 `5DFA48A68599C1CDD2DEDD05A161CF516C367D207DC2EEF962D931787936C338`, length `174398` bytes.
 
-- [ ] **Step 2: Write the failing layout test**
+- [x] **Step 2: Write the failing layout test**
 
 ```python
 """Repository-level contract for the assignment's directory layout."""
@@ -61,7 +61,7 @@ def test_all_project_materials_live_under_assignment_directory():
     ).is_file()
 ```
 
-- [ ] **Step 3: Run the contract and verify RED**
+- [x] **Step 3: Run the contract and verify RED**
 
 Run:
 
@@ -93,15 +93,15 @@ Expected: FAIL because the test resolves the repository root rather than a direc
 - Consumes: `PipelineConfig.defaults(assignment_root: Path) -> PipelineConfig`.
 - Produces: direct execution through `1/app/main.py`, imports through `src.*`, and output under `1/app/output`.
 
-- [ ] **Step 1: Move tracked trees while preserving Git history**
+- [x] **Step 1: Move tracked trees while preserving Git history**
 
 Use `git mv` for tracked application files and the two existing documentation files. Keep the newly written relocation spec and plan in their current `1/docs` locations.
 
-- [ ] **Step 2: Preserve the formatted report outside generated output**
+- [x] **Step 2: Preserve the formatted report outside generated output**
 
 Copy `app/output/Итоговый_отчет_ФИП_оформленный.docx` to `1/reports/Итоговый_отчет_ФИП_оформленный.docx`, then verify its length and SHA-256 against Task 1 before removing or relocating the old generated-output tree.
 
-- [ ] **Step 3: Update package imports**
+- [x] **Step 3: Update package imports**
 
 In `1/app/main.py` and tests, replace imports such as:
 
@@ -117,7 +117,7 @@ from src.pipeline import PipelineConfig, run_pipeline
 
 Replace `from app.tests.conftest import write_csv` with `from tests.conftest import write_csv`. Both `main.py` and `run_tests.py` put `APP_DIR` on `sys.path`, not its parent.
 
-- [ ] **Step 4: Update default paths**
+- [x] **Step 4: Update default paths**
 
 In `1/app/main.py`:
 
@@ -140,7 +140,7 @@ return cls(
 
 In `1/app/tests/conftest.py`, rename the fixture to `assignment_root`, keep `Path(__file__).resolve().parents[2]`, and resolve CSV as `assignment_root / "data" / "data.csv"`. Update test parameters using the fixture.
 
-- [ ] **Step 5: Run the layout contract and verify GREEN**
+- [x] **Step 5: Run the layout contract and verify GREEN**
 
 Run:
 
@@ -151,7 +151,7 @@ Run:
 
 Expected: `1 passed`.
 
-- [ ] **Step 6: Commit the working relocation**
+- [x] **Step 6: Commit the working relocation**
 
 ```powershell
 git add -A -- app docs 1/app 1/docs 1/reports
@@ -172,7 +172,7 @@ git commit -m "refactor: relocate project under assignment directory"
 - Consumes: the paths established by Task 2.
 - Produces: accurate setup, launch, output, and test instructions for the new layout.
 
-- [ ] **Step 1: Replace ignored application paths**
+- [x] **Step 1: Replace ignored application paths**
 
 Set `.gitignore` application entries to:
 
@@ -186,11 +186,11 @@ Set `.gitignore` application entries to:
 
 Keep `.worktrees/`, `.pytest_cache/`, `__pycache__/`, and `*.py[cod]`. Do not ignore `1/reports/`.
 
-- [ ] **Step 2: Update executable documentation paths**
+- [x] **Step 2: Update executable documentation paths**
 
 Replace root-level `app/...` references with `1/app/...`, and describe `1/` as the assignment root. Document the protected report separately at `1/reports/Итоговый_отчет_ФИП_оформленный.docx`.
 
-- [ ] **Step 3: Scan for stale paths**
+- [x] **Step 3: Scan for stale paths**
 
 Run:
 
@@ -200,7 +200,7 @@ rg -n '(^|[^1/])app/|from app\.|root / "1"' 1/app 1/docs
 
 Expected: no executable or current architectural reference points to the obsolete root `app/`; historical wording may only remain where clearly labelled as previous state.
 
-- [ ] **Step 4: Commit documentation and ignore rules**
+- [x] **Step 4: Commit documentation and ignore rules**
 
 ```powershell
 git add .gitignore 1/app/README.md 1/docs
@@ -221,7 +221,7 @@ git commit -m "docs: align instructions with assignment layout"
 - Consumes: `1/app/run_tests.py` and `1/app/main.py`.
 - Produces: a verified `main` checkout with all project materials beneath `1/`.
 
-- [ ] **Step 1: Run all tests**
+- [x] **Step 1: Run all tests**
 
 Run:
 
@@ -229,9 +229,9 @@ Run:
 & 'C:\Program Files\PostgreSQL\15\pgAdmin 4\python\python.exe' 1\app\run_tests.py
 ```
 
-Expected: all 33 tests PASS, including the new layout test.
+Expected: all 35 tests PASS, including the layout test and two test-runner path tests added during execution.
 
-- [ ] **Step 2: Run the production pipeline**
+- [x] **Step 2: Run the production pipeline**
 
 Run:
 
@@ -241,14 +241,14 @@ Run:
 
 Expected: successful DCF/CAPEX completion and seven generated artifact paths under `1/app`.
 
-- [ ] **Step 3: Verify protected and generated artifacts**
+- [x] **Step 3: Verify protected and generated artifacts**
 
 Confirm the protected report is tracked with `git ls-files`, has length `174398`, and has SHA-256 `5DFA48A68599C1CDD2DEDD05A161CF516C367D207DC2EEF962D931787936C338`. Confirm generated output and logs exist but are ignored.
 
-- [ ] **Step 4: Verify repository shape and source immutability**
+- [x] **Step 4: Verify repository shape and source immutability**
 
 Confirm root-level `app/` and `docs/` do not exist, `git diff --exit-code -- 1/data/data.csv` succeeds, and `git status --short --branch` contains no unexpected changes.
 
-- [ ] **Step 5: Commit any verification-only corrections**
+- [x] **Step 5: Commit any verification-only corrections**
 
 If verification required a correction, stage only the relevant tracked files and commit with a focused message. Otherwise, do not create an empty commit.
