@@ -6,26 +6,26 @@
 
 - Python 3.10 или новее;
 - Microsoft Excel для обязательного COM-пересчета формул;
-- зависимости из `app/requirements.txt`.
+- зависимости из `1/app/requirements.txt`.
 
 Обычная установка в виртуальное окружение:
 
 ```powershell
-python -m venv app/.venv
-app/.venv/Scripts/python.exe -m pip install -r app/requirements.txt
-app/.venv/Scripts/python.exe app/main.py
+python -m venv 1/app/.venv
+1/app/.venv/Scripts/python.exe -m pip install -r 1/app/requirements.txt
+1/app/.venv/Scripts/python.exe 1/app/main.py
 ```
 
-В текущей среде доступен изолированный Python из pgAdmin без модуля `venv`. Для него зависимости установлены локально в `app/.python-packages`, а запуск выполняется так:
+В текущей среде доступен изолированный Python из pgAdmin без модуля `venv`. Для него зависимости установлены локально в `1/app/.python-packages`, а запуск выполняется так:
 
 ```powershell
-& 'C:\Program Files\PostgreSQL\15\pgAdmin 4\python\python.exe' app/main.py
+& 'C:\Program Files\PostgreSQL\15\pgAdmin 4\python\python.exe' 1/app/main.py
 ```
 
 Тесты:
 
 ```powershell
-& 'C:\Program Files\PostgreSQL\15\pgAdmin 4\python\python.exe' app/run_tests.py
+& 'C:\Program Files\PostgreSQL\15\pgAdmin 4\python\python.exe' 1/app/run_tests.py
 ```
 
 ## Входы и допущения
@@ -42,13 +42,17 @@ app/.venv/Scripts/python.exe app/main.py
 
 По умолчанию создаются:
 
-- `app/output/DCF_Ground_Truth.xlsx`;
-- `app/output/Harness_Log.xlsx`;
-- `app/output/Сравнение_результатов.xlsx`;
-- `app/output/histogram_npv.png`;
-- `app/output/s_curve_npv.png`;
-- `app/output/Итоговый_отчет_ФИП.docx`;
-- `app/logs/execution.log`.
+- `1/app/output/DCF_Ground_Truth.xlsx`;
+- `1/app/output/Harness_Log.xlsx`;
+- `1/app/output/Сравнение_результатов.xlsx`;
+- `1/app/output/histogram_npv.png`;
+- `1/app/output/s_curve_npv.png`;
+- `1/app/output/Итоговый_отчет_ФИП.docx`;
+- `1/app/logs/execution.log`.
 
 Word-отчет создается только после успешных граничных тестов и сверки Python/Excel с относительным отклонением строго меньше `0,01%`.
+
+## Сохраненный оформленный отчет
+
+Пользовательская оформленная версия хранится отдельно в `1/reports/Итоговый_отчет_ФИП_оформленный.docx` и отслеживается Git. Повторный запуск приложения не изменяет этот файл.
 

@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build and run a reproducible Python pipeline in `app/` that calculates the DCF/CAPEX model, validates it against a recalculated Excel workbook, executes risk scenarios, and generates all required Russian-language artifacts.
+**Goal:** Build and run a reproducible Python pipeline in `1/app/` that calculates the DCF/CAPEX model, validates it against a recalculated Excel workbook, executes risk scenarios, and generates all required Russian-language artifacts.
 
 **Architecture:** Typed dataclasses carry validated project data and immutable calculation results between focused modules. Python and formula-driven Excel implement the same documented cash-flow architecture independently; the orchestrator stops before reporting unless Excel recalculation, comparison, and automated tests succeed.
 
@@ -12,7 +12,7 @@
 
 ## Global Constraints
 
-- All production code and generated artifacts live under `app/`; inputs under `1/data/` remain unchanged.
+- All production code and generated artifacts live under `1/app/`; inputs under `1/data/` remain unchanged.
 - Machine calculations use CSV values when PDF and CSV conflict, while every conflict is disclosed.
 - Excel visible labels are Russian and its model uses cell formulas followed by actual Microsoft Excel recalculation.
 - Python/Excel relative deviation for key numeric metrics must be strictly below `0.01%`.
@@ -25,12 +25,12 @@
 ### Task 1: Project foundation and validated input model
 
 **Files:**
-- Create: `app/requirements.txt`
-- Create: `app/src/__init__.py`
-- Create: `app/src/models.py`
-- Create: `app/src/data_loader.py`
-- Create: `app/tests/conftest.py`
-- Create: `app/tests/test_data_loader.py`
+- Create: `1/app/requirements.txt`
+- Create: `1/app/src/__init__.py`
+- Create: `1/app/src/models.py`
+- Create: `1/app/src/data_loader.py`
+- Create: `1/app/tests/conftest.py`
+- Create: `1/app/tests/test_data_loader.py`
 
 **Interfaces:**
 - Produces: `ProjectData`, `InputConflict`, `ValidationRecord`, `load_project_data(path: Path) -> ProjectData`.
@@ -68,7 +68,7 @@ def test_rejects_duplicate_profile_year(tmp_path):
 
 - [ ] **Step 3: Run tests and verify RED**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_data_loader.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_data_loader.py -v`
 
 Expected: collection/import failure because `app.src.data_loader` does not exist.
 
@@ -101,24 +101,24 @@ Validation must reject missing columns/values, non-numeric `Value`, duplicate `(
 
 - [ ] **Step 5: Run loader tests and full tests**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_data_loader.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_data_loader.py -v`
 
 Expected: PASS.
 
 - [ ] **Step 6: Commit the input layer**
 
 ```powershell
-git add app/requirements.txt app/src app/tests/conftest.py app/tests/test_data_loader.py
+git add 1/app/requirements.txt 1/app/src 1/app/tests/conftest.py 1/app/tests/test_data_loader.py
 git commit -m "feat: validate DCF project inputs"
 ```
 
 ### Task 2: Deterministic financial model and comparison primitives
 
 **Files:**
-- Create: `app/src/financial_model.py`
-- Create: `app/src/comparator.py`
-- Create: `app/tests/test_financial_model.py`
-- Create: `app/tests/test_comparator.py`
+- Create: `1/app/src/financial_model.py`
+- Create: `1/app/src/comparator.py`
+- Create: `1/app/tests/test_financial_model.py`
+- Create: `1/app/tests/test_comparator.py`
 
 **Interfaces:**
 - Consumes: `ProjectData`.
@@ -147,7 +147,7 @@ def test_zero_capex_returns_undefined_pi(project_data_factory):
 
 - [ ] **Step 2: Run finance tests and verify RED**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_financial_model.py app/tests/test_comparator.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_financial_model.py 1/app/tests/test_comparator.py -v`
 
 Expected: import failure because finance modules do not exist.
 
@@ -185,25 +185,25 @@ def compare_value(name: str, python_value: float, excel_value: float, tolerance_
 
 - [ ] **Step 5: Run tests and verify GREEN**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_financial_model.py app/tests/test_comparator.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_financial_model.py 1/app/tests/test_comparator.py -v`
 
 Expected: PASS.
 
 - [ ] **Step 6: Commit deterministic model**
 
 ```powershell
-git add app/src/financial_model.py app/src/comparator.py app/src/models.py app/tests
+git add 1/app/src/financial_model.py 1/app/src/comparator.py 1/app/src/models.py 1/app/tests
 git commit -m "feat: calculate and compare DCF metrics"
 ```
 
 ### Task 3: Boundary scenarios, Monte Carlo, stress test, and charts
 
 **Files:**
-- Create: `app/src/scenarios.py`
-- Create: `app/src/monte_carlo.py`
-- Create: `app/src/charts.py`
-- Create: `app/tests/test_scenarios.py`
-- Create: `app/tests/test_monte_carlo.py`
+- Create: `1/app/src/scenarios.py`
+- Create: `1/app/src/monte_carlo.py`
+- Create: `1/app/src/charts.py`
+- Create: `1/app/tests/test_scenarios.py`
+- Create: `1/app/tests/test_monte_carlo.py`
 
 **Interfaces:**
 - Consumes: `ProjectData`, `FinancialResult`.
@@ -227,7 +227,7 @@ def test_monte_carlo_is_seeded_and_has_exact_iteration_count(real_project_data):
 
 - [ ] **Step 2: Run scenario tests and verify RED**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_scenarios.py app/tests/test_monte_carlo.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_scenarios.py 1/app/tests/test_monte_carlo.py -v`
 
 Expected: import failure because scenario modules do not exist.
 
@@ -261,22 +261,22 @@ Calculate summary statistics with population standard deviation and quantiles `[
 
 - [ ] **Step 5: Run tests and verify GREEN**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_scenarios.py app/tests/test_monte_carlo.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_scenarios.py 1/app/tests/test_monte_carlo.py -v`
 
 Expected: PASS and two non-empty PNG files in a temporary test directory.
 
 - [ ] **Step 6: Commit risk analysis**
 
 ```powershell
-git add app/src/scenarios.py app/src/monte_carlo.py app/src/charts.py app/tests
+git add 1/app/src/scenarios.py 1/app/src/monte_carlo.py 1/app/src/charts.py 1/app/tests
 git commit -m "feat: add DCF risk and stress analysis"
 ```
 
 ### Task 4: Formula-driven Excel Ground Truth and real recalculation
 
 **Files:**
-- Create: `app/src/excel_builder.py`
-- Create: `app/tests/test_excel_builder.py`
+- Create: `1/app/src/excel_builder.py`
+- Create: `1/app/tests/test_excel_builder.py`
 
 **Interfaces:**
 - Consumes: validated inputs, Python results, boundary/Monte Carlo/stress results.
@@ -296,7 +296,7 @@ def test_workbook_contains_russian_sheets_and_formulas(real_project_data, tmp_pa
 
 - [ ] **Step 2: Run Excel tests and verify RED**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_excel_builder.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_excel_builder.py -v`
 
 Expected: import failure because `excel_builder` does not exist.
 
@@ -335,24 +335,24 @@ Reopen via `load_workbook(path, data_only=True)` and fail explicitly on `None`, 
 
 - [ ] **Step 5: Run workbook tests and an Excel integration test**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_excel_builder.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_excel_builder.py -v`
 
 Expected: PASS; the integration marker confirms formulas receive non-empty cached values after COM recalculation.
 
 - [ ] **Step 6: Commit Excel implementation**
 
 ```powershell
-git add app/src/excel_builder.py app/tests/test_excel_builder.py
+git add 1/app/src/excel_builder.py 1/app/tests/test_excel_builder.py
 git commit -m "feat: build and recalculate Excel ground truth"
 ```
 
 ### Task 5: Logging, Harness Log, and Word report
 
 **Files:**
-- Create: `app/src/logger_config.py`
-- Create: `app/src/harness_log.py`
-- Create: `app/src/report_builder.py`
-- Create: `app/tests/test_reporting.py`
+- Create: `1/app/src/logger_config.py`
+- Create: `1/app/src/harness_log.py`
+- Create: `1/app/src/report_builder.py`
+- Create: `1/app/tests/test_reporting.py`
 
 **Interfaces:**
 - Produces: `configure_logging(path)`, `write_harness_log(entries, path)`, `build_word_report(context, path)`.
@@ -377,7 +377,7 @@ def test_word_report_contains_required_sections_and_images(report_context, tmp_p
 
 - [ ] **Step 2: Run reporting tests and verify RED**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_reporting.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_reporting.py -v`
 
 Expected: import failure because reporting modules do not exist.
 
@@ -391,24 +391,24 @@ Use A4, 2 cm margins, Aptos/Times New Roman 10–11 pt, Russian headings, compac
 
 - [ ] **Step 5: Run reporting tests and verify GREEN**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_reporting.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_reporting.py -v`
 
 Expected: PASS; XLSX and DOCX reopen successfully.
 
 - [ ] **Step 6: Commit reporting**
 
 ```powershell
-git add app/src/logger_config.py app/src/harness_log.py app/src/report_builder.py app/tests/test_reporting.py
+git add 1/app/src/logger_config.py 1/app/src/harness_log.py 1/app/src/report_builder.py 1/app/tests/test_reporting.py
 git commit -m "feat: generate audit logs and Word report"
 ```
 
 ### Task 6: Orchestrator, CLI, README, and end-to-end run
 
 **Files:**
-- Create: `app/src/pipeline.py`
-- Create: `app/main.py`
-- Create: `app/README.md`
-- Create: `app/tests/test_pipeline.py`
+- Create: `1/app/src/pipeline.py`
+- Create: `1/app/main.py`
+- Create: `1/app/README.md`
+- Create: `1/app/tests/test_pipeline.py`
 
 **Interfaces:**
 - Produces: `run_pipeline(config: PipelineConfig) -> PipelineResult` and CLI exit code `0` only on complete success.
@@ -428,7 +428,7 @@ def test_pipeline_creates_every_required_artifact(pipeline_config):
 
 - [ ] **Step 2: Run pipeline test and verify RED**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_pipeline.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_pipeline.py -v`
 
 Expected: import failure because `pipeline` does not exist.
 
@@ -488,19 +488,19 @@ README lists interpreter creation, dependency installation, test command, pipeli
 
 - [ ] **Step 5: Run the complete automated suite**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests -v`
 
 Expected: all tests PASS with no warnings attributable to application code.
 
 - [ ] **Step 6: Run the real pipeline**
 
-Run: `app/.venv/Scripts/python.exe app/main.py`
+Run: `1/app/.venv/Scripts/python.exe 1/app/main.py`
 
 Expected: exit code `0`; Excel comparison is below `0.01%`; all required artifacts exist.
 
 - [ ] **Step 7: Inspect generated files programmatically**
 
-Run: `app/.venv/Scripts/python.exe -m pytest app/tests/test_pipeline.py -v`
+Run: `1/app/.venv/Scripts/python.exe -m pytest 1/app/tests/test_pipeline.py -v`
 
 Run: open XLSX/DOCX as ZIP containers and verify they contain required Office XML parts; load workbook with formulas and cached values; load DOCX with python-docx; inspect both PNG dimensions.
 
