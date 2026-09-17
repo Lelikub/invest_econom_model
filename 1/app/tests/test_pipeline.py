@@ -8,15 +8,15 @@ from docx import Document
 from openpyxl import load_workbook
 from PIL import Image
 
-from app.src.pipeline import PipelineConfig, run_pipeline
+from src.pipeline import PipelineConfig, run_pipeline
 
 
-def test_pipeline_creates_every_required_artifact(repository_root, tmp_path):
+def test_pipeline_creates_every_required_artifact(assignment_root, tmp_path):
     """Skipping a stage, gate, or final artifact must fail this test."""
 
     output_dir = tmp_path / "output"
     config = PipelineConfig(
-        csv_path=repository_root / "1" / "data" / "data.csv",
+        csv_path=assignment_root / "data" / "data.csv",
         output_dir=output_dir,
         log_path=tmp_path / "logs" / "execution.log",
     )

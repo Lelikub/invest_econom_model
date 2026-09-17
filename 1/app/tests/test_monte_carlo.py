@@ -5,8 +5,8 @@ from __future__ import annotations
 import numpy as np
 from PIL import Image
 
-from app.src.charts import save_monte_carlo_charts
-from app.src.monte_carlo import lognormal_parameters, run_monte_carlo
+from src.charts import save_monte_carlo_charts
+from src.monte_carlo import lognormal_parameters, run_monte_carlo
 
 
 def test_lognormal_parameters_produce_requested_mean_and_cv():

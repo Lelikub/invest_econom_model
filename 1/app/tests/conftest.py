@@ -8,22 +8,22 @@ from typing import Iterable
 
 import pytest
 
-from app.src.data_loader import load_project_data
-from app.src.models import EquipmentItem, ProjectData
+from src.data_loader import load_project_data
+from src.models import EquipmentItem, ProjectData
 
 
 @pytest.fixture
-def repository_root() -> Path:
-    """Return the repository root for the active worktree."""
+def assignment_root() -> Path:
+    """Return the root of assignment 1 for the active checkout."""
 
     return Path(__file__).resolve().parents[2]
 
 
 @pytest.fixture
-def real_csv_path(repository_root: Path) -> Path:
+def real_csv_path(assignment_root: Path) -> Path:
     """Return the immutable source CSV supplied with the assignment."""
 
-    return repository_root / "1" / "data" / "data.csv"
+    return assignment_root / "data" / "data.csv"
 
 
 @pytest.fixture

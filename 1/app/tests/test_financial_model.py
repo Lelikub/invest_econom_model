@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from app.src.financial_model import FinancialModel
+from src.financial_model import FinancialModel
 
 
 def test_lang_capex_uses_equipment_fci_and_wc_tci(real_project_data):

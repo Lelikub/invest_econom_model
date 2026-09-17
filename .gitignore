@@ -1,8 +1,9 @@
 .worktrees/
-app/.python-packages/
-app/.test-tmp*/
-app/output/
-app/logs/
+1/app/.venv/
+1/app/.python-packages/
+1/app/.test-tmp*/
+1/app/output/
+1/app/logs/
 .pytest_cache/
 __pycache__/
 *.py[cod]

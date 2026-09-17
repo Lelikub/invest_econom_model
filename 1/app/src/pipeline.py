@@ -37,12 +37,12 @@ class PipelineConfig:
     log_path: Path
 
     @classmethod
-    def defaults(cls, repository_root: Path) -> "PipelineConfig":
-        """Build default paths relative to the repository, never absolute literals."""
+    def defaults(cls, assignment_root: Path) -> "PipelineConfig":
+        """Build default paths relative to the assignment, never absolute literals."""
 
-        root = Path(repository_root)
+        root = Path(assignment_root)
         return cls(
-            csv_path=root / "1" / "data" / "data.csv",
+            csv_path=root / "data" / "data.csv",
             output_dir=root / "app" / "output",
             log_path=root / "app" / "logs" / "execution.log",
         )

@@ -5,15 +5,15 @@ from __future__ import annotations
 from docx import Document
 from openpyxl import load_workbook
 
-from app.src.charts import save_monte_carlo_charts
-from app.src.comparator import compare_metrics
-from app.src.financial_model import FinancialModel
-from app.src.harness_log import build_harness_entries, write_harness_log
-from app.src.logger_config import configure_logging
-from app.src.models import ReportContext
-from app.src.monte_carlo import run_monte_carlo
-from app.src.report_builder import build_word_report
-from app.src.scenarios import run_boundary_tests, run_stress_test
+from src.charts import save_monte_carlo_charts
+from src.comparator import compare_metrics
+from src.financial_model import FinancialModel
+from src.harness_log import build_harness_entries, write_harness_log
+from src.logger_config import configure_logging
+from src.models import ReportContext
+from src.monte_carlo import run_monte_carlo
+from src.report_builder import build_word_report
+from src.scenarios import run_boundary_tests, run_stress_test
 
 
 def _report_context(data, directory):

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from app.src.comparator import compare_metrics
+from src.comparator import compare_metrics
 
 
 def test_comparison_uses_strict_relative_tolerance():

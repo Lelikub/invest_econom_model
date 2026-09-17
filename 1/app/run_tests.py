@@ -8,9 +8,8 @@ from pathlib import Path
 
 
 APP_DIR = Path(__file__).resolve().parent
-REPOSITORY_ROOT = APP_DIR.parent
 LOCAL_PACKAGES = APP_DIR / ".python-packages"
-sys.path.insert(0, str(REPOSITORY_ROOT))
+sys.path.insert(0, str(APP_DIR))
 if LOCAL_PACKAGES.is_dir():
     site.addsitedir(str(LOCAL_PACKAGES))
 

@@ -7,16 +7,16 @@ import sys
 
 from openpyxl import load_workbook
 
-from app.src.comparator import compare_metrics
-from app.src.excel_builder import (
+from src.comparator import compare_metrics
+from src.excel_builder import (
     EXPECTED_RUSSIAN_SHEETS,
     build_workbook,
     read_excel_metrics,
     recalculate_with_excel,
 )
-from app.src.financial_model import FinancialModel
-from app.src.monte_carlo import run_monte_carlo
-from app.src.scenarios import run_boundary_tests, run_stress_test
+from src.financial_model import FinancialModel
+from src.monte_carlo import run_monte_carlo
+from src.scenarios import run_boundary_tests, run_stress_test
 
 
 def _build_real_workbook(real_project_data, path):
@@ -62,22 +62,22 @@ def test_excel_com_recalculation_matches_python(real_project_data, tmp_path, cap
     assert "fatal exception" not in captured.err.lower()
 
 
-def test_excel_com_shutdown_has_clean_stderr(real_project_data, tmp_path, repository_root):
+def test_excel_com_shutdown_has_clean_stderr(real_project_data, tmp_path, assignment_root):
     """Releasing COM proxies after CoUninitialize must fail this test."""
 
     path = tmp_path / "DCF_Ground_Truth.xlsx"
     _build_real_workbook(real_project_data, path)
     code = (
         "import sys,site; "
-        "sys.path.insert(0,r'.'); "
+        "sys.path.insert(0,r'app'); "
         "site.addsitedir(r'app\\.python-packages'); "
-        "from app.src.excel_builder import recalculate_with_excel; "
+        "from src.excel_builder import recalculate_with_excel; "
         f"recalculate_with_excel(r'{path}')"
     )
 
     completed = subprocess.run(
         [sys.executable, "-c", code],
-        cwd=repository_root,
+        cwd=assignment_root,
         capture_output=True,
         text=True,
         encoding="utf-8",

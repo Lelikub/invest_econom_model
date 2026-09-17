@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from app.src.scenarios import run_boundary_tests, run_stress_test
+from src.scenarios import run_boundary_tests, run_stress_test
 
 
 def test_boundary_suite_passes_all_three_required_cases(real_project_data):

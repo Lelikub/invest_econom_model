@@ -6,8 +6,8 @@ import csv
 
 import pytest
 
-from app.src.data_loader import DataValidationError, load_project_data
-from app.tests.conftest import write_csv
+from conftest import write_csv
+from src.data_loader import DataValidationError, load_project_data
 
 
 def test_loads_real_csv_and_reports_pdf_conflicts(real_csv_path):

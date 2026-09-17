@@ -9,20 +9,20 @@ from pathlib import Path
 
 
 APP_DIR = Path(__file__).resolve().parent
-REPOSITORY_ROOT = APP_DIR.parent
+ASSIGNMENT_ROOT = APP_DIR.parent
 LOCAL_PACKAGES = APP_DIR / ".python-packages"
-if str(REPOSITORY_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPOSITORY_ROOT))
+if str(APP_DIR) not in sys.path:
+    sys.path.insert(0, str(APP_DIR))
 if LOCAL_PACKAGES.is_dir():
     site.addsitedir(str(LOCAL_PACKAGES))
 
-from app.src.pipeline import PipelineConfig, run_pipeline
+from src.pipeline import PipelineConfig, run_pipeline
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     """Parse optional path overrides while preserving one-command defaults."""
 
-    defaults = PipelineConfig.defaults(REPOSITORY_ROOT)
+    defaults = PipelineConfig.defaults(ASSIGNMENT_ROOT)
     parser = argparse.ArgumentParser(description="DCF-модель и факторная оценка CAPEX")
     parser.add_argument("--csv", type=Path, default=defaults.csv_path, help="Путь к исходному data.csv")
     parser.add_argument("--output-dir", type=Path, default=defaults.output_dir, help="Каталог итоговых файлов")
