@@ -1,0 +1,13 @@
+﻿check,status,details
+schema_units_provenance,PASS,"CSV keys, page references and finite values validated"
+capital_weights,PASS,we+wd=1.0
+ebitda_identity,PASS,150.0-85.0=65.0
+dscr_rounding,WARNING,"EBITDA/DebtService=1.650165016502, source DSCR=1.65; delta=0.00016501650165; tolerance=0.0002"
+price_rows_dates,PASS,1254 rows; 2021-10-15 — 2026-10-14
+price_positive_finite,PASS,"No missing, infinite or nonpositive prices"
+weekday_gaps,WARNING,50 absent weekdays (exchange holidays not independently verified)
+weekends,PASS,0
+extreme_daily_returns,PASS,0 days with |return|>20%; retained
+adjustments,NOT_VERIFIED,User-provided adjusted close; splits/dividends cannot be independently confirmed from prices alone
+monthly_sample,PASS,"60 monthly prices, 59 returns; last incomplete month excluded; first month provides only initial month-end price"
+ols_influence,WARNING,Max leave-one-out beta deviation=0.05938628; observations retained

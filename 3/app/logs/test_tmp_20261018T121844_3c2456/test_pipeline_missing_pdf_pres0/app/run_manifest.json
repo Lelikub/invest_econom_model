@@ -1,0 +1,9 @@
+{
+  "run_id": "20261018T121850_999262",
+  "status": "FAILED",
+  "started_at": "2026-10-18T12:18:50.112087+03:00",
+  "stages": {},
+  "failed_step": "inventory",
+  "error": "C:\\work\\invest_econom_model\\3\\app\\logs\\test_tmp_20261018T121844_3c2456\\test_pipeline_missing_pdf_pres0\\missing.pdf",
+  "duration_seconds": 0.003
+}

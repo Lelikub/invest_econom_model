@@ -1,0 +1,90 @@
+[
+  {
+    "issue_id": "review_regressions",
+    "stage": "final code review",
+    "task": "Сверить реализацию с требованиями и проверить ошибочные входы",
+    "code": "DataRepository.load; PipelineController.run; ChartValidationService.match_values",
+    "issue": "Найдены пробелы контроля единиц CSV, пути FAILED-артефактов при запрещённом --output и численной сверки нарисованных рядов; 3 регрессионных теста сначала упали.",
+    "cause": "Проверка входного пути была, но обработчик исключения повторно использовал запрещённый путь; единицы и численная связь графика с таблицей проверялись недостаточно.",
+    "resolution": "Отклоняются несовместимые единицы; диагностика при запрещённом пути остаётся внутри app; реальные matplotlib-объекты сверяются с таблицами. CSV графика цен теперь включает даты.",
+    "recheck": "58 pytest-тестов прошли; отдельно проверены отказ при неправильной единице, отсутствие записей вне app и обнаружение неверного графического ряда.",
+    "category": "implementation error"
+  },
+  {
+    "issue_id": "review_coverage",
+    "stage": "final code review",
+    "task": "Проверить полноту извлечения и Excel-контроля",
+    "code": "PdfExtractionService; ExcelGroundTruthWriter; ComparisonService",
+    "issue": "Производственные мощности и 60 месяцев первоначально оставались только в raw-тексте; Excel-листы Discount/Checks/Decomposition не входили в программную сверку кэша.",
+    "cause": "Исходная реализация извлекала основной численный вход WACC, но не все контекстные величины; сводная сверка охватывала 65 показателей.",
+    "resolution": "Название, мощности и месячный горизонт извлекаются в CSV и DTO; дополнительно сверяются 20 DF, 5 тождеств и 3 компоненты WACC. Идентификаторы метрик типизированы MetricId.",
+    "recheck": "Тесты мощностей и повреждённого Excel-тождества сначала RED, затем PASS; весь pytest 58 passed. Итоговая фактическая сверка 93 величин выполняется полным пайплайном.",
+    "category": "implementation error"
+  },
+  {
+    "issue_id": "dev_pytest_temp_permissions",
+    "stage": "tests",
+    "task": "Запуск тестов из общего пайплайна",
+    "code": "TestService.run: pytest --basetemp=<app>/logs/test_tmp_<run_id>",
+    "issue": "Первый полный запуск: 42 passed, 10 errors; WinError 5 при чтении системного pytest-of-ildar вне песочницы.",
+    "cause": "Системный временный каталог создан с правами другого контекста запуска.",
+    "resolution": "Тесты получают новый --basetemp внутри logs приложения, уникальный для run_id.",
+    "recheck": "Регрессионный тест сначала воспроизвёл неправильный путь; затем повторно проверяется реальным pytest-процессом.",
+    "category": "implementation error"
+  },
+  {
+    "issue_id": "dev_python_alias",
+    "stage": "environment",
+    "task": "Запустить Python и проверить библиотеки",
+    "code": "python --version",
+    "issue": "Системный WindowsApps alias python.exe недоступен; зависимости отсутствовали у рабочего Python 3.14.",
+    "cause": "Порядок PATH указывает на WindowsApps перед установленным интерпретатором.",
+    "resolution": "Создано локальное 3/app/.venv рабочим интерпретатором, установлены зависимости.",
+    "recheck": "Фактический pytest: 52 passed; версии записываются в run_manifest.json.",
+    "category": "verification limit"
+  },
+  {
+    "issue_id": "dev_stdout_encoding",
+    "stage": "source audit",
+    "task": "Прочитать формулы лекции 5",
+    "code": "print(page.get_text())",
+    "issue": "UnicodeEncodeError при выводе маркера U+F0A7 в консоль cp1251.",
+    "cause": "Кодировка stdout не поддерживала символ PDF.",
+    "resolution": "Исследовательская команда повторена с PYTHONIOENCODING=utf-8; приложение сохраняет извлечённый текст UTF-8.",
+    "recheck": "Слайды 6,15,17,18,19,26–30 реально прочитаны; формула кредитного штрафа извлечена.",
+    "category": "implementation error"
+  },
+  {
+    "issue_id": "dev_chart_unused_ticks",
+    "stage": "charts",
+    "task": "Проверить автоматический аудит границ текста",
+    "code": "ChartValidationService.audit",
+    "issue": "test_chart_validation_accepts_clean_plot упал: 49 passed, 1 failed. Аудитор считал обрезанными скрытые деления −0.2 и 1.2 вне диапазона осей.",
+    "cause": "Matplotlib создаёт tick Text за диапазоном, которые не отображаются, хотя get_visible() возвращает True.",
+    "resolution": "Не участвующие в отображении деления исключены по координате tick относительно пределов осей; остальные тексты проверяются.",
+    "recheck": "50 passed после исправления; отдельный тест действительно обрезанной подписи продолжает обнаруживать FAIL. В последующем наборе 52 passed.",
+    "category": "implementation error"
+  },
+  {
+    "issue_id": "dev_excel_sandbox",
+    "stage": "excel",
+    "task": "Проверить доступ к независимому расчётному движку",
+    "code": "win32com.client.DispatchEx('Excel.Application')",
+    "issue": "COM в песочнице: -2147023584, указанный сеанс работы не существует.",
+    "cause": "COM требует доступ к пользовательскому сеансу Windows.",
+    "resolution": "Повторная проверка через разрешённый запуск вне песочницы.",
+    "recheck": "Реально запущен Excel 16.0 и закрыт; полная сверка выполняется пайплайном отдельно.",
+    "category": "verification limit"
+  },
+  {
+    "issue_id": "dev_tdd_red",
+    "stage": "tests",
+    "task": "Сначала выполнить тесты отсутствующих компонентов",
+    "code": "logs/tdd_initial.log; logs/tdd_reporting_red.log; logs/tdd_pipeline_red.log",
+    "issue": "Ожидаемые RED-запуски: ModuleNotFoundError для src, src.reporting и src.controller до реализации.",
+    "cause": "Тесты написаны перед реализацией соответствующих слоёв.",
+    "resolution": "Реализованы компоненты, затем повторно выполнены тесты.",
+    "recheck": "52 passed; ожидаемый RED не выдаётся за успешно выполненную проверку.",
+    "category": "implementation error"
+  }
+]

@@ -1,0 +1,23 @@
+﻿metric_id,value,unit,scenario
+t_eff,0.15,fraction,stress
+de_peer,0.16666666666666666,ratio,stress
+rf,0.10400000000000001,fraction/year,stress
+pi_exp,0.05,fraction/year,stress
+beta_multiplier,1.2850000000000001,ratio,stress
+beta_u,1.4193667157584686,ratio,stress
+delta_total,0.39999999999999997,fraction,stress
+equity,175.50000000000003,million USD,stress
+debt,157.5,million USD,stress
+de,0.8974358974358972,ratio,stress
+we,0.5270270270270271,fraction,stress
+wd,0.4729729729729729,fraction,stress
+beta_l,2.502088761753711,ratio,stress
+erp,0.0605,fraction/year,stress
+crp,0.05500000000000001,fraction/year,stress
+ke,0.3103763700860995,fraction/year,stress
+dscr,1.1549999999999998,ratio,stress
+credit_spread,0.0062770562770562924,fraction/year,stress
+kd,0.1397770562770563,fraction/year,stress
+kd_after_tax,0.11881049783549785,fraction/year,stress
+wacc,0.21977088996757171,fraction/year,stress
+ebitda,45.5,million USD/year,stress

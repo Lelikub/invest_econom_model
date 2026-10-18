@@ -1,0 +1,23 @@
+﻿metric_id,value,unit,scenario
+t_eff,0.15,fraction,base
+de_peer,0.16666666666666666,ratio,base
+beta_u,1.1045655375552283,ratio,base
+de,0.5384615384615384,ratio,base
+beta_l,1.6101166874362751,ratio,base
+rf,0.040999999999999995,fraction/year,base
+erp,0.05,fraction/year,base
+crp,0.012,fraction/year,base
+we,0.65,fraction,base
+wd,0.35,fraction,base
+ke,0.13350583437181376,fraction/year,base
+kd,0.058499999999999996,fraction/year,base
+kd_after_tax,0.049725,fraction/year,base
+wacc,0.10418254234167895,fraction/year,base
+dscr,1.65,ratio,base
+equity,292.5,million USD,base
+debt,157.5,million USD,base
+ebitda,65.0,million USD/year,base
+credit_spread,0.0,fraction/year,base
+delta_total,0.0,fraction,base
+pi_exp,0.0,fraction/year,base
+beta_multiplier,1.0,ratio,base

@@ -1,0 +1,9 @@
+﻿scenario,wacc,note
+Без шоков,0.10418254234167895,All shock magnitudes and EBITDA compression zero
+Энергия,0.1580986413843888,Diagnostic only; mu_EBITDA=0 because source assigns only combined compression
+Тайвань,0.1277864819587629,Diagnostic only; mu_EBITDA=0 because source assigns only combined compression
+Пошлины,0.10732226988217969,Diagnostic only; mu_EBITDA=0 because source assigns only combined compression
+Срочная премия,0.11176254234167896,Diagnostic only; mu_EBITDA=0 because source assigns only combined compression
+Европа,0.1192249336880121,Diagnostic only; mu_EBITDA=0 because source assigns only combined compression
+Обвал tech,0.11380080882317897,Diagnostic only; mu_EBITDA=0 because source assigns only combined compression
+Все шоки,0.21977088996757171,Required combined scenario including mu_EBITDA

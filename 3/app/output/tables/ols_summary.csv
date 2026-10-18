@@ -1,0 +1,2 @@
+﻿beta_ols,alpha_raw,r_squared,p_value,stderr,intercept_stderr,n,alpha_jensen,alpha_jensen_status
+1.1659789827602143,-0.0001766267512173323,0.3596113616526548,5.194640764321354e-07,0.206090703227832,0.00937407226094651,59,,NOT_CALCULATED: отсутствует месячный ряд Rf

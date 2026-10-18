@@ -1,0 +1,8 @@
+20261018T121204_810457 tests
+Traceback (most recent call last):
+  File "C:\work\invest_econom_model\3\app\src\controller.py", line 130, in run
+    tests=TestService().run(app,tables,self.log)
+  File "C:\work\invest_econom_model\3\app\src\services\testing.py", line 44, in run
+    raise ValueError('Automated tests failed; see logs/tests.log')
+ValueError: Automated tests failed; see logs/tests.log
+

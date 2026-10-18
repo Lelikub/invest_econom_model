@@ -1,0 +1,65 @@
+{
+  "01_ols": {
+    "sha256": "8dd06c7e331099035827bcff91e0461492b2a12999e42011e8666d6df0beff20",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "02_prices": {
+    "sha256": "d38fef5c5c458f7b226305be5b18170808a28940ba1477c6c9d1d604edec674c",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "03_returns": {
+    "sha256": "be5a0fef2fa16247a625218e7e2eb779b753838b8017829c7304e6c6d6a31cdb",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "04_rates": {
+    "sha256": "5dc85f14dfbc5158a37230692cbd43b1587a0246670f0fa4807de315691c3bbc",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "05_capital": {
+    "sha256": "0345e8219a96b01f3e610d73c9838f92e50d81c81bfd6e96142f2545ac8104f6",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "06_credit": {
+    "sha256": "63c69d1ecabc3e46e28b067daab7fa189084b695a17ff7e09f6e541a20617d32",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "08_discount": {
+    "sha256": "6b95b1e970309e74241db9ecd25fdb93dda20030d4866aa0ebea07c7fd404346",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "09_shocks": {
+    "sha256": "f22f8aa9ec2b7f51ad81460976fe50aab544ba949b0e7da2c898506c11f38e5b",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Axes, units, labels, legend and data inspected at full resolution; no clipping or misleading scale observed"
+  },
+  "07_waterfall": {
+    "sha256": "27a293e3b010cca549a66dce12501521e3b2f73b1d8168d4bc6ca12aa856f6c6",
+    "reviewer": "Codex, actual view_image inspection",
+    "reviewed_at": "2026-10-18",
+    "status": "PASS",
+    "observation": "Reviewed final waterfall at full resolution: true floating bars, balance, separate illustrative taxes/DSRA, debt retained, no clipped labels"
+  }
+}

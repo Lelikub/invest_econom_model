@@ -1,0 +1,48 @@
+2026-10-18T12:12:05.595384+03:00 run=20261018T121204_810457 step=data_validation {'check': 'schema_units_provenance', 'status': 'PASS', 'details': 'CSV keys, page references and finite values validated'}
+2026-10-18T12:12:05.595835+03:00 run=20261018T121204_810457 step=data_validation {'check': 'capital_weights', 'status': 'PASS', 'details': 'we+wd=1.0'}
+2026-10-18T12:12:05.596114+03:00 run=20261018T121204_810457 step=data_validation {'check': 'ebitda_identity', 'status': 'PASS', 'details': '150.0-85.0=65.0'}
+2026-10-18T12:12:05.596375+03:00 run=20261018T121204_810457 step=data_validation {'check': 'dscr_rounding', 'status': 'WARNING', 'details': 'EBITDA/DebtService=1.650165016502, source DSCR=1.65; delta=0.00016501650165; tolerance=0.0002'}
+2026-10-18T12:12:05.748291+03:00 run=20261018T121204_810457 step=data_validation {'check': 'price_rows_dates', 'status': 'PASS', 'details': '1254 rows; 2021-10-15 — 2026-10-14'}
+2026-10-18T12:12:05.748760+03:00 run=20261018T121204_810457 step=data_validation {'check': 'price_positive_finite', 'status': 'PASS', 'details': 'No missing, infinite or nonpositive prices'}
+2026-10-18T12:12:05.749055+03:00 run=20261018T121204_810457 step=data_validation {'check': 'weekday_gaps', 'status': 'WARNING', 'details': '50 absent weekdays (exchange holidays not independently verified)'}
+2026-10-18T12:12:05.749323+03:00 run=20261018T121204_810457 step=data_validation {'check': 'weekends', 'status': 'PASS', 'details': '0'}
+2026-10-18T12:12:05.749569+03:00 run=20261018T121204_810457 step=data_validation {'check': 'extreme_daily_returns', 'status': 'PASS', 'details': '0 days with |return|>20%; retained'}
+2026-10-18T12:12:05.749816+03:00 run=20261018T121204_810457 step=data_validation {'check': 'adjustments', 'status': 'NOT_VERIFIED', 'details': 'User-provided adjusted close; splits/dividends cannot be independently confirmed from prices alone'}
+2026-10-18T12:12:05.750076+03:00 run=20261018T121204_810457 step=data_validation {'check': 'monthly_sample', 'status': 'PASS', 'details': '60 monthly prices, 59 returns; last incomplete month excluded; first month provides only initial month-end price'}
+2026-10-18T12:12:05.750351+03:00 run=20261018T121204_810457 step=data_validation {'check': 'ols_influence', 'status': 'WARNING', 'details': 'Max leave-one-out beta deviation=0.05938628; observations retained'}
+2026-10-18T12:12:52.191427+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'schema_units_provenance', 'status': 'PASS', 'details': 'CSV keys, page references and finite values validated'}
+2026-10-18T12:12:52.191797+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'capital_weights', 'status': 'PASS', 'details': 'we+wd=1.0'}
+2026-10-18T12:12:52.192326+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'ebitda_identity', 'status': 'PASS', 'details': '150.0-85.0=65.0'}
+2026-10-18T12:12:52.192652+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'dscr_rounding', 'status': 'WARNING', 'details': 'EBITDA/DebtService=1.650165016502, source DSCR=1.65; delta=0.00016501650165; tolerance=0.0002'}
+2026-10-18T12:12:52.317815+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'price_rows_dates', 'status': 'PASS', 'details': '1254 rows; 2021-10-15 — 2026-10-14'}
+2026-10-18T12:12:52.318110+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'price_positive_finite', 'status': 'PASS', 'details': 'No missing, infinite or nonpositive prices'}
+2026-10-18T12:12:52.318350+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'weekday_gaps', 'status': 'WARNING', 'details': '50 absent weekdays (exchange holidays not independently verified)'}
+2026-10-18T12:12:52.318619+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'weekends', 'status': 'PASS', 'details': '0'}
+2026-10-18T12:12:52.318863+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'extreme_daily_returns', 'status': 'PASS', 'details': '0 days with |return|>20%; retained'}
+2026-10-18T12:12:52.319088+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'adjustments', 'status': 'NOT_VERIFIED', 'details': 'User-provided adjusted close; splits/dividends cannot be independently confirmed from prices alone'}
+2026-10-18T12:12:52.319343+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'monthly_sample', 'status': 'PASS', 'details': '60 monthly prices, 59 returns; last incomplete month excluded; first month provides only initial month-end price'}
+2026-10-18T12:12:52.319559+03:00 run=20261018T121251_fdc8e2 step=data_validation {'check': 'ols_influence', 'status': 'WARNING', 'details': 'Max leave-one-out beta deviation=0.05938628; observations retained'}
+2026-10-18T12:17:35.607794+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'schema_units_provenance', 'status': 'PASS', 'details': 'CSV keys, page references and finite values validated'}
+2026-10-18T12:17:35.608261+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'capital_weights', 'status': 'PASS', 'details': 'we+wd=1.0'}
+2026-10-18T12:17:35.608604+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'ebitda_identity', 'status': 'PASS', 'details': '150.0-85.0=65.0'}
+2026-10-18T12:17:35.608877+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'dscr_rounding', 'status': 'WARNING', 'details': 'EBITDA/DebtService=1.650165016502, source DSCR=1.65; delta=0.00016501650165; tolerance=0.0002'}
+2026-10-18T12:17:35.743453+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'price_rows_dates', 'status': 'PASS', 'details': '1254 rows; 2021-10-15 — 2026-10-14'}
+2026-10-18T12:17:35.743783+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'price_positive_finite', 'status': 'PASS', 'details': 'No missing, infinite or nonpositive prices'}
+2026-10-18T12:17:35.744054+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'weekday_gaps', 'status': 'WARNING', 'details': '50 absent weekdays (exchange holidays not independently verified)'}
+2026-10-18T12:17:35.744312+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'weekends', 'status': 'PASS', 'details': '0'}
+2026-10-18T12:17:35.744548+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'extreme_daily_returns', 'status': 'PASS', 'details': '0 days with |return|>20%; retained'}
+2026-10-18T12:17:35.744801+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'adjustments', 'status': 'NOT_VERIFIED', 'details': 'User-provided adjusted close; splits/dividends cannot be independently confirmed from prices alone'}
+2026-10-18T12:17:35.745025+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'monthly_sample', 'status': 'PASS', 'details': '60 monthly prices, 59 returns; last incomplete month excluded; first month provides only initial month-end price'}
+2026-10-18T12:17:35.745254+03:00 run=20261018T121734_cf4c7e step=data_validation {'check': 'ols_influence', 'status': 'WARNING', 'details': 'Max leave-one-out beta deviation=0.05938628; observations retained'}
+2026-10-18T12:18:45.272384+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'schema_units_provenance', 'status': 'PASS', 'details': 'CSV keys, page references and finite values validated'}
+2026-10-18T12:18:45.272841+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'capital_weights', 'status': 'PASS', 'details': 'we+wd=1.0'}
+2026-10-18T12:18:45.273173+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'ebitda_identity', 'status': 'PASS', 'details': '150.0-85.0=65.0'}
+2026-10-18T12:18:45.273726+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'dscr_rounding', 'status': 'WARNING', 'details': 'EBITDA/DebtService=1.650165016502, source DSCR=1.65; delta=0.00016501650165; tolerance=0.0002'}
+2026-10-18T12:18:45.398984+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'price_rows_dates', 'status': 'PASS', 'details': '1254 rows; 2021-10-15 — 2026-10-14'}
+2026-10-18T12:18:45.399265+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'price_positive_finite', 'status': 'PASS', 'details': 'No missing, infinite or nonpositive prices'}
+2026-10-18T12:18:45.399523+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'weekday_gaps', 'status': 'WARNING', 'details': '50 absent weekdays (exchange holidays not independently verified)'}
+2026-10-18T12:18:45.399858+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'weekends', 'status': 'PASS', 'details': '0'}
+2026-10-18T12:18:45.400268+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'extreme_daily_returns', 'status': 'PASS', 'details': '0 days with |return|>20%; retained'}
+2026-10-18T12:18:45.400660+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'adjustments', 'status': 'NOT_VERIFIED', 'details': 'User-provided adjusted close; splits/dividends cannot be independently confirmed from prices alone'}
+2026-10-18T12:18:45.400983+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'monthly_sample', 'status': 'PASS', 'details': '60 monthly prices, 59 returns; last incomplete month excluded; first month provides only initial month-end price'}
+2026-10-18T12:18:45.401321+03:00 run=20261018T121844_3c2456 step=data_validation {'check': 'ols_influence', 'status': 'WARNING', 'details': 'Max leave-one-out beta deviation=0.05938628; observations retained'}

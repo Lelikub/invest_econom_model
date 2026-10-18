@@ -1,0 +1,31 @@
+{
+  "shock_1": [
+    "oil",
+    "eta",
+    "psi_energy"
+  ],
+  "shock_2": [
+    "taiwan",
+    "psi_tw",
+    "alpha_cross"
+  ],
+  "shock_3": [
+    "tariff",
+    "psi_tariff",
+    "psi_cross"
+  ],
+  "shock_4": [
+    "term_premium"
+  ],
+  "shock_5": [
+    "crp_europe",
+    "spread_europe",
+    "flight"
+  ],
+  "shock_6": [
+    "crash",
+    "panic_lambda",
+    "mu_ebitda",
+    "gamma1"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "20261018T121741_884a7c",
+  "status": "FAILED",
+  "started_at": "2026-10-18T12:17:41.103596+03:00",
+  "stages": {},
+  "failed_step": "inventory",
+  "error": "Output must stay inside 3/app",
+  "duration_seconds": 0.001
+}

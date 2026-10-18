@@ -1,0 +1,94 @@
+﻿metric_id,scenario,python_value,excel_value,analytical_expected,abs_diff,relative_diff,tolerance,verification_status,source_ref,note,unit
+t_eff,base,0.15,0.15,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B2,Independent spreadsheet formula,fraction
+de_peer,base,0.16666666666666666,0.16666666666666666,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B3,Independent spreadsheet formula,ratio
+beta_u,base,1.1045655375552283,1.1045655375552283,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B4,Independent spreadsheet formula,ratio
+de,base,0.5384615384615384,0.5384615384615384,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B5,Independent spreadsheet formula,ratio
+beta_l,base,1.6101166874362751,1.6101166874362751,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B6,Independent spreadsheet formula,ratio
+rf,base,0.040999999999999995,0.04099999999999999,,6.938893903907228e-18,1.6924131472944462e-16,rtol=1e-8; atol=1e-10,PASS,'Base'!B7,Independent spreadsheet formula,fraction/year
+erp,base,0.05,0.05,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B8,Independent spreadsheet formula,fraction/year
+crp,base,0.012,0.012,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B9,Independent spreadsheet formula,fraction/year
+we,base,0.65,0.65,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B10,Independent spreadsheet formula,fraction
+wd,base,0.35,0.35,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B11,Independent spreadsheet formula,fraction
+ke,base,0.13350583437181376,0.13350583437181376,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B12,Independent spreadsheet formula,fraction/year
+kd,base,0.058499999999999996,0.05849999999999999,,6.938893903907228e-18,1.1861357100696117e-16,rtol=1e-8; atol=1e-10,PASS,'Base'!B13,Independent spreadsheet formula,fraction/year
+kd_after_tax,base,0.049725,0.04972499999999999,,6.938893903907228e-18,1.3954537765524843e-16,rtol=1e-8; atol=1e-10,PASS,'Base'!B14,Independent spreadsheet formula,fraction/year
+wacc,base,0.10418254234167895,0.10418254234167895,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B15,Independent spreadsheet formula,fraction/year
+dscr,base,1.65,1.65,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B16,Independent spreadsheet formula,ratio
+equity,base,292.5,292.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B17,Independent spreadsheet formula,million USD
+debt,base,157.5,157.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B18,Independent spreadsheet formula,million USD
+ebitda,base,65.0,65,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B19,Independent spreadsheet formula,million USD/year
+credit_spread,base,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Base'!B20,Independent spreadsheet formula,fraction/year
+delta_total,base,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Base'!B21,Independent spreadsheet formula,fraction
+pi_exp,base,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Base'!B22,Independent spreadsheet formula,fraction/year
+beta_multiplier,base,1.0,1,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Base'!B23,Independent spreadsheet formula,ratio
+t_eff,stress,0.15,0.15,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B2,Independent spreadsheet formula,fraction
+de_peer,stress,0.16666666666666666,0.16666666666666666,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B3,Independent spreadsheet formula,ratio
+pi_exp,stress,0.05,0.05,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B4,Independent spreadsheet formula,fraction/year
+rf,stress,0.10400000000000001,0.10400000000000001,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B5,Independent spreadsheet formula,fraction/year
+beta_multiplier,stress,1.2850000000000001,1.2850000000000001,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B6,Independent spreadsheet formula,ratio
+beta_u,stress,1.4193667157584686,1.4193667157584686,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B7,Independent spreadsheet formula,ratio
+delta_total,stress,0.39999999999999997,0.39999999999999997,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B8,Independent spreadsheet formula,fraction
+equity,stress,175.50000000000003,175.50000000000003,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B9,Independent spreadsheet formula,million USD
+debt,stress,157.5,157.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B10,Independent spreadsheet formula,million USD
+de,stress,0.8974358974358972,0.8974358974358972,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B11,Independent spreadsheet formula,ratio
+we,stress,0.5270270270270271,0.5270270270270271,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B12,Independent spreadsheet formula,fraction
+wd,stress,0.4729729729729729,0.47297297297297297,,5.551115123125783e-17,1.1736643403180226e-16,rtol=1e-8; atol=1e-10,PASS,'Stress'!B13,Independent spreadsheet formula,fraction
+beta_l,stress,2.502088761753711,2.502088761753711,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B14,Independent spreadsheet formula,ratio
+erp,stress,0.0605,0.0605,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B15,Independent spreadsheet formula,fraction/year
+crp,stress,0.05500000000000001,0.055,,6.938893903907228e-18,1.2616170734376778e-16,rtol=1e-8; atol=1e-10,PASS,'Stress'!B16,Independent spreadsheet formula,fraction/year
+ke,stress,0.3103763700860995,0.3103763700860995,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B17,Independent spreadsheet formula,fraction/year
+dscr,stress,1.1549999999999998,1.1549999999999998,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B18,Independent spreadsheet formula,ratio
+credit_spread,stress,0.0062770562770562924,0.0062770562770562924,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B19,Independent spreadsheet formula,fraction/year
+kd,stress,0.1397770562770563,0.1397770562770563,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B20,Independent spreadsheet formula,fraction/year
+kd_after_tax,stress,0.11881049783549785,0.11881049783549785,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B21,Independent spreadsheet formula,fraction/year
+wacc,stress,0.21977088996757171,0.21977088996757171,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B22,Independent spreadsheet formula,fraction/year
+ebitda,stress,45.5,45.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Stress'!B23,Independent spreadsheet formula,million USD/year
+dividend_lockup,waterfall,True,True,,0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B2,Independent spreadsheet formula,ratio/boolean
+dividend_lockup,literal,True,True,,0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C2,Independent spreadsheet formula,ratio/boolean
+debt_service,waterfall,39.39,39.39,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B3,Independent spreadsheet formula,million USD/year
+debt_service,literal,39.39,39.39,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C3,Independent spreadsheet formula,million USD/year
+cfads_before_debt_service,waterfall,45.5,45.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B4,Independent spreadsheet formula,million USD/year
+cfads_before_debt_service,literal,45.5,45.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C4,Independent spreadsheet formula,million USD/year
+debt_paid,waterfall,39.39,39.39,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B5,Independent spreadsheet formula,million USD/year
+debt_paid,literal,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C5,Independent spreadsheet formula,million USD/year
+cash_after_debt_service,waterfall,6.109999999999999,6.109999999999999,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B6,Independent spreadsheet formula,million USD/year
+cash_after_debt_service,literal,45.5,45.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C6,Independent spreadsheet formula,million USD/year
+dsra,waterfall,6.109999999999999,6.109999999999999,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B7,Independent spreadsheet formula,million USD/year
+dsra,literal,45.5,45.5,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C7,Independent spreadsheet formula,million USD/year
+dividends,waterfall,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B8,Independent spreadsheet formula,million USD/year
+dividends,literal,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C8,Independent spreadsheet formula,million USD/year
+retained,waterfall,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B9,Independent spreadsheet formula,million USD/year
+retained,literal,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C9,Independent spreadsheet formula,million USD/year
+shortfall,waterfall,0.0,0,,0.0,,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!B10,Independent spreadsheet formula,million USD/year
+shortfall,literal,39.39,39.39,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Waterfall'!C10,Independent spreadsheet formula,million USD/year
+beta_ols,ols,1.1659789827602143,1.1659789827602143,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'OLS'!B2,Independent spreadsheet formula,ratio/boolean
+alpha_raw,ols,-0.0001766267512173323,-0.00017662675121733057,,1.734723475976807e-18,9.821408501378694e-15,rtol=1e-8; atol=1e-10,PASS,'OLS'!B3,Independent spreadsheet formula,ratio/boolean
+r_squared,ols,0.3596113616526548,0.3596113616526549,,1.1102230246251565e-16,3.087285728467919e-16,rtol=1e-8; atol=1e-10,PASS,'OLS'!B4,Independent spreadsheet formula,ratio/boolean
+year_1,discount_base,0.9056473559881364,0.9056473559881364,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Discount'!B2,Independent spreadsheet formula,PV USD / future USD
+year_1,discount_stress,0.8198260904771925,0.8198260904771925,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Discount'!C2,Independent spreadsheet formula,PV USD / future USD
+year_2,discount_base,0.8201971334083024,0.8201971334083024,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Discount'!B3,Independent spreadsheet formula,PV USD / future USD
+year_2,discount_stress,0.6721148186271177,0.6721148186271177,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Discount'!C3,Independent spreadsheet formula,PV USD / future USD
+year_3,discount_base,0.7428093652602779,0.7428093652602779,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Discount'!B4,Independent spreadsheet formula,PV USD / future USD
+year_3,discount_stress,0.5510172641068573,0.5510172641068573,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Discount'!C4,Independent spreadsheet formula,PV USD / future USD
+year_4,discount_base,0.6727233376511965,0.6727233376511964,,1.1102230246251565e-16,1.650341176658868e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!B5,Independent spreadsheet formula,PV USD / future USD
+year_4,discount_stress,0.45173832941816344,0.4517383294181634,,5.551115123125783e-17,1.2288342081300894e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!C5,Independent spreadsheet formula,PV USD / future USD
+year_5,discount_base,0.6092501120553204,0.6092501120553204,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Discount'!B6,Independent spreadsheet formula,PV USD / future USD
+year_5,discount_stress,0.37034686852559107,0.370346868525591,,5.551115123125783e-17,1.498896195673435e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!C6,Independent spreadsheet formula,PV USD / future USD
+year_6,discount_base,0.5517657531183768,0.5517657531183767,,1.1102230246251565e-16,2.0121274623344868e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!B7,Independent spreadsheet formula,PV USD / future USD
+year_6,discount_stress,0.3036200253438061,0.30362002534380605,,5.551115123125783e-17,1.8283099465655935e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!C7,Independent spreadsheet formula,PV USD / future USD
+year_7,discount_base,0.4997051954364608,0.49970519543646075,,5.551115123125783e-17,1.1108780084380023e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!B8,Independent spreadsheet formula,PV USD / future USD
+year_7,discount_stress,0.24891561836819867,0.24891561836819862,,5.551115123125783e-17,2.2301192506588773e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!C8,Independent spreadsheet formula,PV USD / future USD
+year_8,discount_base,0.45255668902056573,0.4525566890205657,,5.551115123125783e-17,1.2266121035885343e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!B9,Independent spreadsheet formula,PV USD / future USD
+year_8,discount_stress,0.20406751826551317,0.20406751826551311,,5.551115123125783e-17,2.7202345431099927e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!C9,Independent spreadsheet formula,PV USD / future USD
+year_9,discount_base,0.40985676884622063,0.4098567688462206,,5.551115123125783e-17,1.3544036710074628e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!B10,Independent spreadsheet formula,PV USD / future USD
+year_9,discount_stress,0.16729987569299873,0.16729987569299867,,5.551115123125783e-17,3.318062909569806e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!C10,Independent spreadsheet formula,PV USD / future USD
+year_10,discount_base,0.3711856990394205,0.37118569903942045,,5.551115123125783e-17,1.495508888809923e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!B11,Independent spreadsheet formula,PV USD / future USD
+year_10,discount_stress,0.13715680302671143,0.1371568030267114,,2.7755575615628914e-17,2.0236382740871765e-16,rtol=1e-8; atol=1e-10,PASS,'Discount'!C11,Independent spreadsheet formula,PV USD / future USD
+base_weights,checks,1,1,,0,0.0,rtol=1e-8; atol=1e-10,PASS,'Checks'!B2,Independent spreadsheet formula,ratio/boolean
+stress_weights,checks,1,1,,0,0.0,rtol=1e-8; atol=1e-10,PASS,'Checks'!B3,Independent spreadsheet formula,ratio/boolean
+delta_valid,checks,True,True,,0,0.0,rtol=1e-8; atol=1e-10,PASS,'Checks'!B4,Independent spreadsheet formula,ratio/boolean
+ebitda,checks,0,0,,0,,rtol=1e-8; atol=1e-10,PASS,'Checks'!B5,Independent spreadsheet formula,million USD/year
+waterfall_balance,checks,0,0,,0,,rtol=1e-8; atol=1e-10,PASS,'Checks'!B6,Independent spreadsheet formula,ratio/boolean
+Ke,decomposition,0.11496584821428571,0.11496584821428571,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Decomposition'!B2,Independent spreadsheet formula,fraction/year
+Kd_net,decomposition,0.02417992424242425,0.02417992424242425,,0.0,0.0,rtol=1e-8; atol=1e-10,PASS,'Decomposition'!B3,Independent spreadsheet formula,fraction/year
+weights,decomposition,-0.02355742483081722,-0.023557424830817214,,6.938893903907228e-18,2.945523100992747e-16,rtol=1e-8; atol=1e-10,PASS,'Decomposition'!B4,Independent spreadsheet formula,fraction/year
