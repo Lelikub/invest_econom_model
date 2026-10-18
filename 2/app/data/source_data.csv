@@ -1,0 +1,10 @@
+﻿parameter,symbol,raw_value,normalized_value,unit,description,source_file,source_page,extraction_method,confidence,notes
+Начальный CAPEX 1-й очереди,I0,"125,0",125.0,млн долл.,CAPEX первой очереди,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized
+Базовые денежные потоки,S0,"115,0",115.0,млн долл.,PV потоков первой очереди,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized
+Цена исполнения (K),K,"90,0",90.0,млн долл.,CAPEX второй очереди,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized
+безрисковая ставка,r,"6,0%",0.06,доля/год,Непрерывная безрисковая ставка,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized; percentages divided by 100
+рыночная волатильность,sigma,"35,0%",0.35,доля/год,Годовая волатильность,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized; percentages divided by 100
+издержки устаревания,delta,"5,0%",0.05,доля/год,Стоимость отсрочки,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized; percentages divided by 100
+горизонт T,T,3,3.0,год,Срок опциона,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized
+число шагов N,N,3,3.0,шаг,Число шагов CRR,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized
+удваивает выпуск продукции,m,100%,1.0,доля,Масштаб дополнительных потоков,Задание_к_практическому_занятию_2_ФИП.pdf,5,pdftotext + anchored regex,high,Decimal comma normalized; percentages divided by 100

@@ -1,0 +1,18 @@
+2026-10-06 19:07:54,983 | INFO | STEP 01 | source files validated | pdf=C:\work\invest_econom_model\2\data\Задание_к_практическому_занятию_2_ФИП.pdf | template=C:\work\invest_econom_model\2\data\Шаблон_отчета_ЭА_краткий_v2 (1).docx
+2026-10-06 19:07:55,044 | INFO | STEP 02 | PDF parsed | pages=9
+2026-10-06 19:07:55,047 | INFO | STEP 03-07 | inputs extracted, exported, reloaded, validated | ProjectInputData(I0=125.0, S0=115.0, K=90.0, r=0.06, sigma=0.35, delta=0.05, T=3.0, N=3, m=1.0)
+2026-10-06 19:07:55,047 | INFO | STEP 08-14 | CRR, arbitrage, NPV and lattice | ROV=35.8599199030 | NPV_strat=25.8599199030
+2026-10-06 19:07:55,047 | INFO | STEP 19-20 | stress | sigma=0.0001 | WARNING | Degenerate CRR violates no-arbitrage: No-arbitrage violation: d=0.9999000049998333, growth=1.010050167084168, u=1.0001000050001667; r=0.06, delta=0.05, dt=1.0
+2026-10-06 19:07:55,047 | INFO | STEP 19-20 | stress | K=1e9 | PASS | Useless expansion option
+2026-10-06 19:07:55,047 | INFO | STEP 19-20 | stress | p_override=1 | PASS | synthetic probability override; backward induction only
+2026-10-06 19:07:55,047 | INFO | STEP 19-20 | stress | arbitrage violation | PASS | Controlled exception for r=0.2, T=6, N=1: No-arbitrage violation: d=0.4242970794681834, growth=2.45960311115695, u=2.3568392251330277; r=0.2, delta=0.05, dt=6.0
+2026-10-06 19:07:55,048 | INFO | STEP 21-25 | shock, sensitivity, audit, holding and bankability analysis completed
+2026-10-06 19:07:55,355 | INFO | STEP 15 | formula Ground Truth created | C:\work\invest_econom_model\2\app\output\Ground_Truth_ROA.xlsx
+2026-10-06 19:07:57,383 | INFO | STEP 16 | actual Microsoft Excel recalculation completed
+2026-10-06 19:07:57,399 | INFO | STEP 17 | reconciliation | PASS=28 | FAIL=0 | NOT_VERIFIED=0
+2026-10-06 19:07:57,814 | INFO | STEP 18 | unit tests | PASS | exit=0
+2026-10-06 19:07:58,443 | INFO | STEP 22 | CRR decision trees generated
+2026-10-06 19:07:58,548 | INFO | STEP 26 | Harness Log written
+2026-10-06 19:07:58,548 | INFO | STEP 27 | Markdown report written
+2026-10-06 19:07:58,765 | INFO | STEP 28-29 | template Word report generated and validated | C:\work\invest_econom_model\2\app\output\Итоговый_отчет_Практическая_работа_2_ФИП.docx
+2026-10-06 19:07:58,766 | INFO | STEP 30 | artifact integrity check passed | count=10
