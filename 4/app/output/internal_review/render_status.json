@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "detail": "WORD_PDF_RENDERED pages=48 version=16.0",
+  "pages": 48,
+  "pdf": "internal_review\\report.pdf",
+  "sha256": "5c4621835cbb3403e6df8be7f03d261b20df1a86b07db3e87582973b7fd2dbd0",
+  "docx_sha256": "a3c69d33a81ecc29b009a8fb5694691c26b1aa6cae2d01229d1dd3b2f41845ae",
+  "visual_status": "VISUAL_NOT_VERIFIED"
+}

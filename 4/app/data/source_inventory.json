@@ -1,0 +1,24 @@
+{
+  "assignment": {
+    "original": "C:\\work\\invest_econom_model\\4\\app\\data\\source_assignment.pdf",
+    "copy": "data\\source_assignment.pdf",
+    "sha256": "dd58c7b964677169ccb381a67f14ddfd582bfd7e80ba1cefee2a170283f28004",
+    "bytes": 416176,
+    "pages": 15
+  },
+  "lecture7": {
+    "original": "C:\\work\\invest_econom_model\\4\\app\\data\\source_lecture7.pdf",
+    "copy": "data\\source_lecture7.pdf",
+    "sha256": "ebf2b346feeffac6e608cfe261864bbb05c7e2de954d3cd2158f865ba9fb2540",
+    "bytes": 605039,
+    "pages": 32
+  },
+  "report_template": {
+    "original": "C:\\work\\invest_econom_model\\4\\app\\data\\report_template.docx",
+    "copy": "data\\report_template.docx",
+    "sha256": "cf8b89262c58256410a4d8f80fc3b6a5a47e2166413eb183cea41e67a30189e7",
+    "bytes": 131113,
+    "format": "DOCX",
+    "content_chapters": 12
+  }
+}

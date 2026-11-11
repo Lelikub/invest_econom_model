@@ -1,0 +1,302 @@
+{
+  "run_id": "20261101_151044_c0ae218c",
+  "status": "COMPLETED_WITH_LIMITATIONS",
+  "started_at": "2026-11-01T15:10:44.736672+03:00",
+  "stages": {
+    "00": {
+      "name": "Git, структура и источники",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:44.775274+03:00",
+      "seconds": 0.251661
+    },
+    "01": {
+      "name": "PDF/лекция и реестры",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.028398+03:00",
+      "seconds": 0.086876
+    },
+    "02": {
+      "name": "PDF → CSV",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.116829+03:00",
+      "records": 136,
+      "seconds": 0.308295
+    },
+    "03": {
+      "name": "CSV → DTO",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.426928+03:00",
+      "parameters": 136,
+      "countries": [
+        "DEU",
+        "SRB",
+        "VNM"
+      ],
+      "seconds": 0.008392
+    },
+    "04": {
+      "name": "Валидация и проблемы источника",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.437060+03:00",
+      "checks": 9,
+      "source_issues": 8,
+      "seconds": 0.015371
+    },
+    "05": {
+      "name": "Страновые финансовые модели",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.453753+03:00",
+      "seconds": 0.013265
+    },
+    "06": {
+      "name": "Годовые потоки и метрики",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.468660+03:00",
+      "seconds": 0.00828
+    },
+    "07": {
+      "name": "Формульный Excel",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.478621+03:00",
+      "comparison_targets": 1479,
+      "scope": "Initial baseline; scenario workbook extends in stage11",
+      "seconds": 0.358932
+    },
+    "08": {
+      "name": "Реальный Excel и независимая сверка",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.840059+03:00",
+      "engine_detail": "EXCEL_RECALCULATED version=16.0",
+      "total": 10365,
+      "passed": 10365,
+      "failed": 0,
+      "seconds": 1.731718
+    },
+    "09": {
+      "name": "Тесты и Edge Cases",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:47.573745+03:00",
+      "passed": 62,
+      "failed": 0,
+      "total": 62,
+      "seconds": 13.522948
+    },
+    "10": {
+      "name": "Два стресса",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:01.098846+03:00",
+      "stresses": [
+        "STRESS1",
+        "STRESS2"
+      ],
+      "seconds": 0.003809
+    },
+    "11": {
+      "name": "Вероятностные сценарии и сверка расширенного Excel",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:01.104472+03:00",
+      "scenarios": [
+        "A",
+        "B",
+        "C"
+      ],
+      "comparison_targets": 10365,
+      "excel": "PASS",
+      "seconds": 3.309946
+    },
+    "12": {
+      "name": "Графики и аудит",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:04.416487+03:00",
+      "charts": 13,
+      "numeric": "PASS",
+      "visual": "PASS",
+      "seconds": 2.305991
+    },
+    "13": {
+      "name": "Word и машинный отчет",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:06.724498+03:00",
+      "seconds": 13.781454
+    },
+    "14": {
+      "name": "Аудит артефактов",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:20.507498+03:00",
+      "seconds": 1.946657
+    },
+    "15": {
+      "name": "Итоговый статус и архив",
+      "status": "COMPLETED_WITH_LIMITATIONS",
+      "started_at": "2026-11-01T15:11:22.455894+03:00",
+      "archive": "CRC and SHA256 validation performed by final packager",
+      "seconds": 0.001746
+    }
+  },
+  "commit": "7541fa6daf81088db1a5b64f6039a3f70eba1c5b",
+  "branch": "main",
+  "git_status_at_start": "?? ./\n?? \"../../lectuion/\\320\\250\\320\\260\\320\\261\\320\\273\\320\\276\\320\\275_\\320\\276\\321\\202\\321\\207\\320\\265\\321\\202\\320\\260_\\320\\255\\320\\220_\\320\\272\\321\\200\\320\\260\\321\\202\\320\\272\\320\\270\\320\\271_v2 (3).docx\"",
+  "main_tree": "",
+  "github_pushed": false,
+  "environment": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "dependencies": {
+      "pymupdf": "1.28.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "python-docx": "1.2.0",
+      "pytest": "9.1.1"
+    }
+  },
+  "sources": {
+    "assignment": {
+      "original": "C:\\work\\invest_econom_model\\4\\app\\data\\source_assignment.pdf",
+      "copy": "data\\source_assignment.pdf",
+      "sha256": "dd58c7b964677169ccb381a67f14ddfd582bfd7e80ba1cefee2a170283f28004",
+      "bytes": 416176,
+      "pages": 15
+    },
+    "lecture7": {
+      "original": "C:\\work\\invest_econom_model\\4\\app\\data\\source_lecture7.pdf",
+      "copy": "data\\source_lecture7.pdf",
+      "sha256": "ebf2b346feeffac6e608cfe261864bbb05c7e2de954d3cd2158f865ba9fb2540",
+      "bytes": 605039,
+      "pages": 32
+    },
+    "report_template": {
+      "original": "C:\\work\\invest_econom_model\\4\\app\\data\\report_template.docx",
+      "copy": "data\\report_template.docx",
+      "sha256": "cf8b89262c58256410a4d8f80fc3b6a5a47e2166413eb183cea41e67a30189e7",
+      "bytes": 131113,
+      "format": "DOCX",
+      "content_chapters": 12
+    }
+  },
+  "excel": {
+    "status": "PASS",
+    "engine_detail": "EXCEL_RECALCULATED version=16.0",
+    "total": 10365,
+    "passed": 10365,
+    "failed": 0
+  },
+  "visual_status": "PASS",
+  "limitations": [
+    "SRC_NWC: NWC_change=+4 млн при вложении, −4 млн при возврате; cash_effect=−change. Ни CAPEX, ни NWC не облагаются WHT.",
+    "SRC_WHT: Основной economic_rule; буквальный literal_pdf NON_AUTHORITATIVE сохранен точно по визуально проверенной типографике. Не добавлены отсутствующие скобки вокруг FCFF−ΔNWC.",
+    "SRC_NEG_TAX: Основной cash_tax=max(0,literal_tax), без переноса убытков. Буквальная формула сохранена отдельно; численный эффект публикуется.",
+    "SRC_VNM_TAX: Базовый календарь сохраняется; отдельная фикстура PILLAR2 задает 0% t3–6 и проверяет пол при положительном EBIT.",
+    "SRC_SRB_IP: Налог SRB 15% в базе и стрессе; отмена IP Box не создает искусственного налогового эффекта.",
+    "SRC_EXPORT: Для денежной модели приоритет конкретной матрице рынков. Отдельный неназванный внутренний рынок 15% не добавляется.",
+    "SRC_DEU_CIT: Применяется явно заданная сводная ставка 29.80%; компоненты остаются в оригинальном тексте CSV.",
+    "SRC_SUBSIDY_TIME: Не смешивать ввод в конце t3 с потоком t4; t_subsidy=4 считывается отдельно, субсидия учтена только в CF0 через PV."
+  ],
+  "report": {
+    "sections": 35,
+    "chapters": 12,
+    "tables": 52,
+    "figures": 13,
+    "status": "PASS",
+    "order": "table→graph→analysis",
+    "template": {
+      "path": "C:\\work\\invest_econom_model\\4\\app\\data\\report_template.docx",
+      "sha256": "cf8b89262c58256410a4d8f80fc3b6a5a47e2166413eb183cea41e67a30189e7",
+      "name": "report_template.docx"
+    },
+    "template_validation": {
+      "status": "PASS",
+      "chapters": 12,
+      "placeholders_remaining": 0,
+      "calculation_blocks": 35,
+      "figures": 13,
+      "cover_from_template": true,
+      "style_instructions_removed": true
+    },
+    "block_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "20",
+      "12",
+      "13",
+      "14",
+      "15",
+      "17",
+      "16",
+      "18",
+      "19",
+      "ПDEU.1",
+      "ПDEU.2",
+      "ПDEU.3",
+      "ПDEU.4",
+      "ПDEU.5",
+      "ПSRB.1",
+      "ПSRB.2",
+      "ПSRB.3",
+      "ПSRB.4",
+      "ПSRB.5",
+      "ПVNM.1",
+      "ПVNM.2",
+      "ПVNM.3",
+      "ПVNM.4",
+      "ПVNM.5"
+    ],
+    "chapter_titles": [
+      "1. Цель и задачи работы",
+      "2. Объект исследования",
+      "3. Исходные данные и контроль качества входа",
+      "4. Архитектура расчётного решения",
+      "5. Методика расчёта",
+      "6. Результаты расчёта",
+      "7. Harness Log",
+      "8. Тестирование и сценарный анализ",
+      "9. Визуализация результатов",
+      "10. Допущения и качество данных",
+      "11. Анализ результатов и ограничения",
+      "12. Итоговые выводы"
+    ]
+  },
+  "report_preview": {
+    "status": "PASS",
+    "detail": "WORD_PDF_RENDERED pages=48 version=16.0",
+    "pages": 48,
+    "pdf": "internal_review\\report.pdf",
+    "sha256": "5c4621835cbb3403e6df8be7f03d261b20df1a86b07db3e87582973b7fd2dbd0",
+    "docx_sha256": "a3c69d33a81ecc29b009a8fb5694691c26b1aa6cae2d01229d1dd3b2f41845ae",
+    "visual_status": "VISUAL_NOT_VERIFIED"
+  },
+  "artifact_audit": {
+    "status": "PASS",
+    "formulas": 15291,
+    "embedded_figures": 13,
+    "template_validation": {
+      "status": "PASS",
+      "chapters": 12,
+      "placeholders_remaining": 0,
+      "calculation_blocks": 35,
+      "figures": 13,
+      "cover_from_template": true,
+      "style_instructions_removed": true
+    }
+  },
+  "finished_at": "2026-11-01T15:11:22.457622+03:00",
+  "exit_code": 0,
+  "archive": {
+    "path": "output\\Практическая_4_ФИП_результаты.zip",
+    "sha256": "db4d70e1e1773aa8da67cc818eaa24fdca2283ffa6f78c0f61101e96e8b88805",
+    "bytes": 5842197,
+    "files": 144,
+    "status": "PASS"
+  }
+}

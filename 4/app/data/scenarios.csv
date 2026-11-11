@@ -1,0 +1,11 @@
+﻿parameter_id,jurisdiction,period_or_scenario,value,unit,original_text,source_file,source_page,table_id,parse_status,notes
+p_A,ALL,SCENARIO,0.2,fraction,0.20,source_assignment.pdf,14,scenario,PARSED,
+p_B,ALL,SCENARIO,0.5,fraction,0.50,source_assignment.pdf,15,scenario,PARSED,
+p_C,ALL,SCENARIO,0.3,fraction,0.30,source_assignment.pdf,15,scenario,PARSED,
+integration_reduction,ALL,SCENARIO,0.3,fraction,30%,source_assignment.pdf,14,scenario,PARSED,
+vnm_igpr,ALL,SCENARIO,420.0,index,420,source_assignment.pdf,14,scenario,PARSED,
+vnm_freight,ALL,SCENARIO,0.15,fraction,15%,source_assignment.pdf,14,scenario,PARSED,
+vnm_days,ALL,SCENARIO,45.0,day,45,source_assignment.pdf,14,scenario,PARSED,
+srb_cbam,ALL,SCENARIO,0.08,fraction,8.0%,source_assignment.pdf,14,scenario,PARSED,
+deu_igpr_increase,ALL,SCENARIO,0.5,fraction,50%,source_assignment.pdf,15,scenario,PARSED,
+deu_inflation,ALL,SCENARIO,0.5,fraction,+50%,source_assignment.pdf,15,scenario,PARSED,

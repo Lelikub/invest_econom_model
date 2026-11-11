@@ -1,0 +1,66 @@
+[
+  {
+    "id": "SRC_NWC",
+    "page": "8,13",
+    "issue": "Стр.8 ΔNWC назван оттоком −4 млн; стр.13 ΔNWC вычитается из FCFF.",
+    "decision": "NWC_change=+4 млн при вложении, −4 млн при возврате; cash_effect=−change. Ни CAPEX, ни NWC не облагаются WHT.",
+    "status": "SOURCE_CONFLICT",
+    "test": "test_calendar; test_identities"
+  },
+  {
+    "id": "SRC_WHT",
+    "page": "13",
+    "issue": "Текст требует WHT с положительного операционного CF; печатная ветвь: FCFF−ΔNWC*(1−WHT) при FCFF≤0, FCFF−ΔNWC при FCFF>0.",
+    "decision": "Основной economic_rule; буквальный literal_pdf NON_AUTHORITATIVE сохранен точно по визуально проверенной типографике. Не добавлены отсутствующие скобки вокруг FCFF−ΔNWC.",
+    "status": "SOURCE_CONFLICT",
+    "test": "test_wht; test_literal_pdf_exact_typography"
+  },
+  {
+    "id": "SRC_NEG_TAX",
+    "page": "13",
+    "issue": "max(CIT_gross, EBIT*floor) при EBIT<0 может создавать налоговый возврат.",
+    "decision": "Основной cash_tax=max(0,literal_tax), без переноса убытков. Буквальная формула сохранена отдельно; численный эффект публикуется.",
+    "status": "SOURCE_ISSUE",
+    "test": "test_cash_tax"
+  },
+  {
+    "id": "SRC_VNM_TAX",
+    "page": "5,14",
+    "issue": "База VNM 15% t3–11,20% t12–13; edge case требует 0%→15% в первые 4 года.",
+    "decision": "Базовый календарь сохраняется; отдельная фикстура PILLAR2 задает 0% t3–6 и проверяет пол при положительном EBIT.",
+    "status": "SOURCE_ISSUE",
+    "test": "test_tax_calendar_and_credit; test_scenarios"
+  },
+  {
+    "id": "SRC_SRB_IP",
+    "page": "5,14",
+    "issue": "3% IP Box относится к роялти, которых у проекта нет.",
+    "decision": "Налог SRB 15% в базе и стрессе; отмена IP Box не создает искусственного налогового эффекта.",
+    "status": "SOURCE_ISSUE",
+    "test": "test_scenarios"
+  },
+  {
+    "id": "SRC_EXPORT",
+    "page": "2,10",
+    "issue": "На стр.2 указано 85% экспорта; таблица2 задает полное распределение продукции по рынкам ЕС/Азии.",
+    "decision": "Для денежной модели приоритет конкретной матрице рынков. Отдельный неназванный внутренний рынок 15% не добавляется.",
+    "status": "SOURCE_ISSUE",
+    "test": "test_pdf_controls"
+  },
+  {
+    "id": "SRC_DEU_CIT",
+    "page": "5",
+    "issue": "29.80% в строке DEU отличается от суммы перечисленных компонентов 15+0.825+14=29.825%.",
+    "decision": "Применяется явно заданная сводная ставка 29.80%; компоненты остаются в оригинальном тексте CSV.",
+    "status": "SOURCE_ISSUE",
+    "test": "test_pdf_controls"
+  },
+  {
+    "id": "SRC_SUBSIDY_TIME",
+    "page": "7,8,12",
+    "issue": "DEU субсидия t4 описана как через год после ввода t3; первый полный CF по календарю t4.",
+    "decision": "Не смешивать ввод в конце t3 с потоком t4; t_subsidy=4 считывается отдельно, субсидия учтена только в CF0 через PV.",
+    "status": "SOURCE_ISSUE",
+    "test": "test_capex_exemption_and_advance"
+  }
+]

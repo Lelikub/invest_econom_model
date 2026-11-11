@@ -1,0 +1,653 @@
+{
+  "run_id": "20261101_151044_c0ae218c",
+  "status": "COMPLETED_WITH_LIMITATIONS",
+  "unit": "USD",
+  "method": "parent_cashflow_economic_rule; payout=100%; cash_tax>=0; TV=0",
+  "base": {
+    "DEU": {
+      "risk": {
+        "crp": 0.0,
+        "gpr": 0.006,
+        "rate": 0.09100000000000001
+      },
+      "capex": {
+        "gross": 308000000.0,
+        "subsidy_pv": 45063796.97362942,
+        "net": 262936203.02637058
+      },
+      "local": {
+        "npv": -58394722.404108524,
+        "irr": 0.05736165230568546,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05736165230568546
+        ],
+        "pi": 0.7804845448741983,
+        "pv_inflows": 207621729.0145089,
+        "pv_outflows": 266016451.41861743,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "parent": {
+        "npv": -58394722.404108524,
+        "irr": 0.05736165230568546,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05736165230568546
+        ],
+        "pi": 0.7804845448741983,
+        "pv_inflows": 207621729.0145089,
+        "pv_outflows": 266016451.41861743,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "SRB": {
+      "risk": {
+        "crp": 0.034999999999999996,
+        "gpr": 0.051000000000000004,
+        "rate": 0.17099999999999999
+      },
+      "capex": {
+        "gross": 252999999.99999997,
+        "subsidy_pv": 24193124.999999993,
+        "net": 228806874.99999997
+      },
+      "local": {
+        "npv": -92414677.92597441,
+        "irr": 0.08341230769787589,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.08341230769787589
+        ],
+        "pi": 0.601186318201463,
+        "pv_inflows": 139309262.71019015,
+        "pv_outflows": 231723940.63616458,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "parent": {
+        "npv": -99350056.25274904,
+        "irr": 0.07542192291425454,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.07542192291425454
+        ],
+        "pi": 0.5712568326777206,
+        "pv_inflows": 132373884.38341554,
+        "pv_outflows": 231723940.63616458,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "VNM": {
+      "risk": {
+        "crp": 0.03375,
+        "gpr": 0.038000000000000006,
+        "rate": 0.15675
+      },
+      "capex": {
+        "gross": 266200000.00000006,
+        "subsidy_pv": 20530818.02301088,
+        "net": 245669181.97698918
+      },
+      "local": {
+        "npv": -126635999.72591582,
+        "irr": 0.04786369325880857,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.04786369325880857
+        ],
+        "pi": 0.4907233467305392,
+        "pv_inflows": 122022561.22113797,
+        "pv_outflows": 248658560.94705376,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "parent": {
+        "npv": -138778007.32773504,
+        "irr": 0.03370740062407385,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.03370740062407385
+        ],
+        "pi": 0.4418933062301255,
+        "pv_inflows": 109880553.61931875,
+        "pv_outflows": 248658560.94705376,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    }
+  },
+  "scenarios": {
+    "A": {
+      "DEU": {
+        "npv": -55407208.80327238,
+        "irr": 0.05736165230568546,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05736165230568546
+        ],
+        "pi": 0.7917284159618749,
+        "pv_inflows": 210626244.86811206,
+        "pv_outflows": 266033453.67138445,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "SRB": {
+        "npv": -85796434.52040167,
+        "irr": 0.07542192291425454,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.07542192291425454
+        ],
+        "pi": 0.6298938203252619,
+        "pv_inflows": 146019296.29447547,
+        "pv_outflows": 231815730.8148771,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "VNM": {
+        "npv": -102989758.6542218,
+        "irr": 0.05149520484064829,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05149520484064829
+        ],
+        "pi": 0.5450870071326945,
+        "pv_inflows": 123404651.41764687,
+        "pv_outflows": 226394410.0718687,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "B": {
+      "DEU": {
+        "npv": -58394722.404108524,
+        "irr": 0.05736165230568546,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05736165230568546
+        ],
+        "pi": 0.7804845448741983,
+        "pv_inflows": 207621729.0145089,
+        "pv_outflows": 266016451.41861743,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "SRB": {
+        "npv": -99350056.25274904,
+        "irr": 0.07542192291425454,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.07542192291425454
+        ],
+        "pi": 0.5712568326777206,
+        "pv_inflows": 132373884.38341554,
+        "pv_outflows": 231723940.63616458,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "VNM": {
+        "npv": -138778007.32773504,
+        "irr": 0.03370740062407385,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.03370740062407385
+        ],
+        "pi": 0.4418933062301255,
+        "pv_inflows": 109880553.61931875,
+        "pv_outflows": 248658560.94705376,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "C": {
+      "DEU": {
+        "npv": -90130036.5294257,
+        "irr": 0.05018199819479774,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05018199819479774
+        ],
+        "pi": 0.6834280072425095,
+        "pv_inflows": 194576250.16495565,
+        "pv_outflows": 284706286.69438136,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "SRB": {
+        "npv": -113126504.54847753,
+        "irr": 0.05867071868343099,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05867071868343099
+        ],
+        "pi": 0.5118048474494908,
+        "pv_inflows": 118597436.08768708,
+        "pv_outflows": 231723940.63616458,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "VNM": {
+        "npv": -170970527.0192711,
+        "irr": 0.023726042245766576,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.023726042245766576
+        ],
+        "pi": 0.31177732595687346,
+        "pv_inflows": 77452742.75599565,
+        "pv_outflows": 248423269.7752667,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "ZERO": {
+      "DEU": {
+        "npv": -38989066.75431686,
+        "irr": 0.06348398929414234,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.06348398929414234
+        ],
+        "pi": 0.8534619312674261,
+        "pv_inflows": 227078768.66577667,
+        "pv_outflows": 266067835.4200935,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "SRB": {
+        "npv": 17004350.629265927,
+        "irr": 0.09634431185368686,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.09634431185368686
+        ],
+        "pi": 1.0732300031455317,
+        "pv_inflows": 249209046.77645528,
+        "pv_outflows": 232204696.14718935,
+        "dpp": 11.065700971062784,
+        "dpp_status": "REACHED"
+      },
+      "VNM": {
+        "npv": -17263226.066459257,
+        "irr": 0.07337512041685978,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.07337512041685978
+        ],
+        "pi": 0.9238611385214889,
+        "pv_inflows": 209470215.05981115,
+        "pv_outflows": 226733441.1262704,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "PILLAR2": {
+      "DEU": {
+        "npv": -58394722.404108524,
+        "irr": 0.05736165230568546,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05736165230568546
+        ],
+        "pi": 0.7804845448741983,
+        "pv_inflows": 207621729.0145089,
+        "pv_outflows": 266016451.41861743,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "SRB": {
+        "npv": -99350056.25274904,
+        "irr": 0.07542192291425454,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.07542192291425454
+        ],
+        "pi": 0.5712568326777206,
+        "pv_inflows": 132373884.38341554,
+        "pv_outflows": 231723940.63616458,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "VNM": {
+        "npv": -139587549.0169904,
+        "irr": 0.03253188336725432,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.03253188336725432
+        ],
+        "pi": 0.4386376705255991,
+        "pv_inflows": 109071011.93006337,
+        "pv_outflows": 248658560.94705376,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "STRESS1": {
+      "DEU": {
+        "npv": -58394722.404108524,
+        "irr": 0.05736165230568546,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05736165230568546
+        ],
+        "pi": 0.7804845448741983,
+        "pv_inflows": 207621729.0145089,
+        "pv_outflows": 266016451.41861743,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "SRB": {
+        "npv": -99350056.25274904,
+        "irr": 0.07542192291425454,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.07542192291425454
+        ],
+        "pi": 0.5712568326777206,
+        "pv_inflows": 132373884.38341554,
+        "pv_outflows": 231723940.63616458,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "VNM": {
+        "npv": -170970527.0192711,
+        "irr": 0.023726042245766576,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.023726042245766576
+        ],
+        "pi": 0.31177732595687346,
+        "pv_inflows": 77452742.75599565,
+        "pv_outflows": 248423269.7752667,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    },
+    "STRESS2": {
+      "DEU": {
+        "npv": -58394722.404108524,
+        "irr": 0.05736165230568546,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05736165230568546
+        ],
+        "pi": 0.7804845448741983,
+        "pv_inflows": 207621729.0145089,
+        "pv_outflows": 266016451.41861743,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "SRB": {
+        "npv": -113126504.54847753,
+        "irr": 0.05867071868343099,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.05867071868343099
+        ],
+        "pi": 0.5118048474494908,
+        "pv_inflows": 118597436.08768708,
+        "pv_outflows": 231723940.63616458,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      },
+      "VNM": {
+        "npv": -138778007.32773504,
+        "irr": 0.03370740062407385,
+        "irr_status": "UNIQUE",
+        "irr_roots": [
+          0.03370740062407385
+        ],
+        "pi": 0.4418933062301255,
+        "pv_inflows": 109880553.61931875,
+        "pv_outflows": 248658560.94705376,
+        "dpp": null,
+        "dpp_status": "NOT_REACHED"
+      }
+    }
+  },
+  "statistics": {
+    "DEU": {
+      "expected": -67317813.92153645,
+      "variance": 224302534064408.72,
+      "std": 14976733.090511052,
+      "probability_negative": 1.0
+    },
+    "SRB": {
+      "expected": -100772266.39499812,
+      "variance": 91654609017459.78,
+      "std": 9573641.366661891,
+      "probability_negative": 1.0
+    },
+    "VNM": {
+      "expected": -141278113.50049323,
+      "variance": 560816714975362.06,
+      "std": 23681569.098675918,
+      "probability_negative": 1.0
+    }
+  },
+  "ranking": [
+    "DEU",
+    "SRB",
+    "VNM"
+  ],
+  "verdict": "Do not accept any location at the specified assumptions: all expected Parent NPVs are negative",
+  "tests": {
+    "passed": 62,
+    "failed": 0
+  },
+  "excel": {
+    "status": "PASS",
+    "engine_detail": "EXCEL_RECALCULATED version=16.0",
+    "total": 10365,
+    "passed": 10365,
+    "failed": 0
+  },
+  "visual": "PASS",
+  "report": {
+    "sections": 35,
+    "chapters": 12,
+    "tables": 52,
+    "figures": 13,
+    "status": "PASS",
+    "order": "table→graph→analysis",
+    "template": {
+      "path": "C:\\work\\invest_econom_model\\4\\app\\data\\report_template.docx",
+      "sha256": "cf8b89262c58256410a4d8f80fc3b6a5a47e2166413eb183cea41e67a30189e7",
+      "name": "report_template.docx"
+    },
+    "template_validation": {
+      "status": "PASS",
+      "chapters": 12,
+      "placeholders_remaining": 0,
+      "calculation_blocks": 35,
+      "figures": 13,
+      "cover_from_template": true,
+      "style_instructions_removed": true
+    },
+    "block_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "20",
+      "12",
+      "13",
+      "14",
+      "15",
+      "17",
+      "16",
+      "18",
+      "19",
+      "ПDEU.1",
+      "ПDEU.2",
+      "ПDEU.3",
+      "ПDEU.4",
+      "ПDEU.5",
+      "ПSRB.1",
+      "ПSRB.2",
+      "ПSRB.3",
+      "ПSRB.4",
+      "ПSRB.5",
+      "ПVNM.1",
+      "ПVNM.2",
+      "ПVNM.3",
+      "ПVNM.4",
+      "ПVNM.5"
+    ],
+    "chapter_titles": [
+      "1. Цель и задачи работы",
+      "2. Объект исследования",
+      "3. Исходные данные и контроль качества входа",
+      "4. Архитектура расчётного решения",
+      "5. Методика расчёта",
+      "6. Результаты расчёта",
+      "7. Harness Log",
+      "8. Тестирование и сценарный анализ",
+      "9. Визуализация результатов",
+      "10. Допущения и качество данных",
+      "11. Анализ результатов и ограничения",
+      "12. Итоговые выводы"
+    ]
+  },
+  "stages": {
+    "00": {
+      "name": "Git, структура и источники",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:44.775274+03:00",
+      "seconds": 0.251661
+    },
+    "01": {
+      "name": "PDF/лекция и реестры",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.028398+03:00",
+      "seconds": 0.086876
+    },
+    "02": {
+      "name": "PDF → CSV",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.116829+03:00",
+      "records": 136,
+      "seconds": 0.308295
+    },
+    "03": {
+      "name": "CSV → DTO",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.426928+03:00",
+      "parameters": 136,
+      "countries": [
+        "DEU",
+        "SRB",
+        "VNM"
+      ],
+      "seconds": 0.008392
+    },
+    "04": {
+      "name": "Валидация и проблемы источника",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.437060+03:00",
+      "checks": 9,
+      "source_issues": 8,
+      "seconds": 0.015371
+    },
+    "05": {
+      "name": "Страновые финансовые модели",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.453753+03:00",
+      "seconds": 0.013265
+    },
+    "06": {
+      "name": "Годовые потоки и метрики",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.468660+03:00",
+      "seconds": 0.00828
+    },
+    "07": {
+      "name": "Формульный Excel",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.478621+03:00",
+      "comparison_targets": 1479,
+      "scope": "Initial baseline; scenario workbook extends in stage11",
+      "seconds": 0.358932
+    },
+    "08": {
+      "name": "Реальный Excel и независимая сверка",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:45.840059+03:00",
+      "engine_detail": "EXCEL_RECALCULATED version=16.0",
+      "total": 10365,
+      "passed": 10365,
+      "failed": 0,
+      "seconds": 1.731718
+    },
+    "09": {
+      "name": "Тесты и Edge Cases",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:10:47.573745+03:00",
+      "passed": 62,
+      "failed": 0,
+      "total": 62,
+      "seconds": 13.522948
+    },
+    "10": {
+      "name": "Два стресса",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:01.098846+03:00",
+      "stresses": [
+        "STRESS1",
+        "STRESS2"
+      ],
+      "seconds": 0.003809
+    },
+    "11": {
+      "name": "Вероятностные сценарии и сверка расширенного Excel",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:01.104472+03:00",
+      "scenarios": [
+        "A",
+        "B",
+        "C"
+      ],
+      "comparison_targets": 10365,
+      "excel": "PASS",
+      "seconds": 3.309946
+    },
+    "12": {
+      "name": "Графики и аудит",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:04.416487+03:00",
+      "charts": 13,
+      "numeric": "PASS",
+      "visual": "PASS",
+      "seconds": 2.305991
+    },
+    "13": {
+      "name": "Word и машинный отчет",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:06.724498+03:00",
+      "seconds": 13.781454
+    },
+    "14": {
+      "name": "Аудит артефактов",
+      "status": "PASS",
+      "started_at": "2026-11-01T15:11:20.507498+03:00",
+      "seconds": 1.946657
+    },
+    "15": {
+      "name": "Итоговый статус и архив",
+      "status": "COMPLETED_WITH_LIMITATIONS",
+      "started_at": "2026-11-01T15:11:22.455894+03:00",
+      "archive": "CRC and SHA256 validation performed by final packager",
+      "seconds": 0.001746
+    }
+  }
+}

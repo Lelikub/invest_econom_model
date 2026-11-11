@@ -1,0 +1,490 @@
+[
+  {
+    "chart_id": "01_risk",
+    "filename": "01_risk.png",
+    "source_table": "risk_rates.csv",
+    "source_sha256": "5ebea67fea24ab91ea72446a9eda68c473e0e4b8e6ff2cc2dc47b55461feae62",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.54,
+          2.5400000000000005
+        ],
+        "ylim": [
+          0.0,
+          17.954999999999988
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1440,
+    "height": 800,
+    "sha256": "2a51f7e76ea16803903cd59ec859b80591cbb661c3b05739ef74bbc9d3946bc9",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "02_capex",
+    "filename": "02_capex.png",
+    "source_table": "capex.csv",
+    "source_sha256": "42569ff98b2f596e1417fc72677757666046ca35a4fbd65e5c733e8115841980",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.54,
+          2.5400000000000005
+        ],
+        "ylim": [
+          0.0,
+          323.4
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1440,
+    "height": 800,
+    "sha256": "6a778fa8c1838fd3a5b366d857d90f08d240398a119fa5d47eb6385dede5bd19",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "03_supply",
+    "filename": "03_supply.png",
+    "source_table": "supply_chains.csv",
+    "source_sha256": "9c9a5b79e096472ad739d4bce87e3e5b5dcd504a02579885bc263352f721d96e",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.5125,
+          2.5125
+        ],
+        "ylim": [
+          0.0,
+          185.22
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1440,
+    "height": 800,
+    "sha256": "8143965f9e5cbb79c58e0eaae8d98a9e5cac7604da45658cecda5ad0e2441c36",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "04_calendar",
+    "filename": "04_calendar.png",
+    "source_table": "time_schedule.csv",
+    "source_sha256": "e117d7920f83c27978cabc2098bd2525badedb8c4af4b6660d434a69ac004b27",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.65,
+          13.65
+        ],
+        "ylim": [
+          -0.08,
+          1.2
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1600,
+    "height": 800,
+    "sha256": "e500957b131b0e1bc66b3f30d4daf3e223b837bbabc6599fafafa68919137bf6",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "05_cashflows",
+    "filename": "05_cashflows.png",
+    "source_table": "annual_cashflows.csv",
+    "source_sha256": "e71aa4bc517395e4cea261a54e9c9e3ae8f942011429ea501cb2a1da1a0eee73",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.65,
+          13.65
+        ],
+        "ylim": [
+          -278.37975312019836,
+          61.378348944013666
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.65,
+          13.65
+        ],
+        "ylim": [
+          -242.49604890625,
+          58.665777031249995
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.65,
+          13.65
+        ],
+        "ylim": [
+          -259.7361679623214,
+          49.737523714987034
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1600,
+    "height": 1440,
+    "sha256": "d914d004213c8f25155c549f5627984bdde3f18ed9da09fb633871af8aece8d6",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "06_cumulative",
+    "filename": "06_cumulative.png",
+    "source_table": "annual_cashflows.csv",
+    "source_sha256": "e71aa4bc517395e4cea261a54e9c9e3ae8f942011429ea501cb2a1da1a0eee73",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.65,
+          13.65
+        ],
+        "ylim": [
+          -279.31727398954826,
+          13.300822570930931
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1600,
+    "height": 800,
+    "sha256": "e21310d43355416390c3c0af8cd228732f7cd77742a1077d42f1679313a36583",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "07_taxation",
+    "filename": "07_taxation.png",
+    "source_table": "taxation.csv",
+    "source_sha256": "d2d98c83b5b08d87b23c943cd60c94894c1d91c8d0fbf7fe3fce874efa2398fa",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          0.0,
+          13.5
+        ],
+        "ylim": [
+          14.26,
+          30.539999999999996
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          0.0,
+          13.5
+        ],
+        "ylim": [
+          0.7679576344405024,
+          5.426974650546235
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1600,
+    "height": 1120,
+    "sha256": "2a457eae442b44e3ba3a671e13de8c20f147862f3dcb2028fc2722b8f9a5715c",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "08_metrics",
+    "filename": "08_metrics.png",
+    "source_table": "base_metrics.csv",
+    "source_sha256": "9e83f02ad21ff91b575268756e72a8c953e427d0b5b7a95b04e3b02fb4c5f6fe",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.54,
+          2.5400000000000005
+        ],
+        "ylim": [
+          -145.71690769412177,
+          0.0
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.54,
+          2.5400000000000005
+        ],
+        "ylim": [
+          0.0,
+          7.919301905996722
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.54,
+          2.5400000000000005
+        ],
+        "ylim": [
+          0.0,
+          0.8195087721179082
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1920,
+    "height": 800,
+    "sha256": "c57068e9fd512dfa09543566ccec280f023438c3c911b5296542c0543f675e04",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "09_stress",
+    "filename": "09_stress.png",
+    "source_table": "stress_metrics.csv",
+    "source_sha256": "29b8f362226b7b78c2c4680ec635cb435e933ef19ae27fea2d3c91be2e425531",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.44599999999999995,
+          1.446
+        ],
+        "ylim": [
+          -179.51905337023467,
+          0.0
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1440,
+    "height": 800,
+    "sha256": "e58be3c9a5a5b52f81ab483e9c5b5b24ff65b311950c54d6dd64216a5736a2bc",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "10_scenarios",
+    "filename": "10_scenarios.png",
+    "source_table": "scenario_metrics.csv",
+    "source_sha256": "e0cc4be7ed75efbd248d9868d0ffaaefb1bc1a8c4d63742c4c4abc2dd71597df",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.5125,
+          2.5125
+        ],
+        "ylim": [
+          -179.51905337023467,
+          0.0
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1600,
+    "height": 800,
+    "sha256": "9e3514819a899c067f0699d865f0f8aabf6925c5af0082f9af547ae3c6fe11bd",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "11_expectation",
+    "filename": "11_expectation.png",
+    "source_table": "scenario_statistics.csv",
+    "source_sha256": "de513c5b4c4b907b9bd7b624cae65a5c95e25b0324aa981502fe7c10c3daa0fc",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.1,
+          2.1
+        ],
+        "ylim": [
+          -173.2076667291276,
+          8.247984129958487
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1440,
+    "height": 800,
+    "sha256": "c08014f556a394d7d1c27bc243ce6d083e679a613e7d7d93d6e499ece70a58ba",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "12_source_audit",
+    "filename": "12_source_audit.png",
+    "source_table": "source_sensitivity.csv",
+    "source_sha256": "3fbcc54670d233ce97b80f51b1f1446a8d43b7d0f85a152c965f8bb564e3ac9e",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -0.45199999999999996,
+          2.452
+        ],
+        "ylim": [
+          -145.71690769412177,
+          0.0
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1600,
+    "height": 800,
+    "sha256": "89e72eeb3fc09470a99a731592a5624354523550cee9ee1bc08267c006212578",
+    "status": "PASS"
+  },
+  {
+    "chart_id": "13_sensitivity",
+    "filename": "13_sensitivity.png",
+    "source_table": "sensitivities.csv",
+    "source_sha256": "c2728d6bd75ab28b8724086a9ac92b525f19b207ad93a4228f0d68b021e8994b",
+    "numeric_status": "PASS",
+    "axes": [
+      {
+        "xlim": [
+          -57.5,
+          107.5
+        ],
+        "ylim": [
+          -156.62114465266873,
+          -50.587497572348745
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -57.5,
+          107.5
+        ],
+        "ylim": [
+          -156.62114465266873,
+          -50.587497572348745
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -57.5,
+          107.5
+        ],
+        "ylim": [
+          -156.62114465266873,
+          -50.587497572348745
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.0075,
+          0.1575
+        ],
+        "ylim": [
+          -149.1717255648714,
+          -54.072007967881724
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.0075,
+          0.1575
+        ],
+        "ylim": [
+          -149.1717255648714,
+          -54.072007967881724
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.0075,
+          0.1575
+        ],
+        "ylim": [
+          -149.1717255648714,
+          -54.072007967881724
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.006,
+          0.126
+        ],
+        "ylim": [
+          -148.68552082481875,
+          -54.095160574550896
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.006,
+          0.126
+        ],
+        "ylim": [
+          -148.68552082481875,
+          -54.095160574550896
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.006,
+          0.126
+        ],
+        "ylim": [
+          -148.68552082481875,
+          -54.095160574550896
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.1,
+          2.1
+        ],
+        "ylim": [
+          -171.15411969036293,
+          -53.02522729523927
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.1,
+          2.1
+        ],
+        "ylim": [
+          -171.15411969036293,
+          -53.02522729523927
+        ],
+        "status": "PASS"
+      },
+      {
+        "xlim": [
+          -0.1,
+          2.1
+        ],
+        "ylim": [
+          -171.15411969036293,
+          -53.02522729523927
+        ],
+        "status": "PASS"
+      }
+    ],
+    "width": 1760,
+    "height": 1280,
+    "sha256": "6d5c7b36a48acec49fed4425fb769ee4142ab5de68823184f53271ff566f6060",
+    "status": "PASS"
+  }
+]

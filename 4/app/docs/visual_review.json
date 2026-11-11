@@ -1,0 +1,106 @@
+[
+  {
+    "filename": "01_risk.png",
+    "SHA256": "2a51f7e76ea16803903cd59ec859b80591cbb661c3b05739ef74bbc9d3946bc9",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.824190+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "02_capex.png",
+    "SHA256": "6a778fa8c1838fd3a5b366d857d90f08d240398a119fa5d47eb6385dede5bd19",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.825032+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "03_supply.png",
+    "SHA256": "8143965f9e5cbb79c58e0eaae8d98a9e5cac7604da45658cecda5ad0e2441c36",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.825756+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "04_calendar.png",
+    "SHA256": "e500957b131b0e1bc66b3f30d4daf3e223b837bbabc6599fafafa68919137bf6",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.826832+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "05_cashflows.png",
+    "SHA256": "d914d004213c8f25155c549f5627984bdde3f18ed9da09fb633871af8aece8d6",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.827795+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "06_cumulative.png",
+    "SHA256": "e21310d43355416390c3c0af8cd228732f7cd77742a1077d42f1679313a36583",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.829081+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "07_taxation.png",
+    "SHA256": "2a457eae442b44e3ba3a671e13de8c20f147862f3dcb2028fc2722b8f9a5715c",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.830048+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "08_metrics.png",
+    "SHA256": "c57068e9fd512dfa09543566ccec280f023438c3c911b5296542c0543f675e04",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.830835+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "09_stress.png",
+    "SHA256": "e58be3c9a5a5b52f81ab483e9c5b5b24ff65b311950c54d6dd64216a5736a2bc",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.831556+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "10_scenarios.png",
+    "SHA256": "9e3514819a899c067f0699d865f0f8aabf6925c5af0082f9af547ae3c6fe11bd",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.832290+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "11_expectation.png",
+    "SHA256": "c08014f556a394d7d1c27bc243ce6d083e679a613e7d7d93d6e499ece70a58ba",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.832901+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "12_source_audit.png",
+    "SHA256": "89e72eeb3fc09470a99a731592a5624354523550cee9ee1bc08267c006212578",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.833519+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  },
+  {
+    "filename": "13_sensitivity.png",
+    "SHA256": "6d5c7b36a48acec49fed4425fb769ee4142ab5de68823184f53271ff566f6060",
+    "reviewer": "Codex: actual view_image inspection",
+    "review_time": "2026-11-01T14:38:41.834315+03:00",
+    "status": "PASS",
+    "comment": "Просмотрен фактический PNG: единицы и календарь согласованы с CSV; подписи, легенда и диапазоны читаемы; неполные годы VNM и отрицательные значения сохранены"
+  }
+]

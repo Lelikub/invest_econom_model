@@ -1,0 +1,7 @@
+﻿parameter_id,jurisdiction,period_or_scenario,value,unit,original_text,source_file,source_page,table_id,parse_status,notes
+share_eu,DEU,BASE,1.0,fraction,"100% объема на Рынок 1 (ЕС: Германия, Франция)",source_assignment.pdf,10,2,PARSED,
+share_eu,SRB,BASE,0.7,fraction,"70% на Рынок 1 (ЕС), 30% на Рынок 2 (КНР/Азия)",source_assignment.pdf,10,2,PARSED,
+share_eu,VNM,BASE,0.3,fraction,"30% на Рынок 1 (ЕС), 70% на Рынок 2 (Азия)",source_assignment.pdf,10,2,PARSED,
+share_asia,DEU,BASE,0.0,fraction,"100% объема на Рынок 1 (ЕС: Германия, Франция)",source_assignment.pdf,10,2,PARSED,Complement only when PDF explicitly allocates 100% to EU
+share_asia,SRB,BASE,0.3,fraction,"70% на Рынок 1 (ЕС), 30% на Рынок 2 (КНР/Азия)",source_assignment.pdf,10,2,PARSED,Complement only when PDF explicitly allocates 100% to EU
+share_asia,VNM,BASE,0.7,fraction,"30% на Рынок 1 (ЕС), 70% на Рынок 2 (Азия)",source_assignment.pdf,10,2,PARSED,Complement only when PDF explicitly allocates 100% to EU

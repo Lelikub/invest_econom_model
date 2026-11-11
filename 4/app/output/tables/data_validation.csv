@@ -1,0 +1,10 @@
+﻿check,status,value,expected,unit
+DEU.raw_landed,PASS,72.1,72.1,USD/m2
+DEU.price_weighted,PASS,180.0,180.0,USD/m2
+DEU.price_net,PASS,176.4,176.4,USD/m2
+SRB.raw_landed,PASS,66.96,66.96,USD/m2
+SRB.price_weighted,PASS,174.0,174.0,USD/m2
+SRB.price_net,PASS,165.3,165.3,USD/m2
+VNM.raw_landed,PASS,66.96,66.96,USD/m2
+VNM.price_weighted,PASS,166.0,166.0,USD/m2
+VNM.price_net,PASS,152.22,152.22,USD/m2

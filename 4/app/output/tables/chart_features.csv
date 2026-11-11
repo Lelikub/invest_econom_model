@@ -1,0 +1,13 @@
+﻿chart_id,feature_type,x,y,unit,method,confidence_or_tolerance,economic_meaning
+04_calendar,operating_boundary,4,1.0,year;fraction,exact extracted calendar,0,DEU: начало/конец эксплуатации
+04_calendar,operating_boundary,13,1.0,year;fraction,exact extracted calendar,0,DEU: начало/конец эксплуатации
+04_calendar,operating_boundary,3,1.0,year;fraction,exact extracted calendar,0,SRB: начало/конец эксплуатации
+04_calendar,operating_boundary,12,1.0,year;fraction,exact extracted calendar,0,SRB: начало/конец эксплуатации
+04_calendar,operating_boundary,3,0.5,year;fraction,exact extracted calendar,0,VNM: начало/конец эксплуатации
+04_calendar,operating_boundary,13,0.5,year;fraction,exact extracted calendar,0,VNM: начало/конец эксплуатации
+04_calendar,NWC_event_not_annotated,3,-4000000.0,year;USD,exact CSV event,0.01,"DEU: NWC вложение/возврат; отдельное событие, не перегиб"
+04_calendar,NWC_event_not_annotated,13,4000000.0,year;USD,exact CSV event,0.01,"DEU: NWC вложение/возврат; отдельное событие, не перегиб"
+04_calendar,NWC_event_not_annotated,2,-4000000.0,year;USD,exact CSV event,0.01,"SRB: NWC вложение/возврат; отдельное событие, не перегиб"
+04_calendar,NWC_event_not_annotated,12,4000000.0,year;USD,exact CSV event,0.01,"SRB: NWC вложение/возврат; отдельное событие, не перегиб"
+04_calendar,NWC_event_not_annotated,2,-4000000.0,year;USD,exact CSV event,0.01,"VNM: NWC вложение/возврат; отдельное событие, не перегиб"
+04_calendar,NWC_event_not_annotated,13,4000000.0,year;USD,exact CSV event,0.01,"VNM: NWC вложение/возврат; отдельное событие, не перегиб"

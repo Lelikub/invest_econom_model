@@ -1,0 +1,65 @@
+[
+  {
+    "check": "DEU.raw_landed",
+    "status": "PASS",
+    "value": 72.1,
+    "expected": 72.1,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "DEU.price_weighted",
+    "status": "PASS",
+    "value": 180.0,
+    "expected": 180.0,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "DEU.price_net",
+    "status": "PASS",
+    "value": 176.4,
+    "expected": 176.4,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "SRB.raw_landed",
+    "status": "PASS",
+    "value": 66.96,
+    "expected": 66.96,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "SRB.price_weighted",
+    "status": "PASS",
+    "value": 174.0,
+    "expected": 174.0,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "SRB.price_net",
+    "status": "PASS",
+    "value": 165.3,
+    "expected": 165.3,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "VNM.raw_landed",
+    "status": "PASS",
+    "value": 66.96,
+    "expected": 66.96,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "VNM.price_weighted",
+    "status": "PASS",
+    "value": 166.0,
+    "expected": 166.0,
+    "unit": "USD/m2"
+  },
+  {
+    "check": "VNM.price_net",
+    "status": "PASS",
+    "value": 152.22,
+    "expected": 152.22,
+    "unit": "USD/m2"
+  }
+]

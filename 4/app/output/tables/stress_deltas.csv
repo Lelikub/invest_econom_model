@@ -1,0 +1,1009 @@
+﻿stress,country,metric,base,stress_value,absolute_change,relative_change,reason
+STRESS1,VNM,country.oecd,5.0,5.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.spread,0.025,0.025,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.volatility,1.35,1.35,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.gpr_base,0.016,0.016,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.igpr,200.0,420.0,220.0,1.1,PDF14 prescribed scenario
+STRESS1,VNM,country.gamma,0.011000000000000001,0.011000000000000001,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.nominal_tax,0.2,0.2,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.inflation,0.1,0.1,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.delay,0.5,0.5,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.subsidy_rate,0.2,0.2,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.approval,0.65,0.65,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.clawback,0.25,0.25,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.subsidy_year,5.0,5.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.equip_duty,0.1,0.1,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.duty_free,0.0,0.0,0.0,,PDF14 prescribed scenario
+STRESS1,VNM,country.gov_rate,0.048,0.048,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.wht,0.1,0.1,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.raw_base,62.0,62.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.logistics_in,0.05,0.15,0.09999999999999999,1.9999999999999998,PDF14 prescribed scenario
+STRESS1,VNM,country.lead_days,14.0,45.0,31.0,2.2142857142857144,PDF14 prescribed scenario
+STRESS1,VNM,country.input_duty,0.03,0.03,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.raw_control,66.96,66.96,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.share_eu,0.3,0.3,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.share_asia,0.7,0.7,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.price_control,166.0,166.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.logistics_out,0.07,0.07,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.outbound_days,30.0,30.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.cbam,0.04,0.04,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.net_price_control,152.22,152.22,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.first,3.0,3.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.last,13.0,13.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.first_load,0.5,0.5,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.last_load,0.5,0.5,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.nwc_draw,2.0,2.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.nwc_release,13.0,13.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.holiday_tax,0.15,0.15,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.holiday_end,11.0,11.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,country.tax_credit,0.0,0.0,0.0,,PDF14 prescribed scenario
+STRESS1,VNM,risk.crp,0.03375,0.03375,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,risk.gpr,0.038000000000000006,0.0864,0.0484,1.2736842105263155,PDF14 prescribed scenario
+STRESS1,VNM,risk.rate,0.15675,0.20515,0.0484,0.3087719298245614,PDF14 prescribed scenario
+STRESS1,VNM,capex.gross,266200000.00000006,266200000.00000006,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,capex.subsidy_pv,20530818.02301088,20530818.02301088,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,capex.net,245669181.97698918,245669181.97698918,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,supply.price_weighted,166.0,166.0,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,supply.raw_landed,66.96,73.16,6.200000000000003,0.09259259259259264,PDF14 prescribed scenario
+STRESS1,VNM,supply.price_net,152.22,152.22,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,supply.cbam_unit,2.16,2.16,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,supply.inbound_unit,3.1,9.299999999999999,6.199999999999999,1.9999999999999998,PDF14 prescribed scenario
+STRESS1,VNM,supply.duty_unit,1.8599999999999999,1.8599999999999999,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,supply.outbound_unit,11.620000000000001,11.620000000000001,0.0,0.0,PDF14 prescribed scenario
+STRESS1,VNM,parent.npv,-138778007.32773504,-170970527.0192711,-32192519.69153607,-0.23197133545455034,PDF14 prescribed scenario
+STRESS1,VNM,parent.irr,0.03370740062407385,0.023726042245766576,-0.00998135837830727,-0.2961177128318396,PDF14 prescribed scenario
+STRESS1,VNM,parent.pi,0.4418933062301255,0.31177732595687346,-0.13011598027325205,-0.29445112301721843,PDF14 prescribed scenario
+STRESS1,VNM,parent.pv_inflows,109880553.61931875,77452742.75599565,-32427810.863323107,-0.29511874299131474,PDF14 prescribed scenario
+STRESS1,VNM,parent.pv_outflows,248658560.94705376,248423269.7752667,-235291.17178705335,-0.0009462419909892155,PDF14 prescribed scenario
+STRESS1,VNM,year0.year,0,0,0,,Full recalculation
+STRESS1,VNM,year0.load,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.volume,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.revenue_eu,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.revenue_asia,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.outbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.cbam_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.revenue,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.raw_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.inbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.fixed_opex,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.opex,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.depreciation,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.ebit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.tax_gross,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.cash_tax,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.operating_cf,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.investment,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.local_cf,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.wht,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year0.parent_cf,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.parent_literal,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.parent_literal_tax,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.discount_factor,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.discounted_parent,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year0.cumulative_parent,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year1.year,1,1,0,0.0,Full recalculation
+STRESS1,VNM,year1.load,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.volume,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.revenue_eu,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.revenue_asia,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.outbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.cbam_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.revenue,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.raw_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.inbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.fixed_opex,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.opex,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.depreciation,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.ebit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year1.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.tax_gross,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.cash_tax,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.operating_cf,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.local_cf,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.wht,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.parent_cf,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.parent_literal,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.parent_literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.discount_factor,0.8644910309055543,0.8297722275235448,-0.0347188033820095,-0.04016097581213949,Full recalculation
+STRESS1,VNM,year1.discounted_parent,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year1.cumulative_parent,-245669181.97698918,-245669181.97698918,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.year,2,2,0,0.0,Full recalculation
+STRESS1,VNM,year2.load,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.volume,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.revenue_eu,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.revenue_asia,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.outbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.cbam_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.revenue,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.raw_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.inbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.fixed_opex,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.opex,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.depreciation,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.ebit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.tax_gross,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.cash_tax,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.operating_cf,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.nwc_change,4000000.0,4000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.nwc_cash_effect,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.local_cf,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.wht,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year2.parent_cf,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.parent_literal,-7600000.0,-7600000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.parent_literal_tax,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year2.discount_factor,0.7473447425161482,0.6885219495693854,-0.05882279294676285,-0.07870904764609599,Full recalculation
+STRESS1,VNM,year2.discounted_parent,-2989378.970064593,-2754087.7982775415,235291.17178705148,0.07870904764609601,Full recalculation
+STRESS1,VNM,year2.cumulative_parent,-248658560.94705376,-248423269.7752667,235291.17178705335,0.0009462419909892155,Full recalculation
+STRESS1,VNM,year3.year,3,3,0,0.0,Full recalculation
+STRESS1,VNM,year3.load,0.5,0.5,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.volume,250000.0,250000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.revenue_eu,13500000.0,13500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.revenue_asia,28000000.0,28000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.outbound_cost,2905000.0000000005,2905000.0000000005,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.cbam_cost,540000.0,540000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.revenue,38055000.0,38055000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.raw_cost,15500000.0,15500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.inbound_cost,775000.0,2324999.9999999995,1549999.9999999995,1.9999999999999993,Full recalculation
+STRESS1,VNM,year3.duty_cost,464999.99999999994,464999.99999999994,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.fixed_opex,2500000.0,2500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.opex,19240000.0,20790000.0,1550000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year3.depreciation,12283459.098849459,12283459.098849459,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.ebit,6531540.901150541,4981540.901150541,-1550000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year3.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year3.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year3.tax_gross,979731.1351725812,747231.1351725812,-232500.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year3.literal_tax,979731.1351725812,747231.1351725812,-232500.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year3.cash_tax,979731.1351725812,747231.1351725812,-232500.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year3.operating_cf,17835268.864827417,16517768.864827419,-1317499.9999999981,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year3.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year3.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year3.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year3.local_cf,17835268.864827417,16517768.864827419,-1317499.9999999981,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year3.wht,1783526.8864827417,1651776.886482742,-131749.99999999977,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year3.parent_cf,16051741.978344675,14865991.978344677,-1185749.9999999981,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year3.parent_literal,17835268.864827417,16517768.864827419,-1317499.9999999981,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year3.parent_literal_tax,16051741.978344675,14865991.978344677,-1185749.9999999981,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year3.discount_factor,0.6460728268996311,0.5713163917930428,-0.07475643510658825,-0.11570899129952394,Full recalculation
+STRESS1,VNM,year3.discounted_parent,10370594.316612622,8493184.8974922,-1877409.4191204216,-0.1810319989195803,Full recalculation
+STRESS1,VNM,year3.cumulative_parent,-238287966.63044113,-239930084.8777745,-1642118.2473333776,-0.006891318393262071,Full recalculation
+STRESS1,VNM,year4.year,4,4,0,0.0,Full recalculation
+STRESS1,VNM,year4.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year4.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year4.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year4.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year4.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year4.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year4.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year4.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year4.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year4.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year4.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year4.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year4.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year4.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year4.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year4.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year4.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year4.discount_factor,0.5585241641665278,0.47406247503882737,-0.08446168912770047,-0.1512229811108363,Full recalculation
+STRESS1,VNM,year4.discounted_parent,17930571.543743454,14094817.902322862,-3835753.6414205916,-0.2139225530018873,Full recalculation
+STRESS1,VNM,year4.cumulative_parent,-220357395.08669767,-225835266.97545165,-5477871.88875398,-0.024859033601294662,Full recalculation
+STRESS1,VNM,year5.year,5,5,0,0.0,Full recalculation
+STRESS1,VNM,year5.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year5.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year5.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year5.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year5.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year5.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year5.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year5.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year5.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year5.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year5.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year5.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year5.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year5.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year5.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year5.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year5.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year5.discount_factor,0.4828391304659848,0.3933638758982927,-0.08947525456769212,-0.18531069443634393,Full recalculation
+STRESS1,VNM,year5.discounted_parent,15500818.278576579,11695488.44734918,-3805329.8312273994,-0.24549219033724703,Full recalculation
+STRESS1,VNM,year5.cumulative_parent,-204856576.8081211,-214139778.52810246,-9283201.719981372,-0.04531561478095225,Full recalculation
+STRESS1,VNM,year6.year,6,6,0,0.0,Full recalculation
+STRESS1,VNM,year6.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year6.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year6.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year6.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year6.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year6.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year6.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year6.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year6.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year6.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year6.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year6.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year6.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year6.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year6.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year6.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year6.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year6.discount_factor,0.4174100976580806,0.3264024195314215,-0.09100767812665911,-0.21802941193149475,Full recalculation
+STRESS1,VNM,year6.discounted_parent,13400318.373526325,9704591.500932813,-3695726.8725935128,-0.2757939602311832,Full recalculation
+STRESS1,VNM,year6.cumulative_parent,-191456258.43459475,-204435187.02716964,-12978928.592574894,-0.06779056844991439,Full recalculation
+STRESS1,VNM,year7.year,7,7,0,0.0,Full recalculation
+STRESS1,VNM,year7.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year7.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year7.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year7.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year7.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year7.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year7.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year7.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year7.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year7.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year7.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year7.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year7.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year7.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year7.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year7.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year7.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year7.discount_factor,0.36084728563482227,0.2708396627236622,-0.09000762291116005,-0.24943411380471858,Full recalculation
+STRESS1,VNM,year7.discounted_parent,11584455.045192417,8052600.5069350805,-3531854.5382573362,-0.3048787814773442,Full recalculation
+STRESS1,VNM,year7.cumulative_parent,-179871803.38940233,-196382586.52023456,-16510783.130832225,-0.09179194748544454,Full recalculation
+STRESS1,VNM,year8.year,8,8,0,0.0,Full recalculation
+STRESS1,VNM,year8.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year8.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year8.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year8.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year8.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year8.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year8.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year8.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year8.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year8.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year8.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year8.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year8.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year8.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year8.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year8.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year8.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year8.discount_factor,0.31194924195791857,0.22473523023993883,-0.08721401171797974,-0.2795775722056243,Full recalculation
+STRESS1,VNM,year8.discounted_parent,10014657.484497443,6681824.259996749,-3332833.2245006934,-0.3327955279209374,Full recalculation
+STRESS1,VNM,year8.cumulative_parent,-169857145.9049049,-189700762.2602378,-19843616.35533291,-0.11682532547934384,Full recalculation
+STRESS1,VNM,year9.year,9,9,0,0.0,Full recalculation
+STRESS1,VNM,year9.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year9.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year9.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year9.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year9.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year9.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year9.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year9.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year9.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year9.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year9.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year9.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year9.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year9.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year9.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year9.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year9.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year9.discount_factor,0.26967732177040726,0.18647905259921072,-0.08319826917119655,-0.30851043990279725,Full recalculation
+STRESS1,VNM,year9.discounted_parent,8657581.57293922,5544392.200138363,-3113189.3728008578,-0.35959111058585613,Full recalculation
+STRESS1,VNM,year9.cumulative_parent,-161199564.33196568,-184156370.06009945,-22956805.728133768,-0.14241233109574516,Full recalculation
+STRESS1,VNM,year10.year,10,10,0,0.0,Full recalculation
+STRESS1,VNM,year10.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year10.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year10.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year10.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year10.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year10.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year10.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year10.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year10.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year10.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year10.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year10.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year10.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year10.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year10.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year10.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year10.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year10.discount_factor,0.23313362590914824,0.15473513886172738,-0.07839848704742086,-0.3362813354002078,Full recalculation
+STRESS1,VNM,year10.discounted_parent,7484401.619139157,4600582.666172978,-2883818.9529661797,-0.3853105565034966,Full recalculation
+STRESS1,VNM,year10.cumulative_parent,-153715162.71282652,-179555787.39392647,-25840624.68109995,-0.16810719401426832,Full recalculation
+STRESS1,VNM,year11.year,11,11,0,0.0,Full recalculation
+STRESS1,VNM,year11.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year11.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year11.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year11.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS1,VNM,year11.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year11.tax_gross,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year11.literal_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year11.cash_tax,1959462.2703451624,1494462.2703451624,-465000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year11.operating_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year11.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year11.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year11.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year11.local_cf,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year11.wht,3567053.7729654834,3303553.772965484,-263499.99999999953,-0.07387048717825687,Full recalculation
+STRESS1,VNM,year11.parent_cf,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year11.parent_literal,35670537.72965483,33035537.729654837,-2634999.9999999963,-0.0738704871782569,Full recalculation
+STRESS1,VNM,year11.parent_literal_tax,32103483.95668935,29731983.956689354,-2371499.9999999963,-0.07387048717825688,Full recalculation
+STRESS1,VNM,year11.discount_factor,0.20154192860094944,0.12839492084946055,-0.07314700775148889,-0.36293692463526567,Full recalculation
+STRESS1,VNM,year11.discounted_parent,6470198.071440811,3817435.7268165606,-2652762.3446242507,-0.40999708437573723,Full recalculation
+STRESS1,VNM,year11.cumulative_parent,-147244964.6413857,-175738351.6671099,-28493387.025724202,-0.19351009452255083,Full recalculation
+STRESS1,VNM,year12.year,12,12,0,0.0,Full recalculation
+STRESS1,VNM,year12.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.revenue_eu,27000000.0,27000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.revenue_asia,56000000.0,56000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.outbound_cost,5810000.000000001,5810000.000000001,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.cbam_cost,1080000.0,1080000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.revenue,76110000.0,76110000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.inbound_cost,1550000.0,4649999.999999999,3099999.999999999,1.9999999999999993,Full recalculation
+STRESS1,VNM,year12.duty_cost,929999.9999999999,929999.9999999999,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.opex,38480000.0,41580000.0,3100000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year12.depreciation,24566918.197698917,24566918.197698917,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.ebit,13063081.802301083,9963081.802301083,-3100000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year12.holiday_rate,0.2,0.2,0.0,0.0,Full recalculation
+STRESS1,VNM,year12.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year12.tax_gross,2612616.3604602166,1992616.3604602166,-620000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year12.literal_tax,2612616.3604602166,1992616.3604602166,-620000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year12.cash_tax,2612616.3604602166,1992616.3604602166,-620000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year12.operating_cf,35017383.639539786,32537383.639539786,-2480000.0,-0.07082196732709964,Full recalculation
+STRESS1,VNM,year12.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year12.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS1,VNM,year12.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year12.local_cf,35017383.639539786,32537383.639539786,-2480000.0,-0.07082196732709964,Full recalculation
+STRESS1,VNM,year12.wht,3501738.3639539788,3253738.3639539788,-248000.0,-0.07082196732709962,Full recalculation
+STRESS1,VNM,year12.parent_cf,31515645.275585808,29283645.275585808,-2232000.0,-0.07082196732709964,Full recalculation
+STRESS1,VNM,year12.parent_literal,35017383.639539786,32537383.639539786,-2480000.0,-0.07082196732709964,Full recalculation
+STRESS1,VNM,year12.parent_literal_tax,31515645.275585808,29283645.275585808,-2232000.0,-0.07082196732709964,Full recalculation
+STRESS1,VNM,year12.discount_factor,0.17423118962692843,0.10653853947596612,-0.06769265015096232,-0.38852199939579607,Full recalculation
+STRESS1,VNM,year12.discounted_parent,5491008.368225602,3119836.7981931875,-2371171.570032415,-0.4318280743758272,Full recalculation
+STRESS1,VNM,year12.cumulative_parent,-141753956.2731601,-172618514.86891672,-30864558.59575662,-0.217733313462381,Full recalculation
+STRESS1,VNM,year13.year,13,13,0,0.0,Full recalculation
+STRESS1,VNM,year13.load,0.5,0.5,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.volume,250000.0,250000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.revenue_eu,13500000.0,13500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.revenue_asia,28000000.0,28000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.outbound_cost,2905000.0000000005,2905000.0000000005,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.cbam_cost,540000.0,540000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.revenue,38055000.0,38055000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.raw_cost,15500000.0,15500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.inbound_cost,775000.0,2324999.9999999995,1549999.9999999995,1.9999999999999993,Full recalculation
+STRESS1,VNM,year13.duty_cost,464999.99999999994,464999.99999999994,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.fixed_opex,2500000.0,2500000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.opex,19240000.0,20790000.0,1550000.0,0.08056133056133057,Full recalculation
+STRESS1,VNM,year13.depreciation,12283459.098849459,12283459.098849459,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.ebit,6531540.901150541,4981540.901150541,-1550000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year13.holiday_rate,0.2,0.2,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year13.tax_gross,1306308.1802301083,996308.1802301083,-310000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year13.literal_tax,1306308.1802301083,996308.1802301083,-310000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year13.cash_tax,1306308.1802301083,996308.1802301083,-310000.0,-0.23731000440140626,Full recalculation
+STRESS1,VNM,year13.operating_cf,17508691.819769893,16268691.819769893,-1240000.0,-0.07082196732709964,Full recalculation
+STRESS1,VNM,year13.nwc_change,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.nwc_cash_effect,4000000.0,4000000.0,0.0,0.0,Full recalculation
+STRESS1,VNM,year13.investment,0.0,0.0,0.0,,Full recalculation
+STRESS1,VNM,year13.local_cf,21508691.819769893,20268691.819769893,-1240000.0,-0.057651111950018444,Full recalculation
+STRESS1,VNM,year13.wht,1750869.1819769894,1626869.1819769894,-124000.0,-0.07082196732709962,Full recalculation
+STRESS1,VNM,year13.parent_cf,19757822.637792904,18641822.637792904,-1116000.0,-0.056483956783036776,Full recalculation
+STRESS1,VNM,year13.parent_literal,25508691.819769893,24268691.819769893,-1240000.0,-0.04861088168539353,Full recalculation
+STRESS1,VNM,year13.parent_literal_tax,19757822.637792904,18641822.637792904,-1116000.0,-0.056483956783036776,Full recalculation
+STRESS1,VNM,year13.discount_factor,0.1506213007364845,0.0884027212180775,-0.062218579518406994,-0.41307955258771706,Full recalculation
+STRESS1,VNM,year13.discounted_parent,2975948.9454251262,1647987.8496456523,-1327961.095779474,-0.446231141774433,Full recalculation
+STRESS1,VNM,year13.cumulative_parent,-138778007.32773498,-170970527.01927108,-32192519.6915361,-0.23197133545455065,Full recalculation
+STRESS2,SRB,country.oecd,4.0,4.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.spread,0.027999999999999997,0.027999999999999997,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.volatility,1.25,1.25,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.gpr_base,0.015,0.015,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.igpr,250.0,250.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.gamma,0.012,0.012,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.nominal_tax,0.15,0.15,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.inflation,0.15,0.15,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.delay,0.0,0.0,0.0,,PDF14 prescribed scenario
+STRESS2,SRB,country.subsidy_rate,0.15,0.15,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.approval,0.75,0.75,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.clawback,0.15,0.15,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.subsidy_year,0.0,0.0,0.0,,PDF14 prescribed scenario
+STRESS2,SRB,country.equip_duty,0.01,0.01,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.duty_free,1.0,1.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.gov_rate,0.057999999999999996,0.057999999999999996,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.wht,0.05,0.05,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.raw_base,62.0,62.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.logistics_in,0.08,0.08,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.lead_days,35.0,35.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.input_duty,0.0,0.0,0.0,,PDF14 prescribed scenario
+STRESS2,SRB,country.raw_control,66.96,66.96,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.share_eu,0.7,0.7,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.share_asia,0.3,0.3,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.price_control,174.0,174.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.logistics_out,0.05,0.05,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.outbound_days,7.0,7.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.cbam,0.0,0.08,0.08,,PDF14 prescribed scenario
+STRESS2,SRB,country.net_price_control,165.3,165.3,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.first,3.0,3.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.last,12.0,12.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.first_load,1.0,1.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.last_load,1.0,1.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.nwc_draw,2.0,2.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.nwc_release,12.0,12.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.holiday_tax,0.15,0.15,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.holiday_end,13.0,13.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,country.tax_credit,0.0,0.0,0.0,,PDF14 prescribed scenario
+STRESS2,SRB,risk.crp,0.034999999999999996,0.034999999999999996,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,risk.gpr,0.051000000000000004,0.051000000000000004,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,risk.rate,0.17099999999999999,0.17099999999999999,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,capex.gross,252999999.99999997,252999999.99999997,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,capex.subsidy_pv,24193124.999999993,24193124.999999993,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,capex.net,228806874.99999997,228806874.99999997,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,supply.price_weighted,174.0,174.0,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,supply.raw_landed,66.96,66.96,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,supply.price_net,165.3,155.22000000000003,-10.079999999999984,-0.06098003629764055,PDF14 prescribed scenario
+STRESS2,SRB,supply.cbam_unit,0.0,10.079999999999998,10.079999999999998,,PDF14 prescribed scenario
+STRESS2,SRB,supply.inbound_unit,4.96,4.96,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,supply.duty_unit,0.0,0.0,0.0,,PDF14 prescribed scenario
+STRESS2,SRB,supply.outbound_unit,8.700000000000001,8.700000000000001,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,parent.npv,-99350056.25274904,-113126504.54847753,-13776448.29572849,-0.13866573221338555,PDF14 prescribed scenario
+STRESS2,SRB,parent.irr,0.07542192291425454,0.05867071868343099,-0.016751204230823546,-0.22209993571587414,PDF14 prescribed scenario
+STRESS2,SRB,parent.pi,0.5712568326777206,0.5118048474494908,-0.05945198522822981,-0.10407225231697166,PDF14 prescribed scenario
+STRESS2,SRB,parent.pv_inflows,132373884.38341554,118597436.08768708,-13776448.29572846,-0.10407225231697169,PDF14 prescribed scenario
+STRESS2,SRB,parent.pv_outflows,231723940.63616458,231723940.63616458,0.0,0.0,PDF14 prescribed scenario
+STRESS2,SRB,year0.year,0,0,0,,Full recalculation
+STRESS2,SRB,year0.load,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.volume,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.revenue_eu,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.revenue_asia,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.outbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.cbam_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.revenue,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.raw_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.inbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.fixed_opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.depreciation,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.ebit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.tax_gross,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.cash_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.operating_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.investment,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.local_cf,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.wht,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year0.parent_cf,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.parent_literal,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.parent_literal_tax,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.discount_factor,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.discounted_parent,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year0.cumulative_parent,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year1.year,1,1,0,0.0,Full recalculation
+STRESS2,SRB,year1.load,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.volume,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.revenue_eu,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.revenue_asia,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.outbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.cbam_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.revenue,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.raw_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.inbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.fixed_opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.depreciation,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.ebit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year1.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.tax_gross,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.cash_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.operating_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.local_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.wht,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.parent_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.parent_literal,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.parent_literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.discount_factor,0.8539709649871904,0.8539709649871904,0.0,0.0,Full recalculation
+STRESS2,SRB,year1.discounted_parent,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year1.cumulative_parent,-228806874.99999997,-228806874.99999997,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.year,2,2,0,0.0,Full recalculation
+STRESS2,SRB,year2.load,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.volume,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.revenue_eu,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.revenue_asia,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.outbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.cbam_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.revenue,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.raw_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.inbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.fixed_opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.depreciation,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.ebit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.tax_gross,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.cash_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.operating_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.nwc_change,4000000.0,4000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.nwc_cash_effect,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.local_cf,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.wht,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year2.parent_cf,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.parent_literal,-7800000.0,-7800000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.parent_literal_tax,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.discount_factor,0.7292664090411531,0.7292664090411531,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.discounted_parent,-2917065.6361646126,-2917065.6361646126,0.0,0.0,Full recalculation
+STRESS2,SRB,year2.cumulative_parent,-231723940.63616458,-231723940.63616458,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.year,3,3,0,0.0,Full recalculation
+STRESS2,SRB,year3.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year3.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year3.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year3.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year3.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year3.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year3.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year3.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year3.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year3.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year3.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year3.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year3.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year3.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year3.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year3.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year3.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year3.discount_factor,0.6227723390616167,0.6227723390616167,0.0,0.0,Full recalculation
+STRESS2,SRB,year3.discounted_parent,24243140.226208013,21708581.36069504,-2534558.865512971,-0.10454746546295143,Full recalculation
+STRESS2,SRB,year3.cumulative_parent,-207480800.40995657,-210015359.27546954,-2534558.865512967,-0.012215871832502044,Full recalculation
+STRESS2,SRB,year4.year,4,4,0,0.0,Full recalculation
+STRESS2,SRB,year4.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year4.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year4.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year4.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year4.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year4.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year4.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year4.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year4.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year4.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year4.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year4.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year4.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year4.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year4.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year4.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year4.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year4.discount_factor,0.5318294953557785,0.5318294953557785,0.0,0.0,Full recalculation
+STRESS2,SRB,year4.discounted_parent,20702937.85329463,18538498.17309568,-2164439.680198949,-0.10454746546295136,Full recalculation
+STRESS2,SRB,year4.cumulative_parent,-186777862.55666193,-191476861.10237387,-4698998.545711935,-0.025158219937796007,Full recalculation
+STRESS2,SRB,year5.year,5,5,0,0.0,Full recalculation
+STRESS2,SRB,year5.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year5.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year5.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year5.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year5.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year5.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year5.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year5.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year5.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year5.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year5.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year5.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year5.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year5.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year5.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year5.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year5.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year5.discount_factor,0.45416694735762464,0.45416694735762464,0.0,0.0,Full recalculation
+STRESS2,SRB,year5.discounted_parent,17679707.816647846,15831339.174291784,-1848368.6423560623,-0.10454746546295138,Full recalculation
+STRESS2,SRB,year5.cumulative_parent,-169098154.74001408,-175645521.92808208,-6547367.188068002,-0.03871932959963095,Full recalculation
+STRESS2,SRB,year6.year,6,6,0,0.0,Full recalculation
+STRESS2,SRB,year6.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year6.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year6.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year6.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year6.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year6.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year6.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year6.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year6.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year6.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year6.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year6.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year6.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year6.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year6.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year6.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year6.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year6.discount_factor,0.38784538630027726,0.38784538630027726,0.0,0.0,Full recalculation
+STRESS2,SRB,year6.discounted_parent,15097957.144874334,13519503.991709467,-1578453.1531648673,-0.10454746546295124,Full recalculation
+STRESS2,SRB,year6.cumulative_parent,-154000197.59513974,-162126017.9363726,-8125820.341232866,-0.0527649994488664,Full recalculation
+STRESS2,SRB,year7.year,7,7,0,0.0,Full recalculation
+STRESS2,SRB,year7.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year7.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year7.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year7.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year7.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year7.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year7.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year7.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year7.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year7.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year7.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year7.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year7.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year7.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year7.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year7.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year7.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year7.discount_factor,0.3312086988046774,0.3312086988046774,0.0,0.0,Full recalculation
+STRESS2,SRB,year7.discounted_parent,12893217.032343581,11545263.869948305,-1347953.1623952761,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year7.cumulative_parent,-141106980.56279618,-150580754.0664243,-9473773.503628135,-0.06713894284919565,Full recalculation
+STRESS2,SRB,year8.year,8,8,0,0.0,Full recalculation
+STRESS2,SRB,year8.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year8.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year8.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year8.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year8.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year8.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year8.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year8.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year8.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year8.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year8.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year8.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year8.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year8.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year8.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year8.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year8.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year8.discount_factor,0.2828426121303821,0.2828426121303821,0.0,0.0,Full recalculation
+STRESS2,SRB,year8.discounted_parent,11010432.990899729,9859320.128051499,-1151112.8628482297,-0.10454746546295136,Full recalculation
+STRESS2,SRB,year8.cumulative_parent,-130096547.57189645,-140721433.93837282,-10624886.366476372,-0.08166924153467366,Full recalculation
+STRESS2,SRB,year9.year,9,9,0,0.0,Full recalculation
+STRESS2,SRB,year9.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year9.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year9.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year9.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year9.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year9.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year9.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year9.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year9.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year9.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year9.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year9.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year9.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year9.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year9.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year9.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year9.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year9.discount_factor,0.24153937842047998,0.24153937842047998,0.0,0.0,Full recalculation
+STRESS2,SRB,year9.discounted_parent,9402590.086165437,8419573.123869767,-983016.9622956701,-0.10454746546295138,Full recalculation
+STRESS2,SRB,year9.cumulative_parent,-120693957.485731,-132301860.81450306,-11607903.328772053,-0.09617634196926879,Full recalculation
+STRESS2,SRB,year10.year,10,10,0,0.0,Full recalculation
+STRESS2,SRB,year10.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year10.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year10.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year10.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year10.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year10.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year10.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year10.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year10.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year10.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year10.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year10.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year10.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year10.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year10.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year10.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year10.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year10.discount_factor,0.20626761607214344,0.20626761607214344,0.0,0.0,Full recalculation
+STRESS2,SRB,year10.discounted_parent,8029538.929261689,7190070.9853712795,-839467.9438904095,-0.10454746546295132,Full recalculation
+STRESS2,SRB,year10.cumulative_parent,-112664418.55646932,-125111789.82913178,-12447371.27266246,-0.11048183119521117,Full recalculation
+STRESS2,SRB,year11.year,11,11,0,0.0,Full recalculation
+STRESS2,SRB,year11.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year11.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year11.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year11.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year11.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year11.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year11.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year11.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year11.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year11.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year11.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year11.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year11.local_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year11.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year11.parent_cf,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year11.parent_literal,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year11.parent_literal_tax,38927772.96875,34857972.96875,-4069800.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year11.discount_factor,0.17614655514273564,0.17614655514273564,0.0,0.0,Full recalculation
+STRESS2,SRB,year11.discounted_parent,6856993.107823816,6140111.85770391,-716881.2501199059,-0.10454746546295136,Full recalculation
+STRESS2,SRB,year11.cumulative_parent,-105807425.4486455,-118971677.97142787,-13164252.52278237,-0.12441709517988175,Full recalculation
+STRESS2,SRB,year12.year,12,12,0,0.0,Full recalculation
+STRESS2,SRB,year12.load,1.0,1.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.volume,500000.0,500000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.revenue_eu,63000000.0,63000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.revenue_asia,24000000.0,24000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.outbound_cost,4350000.000000001,4350000.000000001,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.cbam_cost,0.0,5039999.999999999,5039999.999999999,,Full recalculation
+STRESS2,SRB,year12.revenue,82650000.0,77610000.0,-5040000.0,-0.060980036297640657,Full recalculation
+STRESS2,SRB,year12.raw_cost,31000000.0,31000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.inbound_cost,2480000.0,2480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year12.fixed_opex,5000000.0,5000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.opex,38480000.0,38480000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.depreciation,22880687.499999996,22880687.499999996,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.ebit,21289312.500000004,16249312.500000004,-5040000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year12.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year12.tax_gross,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year12.literal_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year12.cash_tax,3193396.8750000005,2437396.8750000005,-756000.0,-0.23673850435517818,Full recalculation
+STRESS2,SRB,year12.operating_cf,40976603.125,36692603.125,-4284000.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year12.nwc_change,-4000000.0,-4000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.nwc_cash_effect,4000000.0,4000000.0,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year12.local_cf,44976603.125,40692603.125,-4284000.0,-0.09524952313748128,Full recalculation
+STRESS2,SRB,year12.wht,2048830.15625,1834630.15625,-214200.0,-0.10454746546295131,Full recalculation
+STRESS2,SRB,year12.parent_cf,42927772.96875,38857972.96875,-4069800.0,-0.09480575670586686,Full recalculation
+STRESS2,SRB,year12.parent_literal,48976603.125,44692603.125,-4284000.0,-0.08747033739898637,Full recalculation
+STRESS2,SRB,year12.parent_literal_tax,42927772.96875,38857972.96875,-4069800.0,-0.09480575670586686,Full recalculation
+STRESS2,SRB,year12.discount_factor,0.1504240436744113,0.1504240436744113,0.0,0.0,Full recalculation
+STRESS2,SRB,year12.discounted_parent,6457369.1958964635,5845173.422950344,-612195.7729461193,-0.09480575670586687,Full recalculation
+STRESS2,SRB,year12.cumulative_parent,-99350056.25274904,-113126504.54847753,-13776448.29572849,-0.13866573221338555,Full recalculation
+STRESS2,SRB,year13.year,13,13,0,0.0,Full recalculation
+STRESS2,SRB,year13.load,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.volume,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.revenue_eu,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.revenue_asia,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.outbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.cbam_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.revenue,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.raw_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.inbound_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.duty_cost,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.fixed_opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.opex,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.depreciation,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.ebit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.holiday_rate,0.15,0.15,0.0,0.0,Full recalculation
+STRESS2,SRB,year13.tax_credit,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.tax_gross,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.cash_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.operating_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.nwc_change,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.nwc_cash_effect,-0.0,-0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.investment,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.local_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.wht,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.parent_cf,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.parent_literal,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.parent_literal_tax,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.discount_factor,0.1284577657339123,0.1284577657339123,0.0,0.0,Full recalculation
+STRESS2,SRB,year13.discounted_parent,0.0,0.0,0.0,,Full recalculation
+STRESS2,SRB,year13.cumulative_parent,-99350056.25274904,-113126504.54847753,-13776448.29572849,-0.13866573221338555,Full recalculation

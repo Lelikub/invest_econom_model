@@ -1,0 +1,13 @@
+﻿parameter_id,jurisdiction,period_or_scenario,value,unit,original_text,source_file,source_page,table_id,parse_status,notes
+subsidy_rate,DEU,BASE,0.2,fraction,Субсидия фонда декарбонизации IPCEI Hydrogen: 20.0%,source_assignment.pdf,6,1,PARSED,
+subsidy_rate,SRB,BASE,0.15,fraction,Государственная субсидия Агентства развития Сербии RAS: 15.0%,source_assignment.pdf,6,1,PARSED,
+subsidy_rate,VNM,BASE,0.2,fraction,Прямой капитальный грант Комитета управления парком: 20.0%,source_assignment.pdf,6,1,PARSED,
+approval,DEU,BASE,0.85,fraction,0.85 (85%),source_assignment.pdf,6,1,PARSED,
+approval,SRB,BASE,0.75,fraction,0.75 (75%),source_assignment.pdf,6,1,PARSED,
+approval,VNM,BASE,0.65,fraction,0.65 (65%),source_assignment.pdf,6,1,PARSED,
+clawback,DEU,BASE,0.05,fraction,0.05 (5%),source_assignment.pdf,6,1,PARSED,
+clawback,SRB,BASE,0.15,fraction,0.15 (15%),source_assignment.pdf,6,1,PARSED,
+clawback,VNM,BASE,0.25,fraction,0.25 (25%из-за жестких обязательств по трансферу технологий),source_assignment.pdf,6,1,PARSED,
+subsidy_year,DEU,BASE,4.0,year,t = 4 (через 1 год после subsidy ввода в t = 3),source_assignment.pdf,7,1,PARSED,
+subsidy_year,SRB,BASE,0.0,year,"t = 0 (авансирование subsidy траншами в инвестиционный период, дисконт не применяется)",source_assignment.pdf,7,1,PARSED,
+subsidy_year,VNM,BASE,5.0,year,t = 5 (через 2 года после subsidy запуска первого полугодия мощности в t = 3).,source_assignment.pdf,7,1,PARSED,

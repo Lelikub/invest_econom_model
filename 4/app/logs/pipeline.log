@@ -1,0 +1,204 @@
+{"timestamp": "2026-11-01T14:35:01.275777+03:00", "run_id": "20261101_143501_de751572", "stage": "00", "status": "START", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:35:01.682405+03:00", "run_id": "20261101_143501_de751572", "stage": "00", "status": "PASS", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:35:01.685276+03:00", "run_id": "20261101_143501_de751572", "stage": "01", "status": "START", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:35:01.797620+03:00", "run_id": "20261101_143501_de751572", "stage": "01", "status": "PASS", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:35:01.800649+03:00", "run_id": "20261101_143501_de751572", "stage": "02", "status": "START", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:35:02.142633+03:00", "run_id": "20261101_143501_de751572", "stage": "02", "status": "PASS", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:35:02.144810+03:00", "run_id": "20261101_143501_de751572", "stage": "03", "status": "START", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:35:02.342896+03:00", "run_id": "20261101_143501_de751572", "stage": "03", "status": "PASS", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:35:02.345663+03:00", "run_id": "20261101_143501_de751572", "stage": "04", "status": "START", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:35:02.358442+03:00", "run_id": "20261101_143501_de751572", "stage": "04", "status": "PASS", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:35:02.360109+03:00", "run_id": "20261101_143501_de751572", "stage": "05", "status": "START", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:35:02.375752+03:00", "run_id": "20261101_143501_de751572", "stage": "05", "status": "PASS", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:35:02.377653+03:00", "run_id": "20261101_143501_de751572", "stage": "06", "status": "START", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:35:02.384935+03:00", "run_id": "20261101_143501_de751572", "stage": "06", "status": "PASS", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:35:02.386583+03:00", "run_id": "20261101_143501_de751572", "stage": "07", "status": "START", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:35:03.280644+03:00", "run_id": "20261101_143501_de751572", "stage": "07", "status": "PASS", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:35:03.288096+03:00", "run_id": "20261101_143501_de751572", "stage": "08", "status": "START", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:35:03.528126+03:00", "run_id": "20261101_143501_de751572", "stage": "08", "status": "NOT_VERIFIED", "message": "Traceback (most recent call last):\n  File \"C:\\work\\invest_econom_model\\4\\app\\src\\reporting\\excel_worker.py\", line 20, in <module>\n    if __name__=='__main__': main()\n                             ~~~~^^\n  File \"C:\\work\\invest_econom_model\\4\\app\\src\\reporting\\excel_worker.py\", line 10, in main\n    app=win32com.client.DispatchEx('Excel.Application')\n  File \"C:\\work\\invest_econom_model\\4\\app\\.venv\\Lib\\site-packages\\win32com\\client\\__init__.py\", line 142, in DispatchEx\n    dispatch = pythoncom.CoCreateInstanceEx(\n               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )[0]\n    ^\npywintypes.com_error: (-2147023584, 'Указанный сеанс работы не существует.  Возможно, он уже  завершен.', None, None)"}
+{"timestamp": "2026-11-01T14:35:03.787229+03:00", "run_id": "20261101_143501_de751572", "stage": "08", "status": "NOT_VERIFIED", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:35:03.794851+03:00", "run_id": "20261101_143501_de751572", "stage": "09", "status": "START", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:35:17.268221+03:00", "run_id": "20261101_143501_de751572", "stage": "09", "status": "PASS", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:35:17.274847+03:00", "run_id": "20261101_143501_de751572", "stage": "10", "status": "START", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:35:17.285227+03:00", "run_id": "20261101_143501_de751572", "stage": "10", "status": "PASS", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:35:17.290741+03:00", "run_id": "20261101_143501_de751572", "stage": "11", "status": "START", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:35:20.887049+03:00", "run_id": "20261101_143501_de751572", "stage": "08", "status": "NOT_VERIFIED", "message": "Traceback (most recent call last):\n  File \"C:\\work\\invest_econom_model\\4\\app\\src\\reporting\\excel_worker.py\", line 20, in <module>\n    if __name__=='__main__': main()\n                             ~~~~^^\n  File \"C:\\work\\invest_econom_model\\4\\app\\src\\reporting\\excel_worker.py\", line 10, in main\n    app=win32com.client.DispatchEx('Excel.Application')\n  File \"C:\\work\\invest_econom_model\\4\\app\\.venv\\Lib\\site-packages\\win32com\\client\\__init__.py\", line 142, in DispatchEx\n    dispatch = pythoncom.CoCreateInstanceEx(\n               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        clsid, None, clsctx, serverInfo, (pythoncom.IID_IDispatch,)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )[0]\n    ^\npywintypes.com_error: (-2147023584, 'Указанный сеанс работы не существует.  Возможно, он уже  завершен.', None, None)"}
+{"timestamp": "2026-11-01T14:35:21.857467+03:00", "run_id": "20261101_143501_de751572", "stage": "11", "status": "PASS", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:35:21.862530+03:00", "run_id": "20261101_143501_de751572", "stage": "12", "status": "START", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:35:29.458261+03:00", "run_id": "20261101_143501_de751572", "stage": "12", "status": "PASS", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:35:29.463553+03:00", "run_id": "20261101_143501_de751572", "stage": "13", "status": "START", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:35:31.125789+03:00", "run_id": "20261101_143501_de751572", "stage": "13", "status": "PASS", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:35:31.131924+03:00", "run_id": "20261101_143501_de751572", "stage": "14", "status": "START", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:35:35.404370+03:00", "run_id": "20261101_143501_de751572", "stage": "14", "status": "FAIL", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:39:39.590575+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "00", "status": "START", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:39:39.806055+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "00", "status": "PASS", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:39:39.807733+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "01", "status": "START", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:39:39.900362+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "01", "status": "PASS", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:39:39.902864+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "02", "status": "START", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:39:40.221232+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "02", "status": "PASS", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:39:40.222631+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "03", "status": "START", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:39:40.236822+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "03", "status": "PASS", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:39:40.238325+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "04", "status": "START", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:39:40.246075+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "04", "status": "PASS", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:39:40.247630+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "05", "status": "START", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:39:40.261997+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "05", "status": "PASS", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:39:40.264197+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "06", "status": "START", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:39:40.272851+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "06", "status": "PASS", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:39:40.274710+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "07", "status": "START", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:39:40.687675+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "07", "status": "PASS", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:39:40.694268+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "08", "status": "START", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:39:43.111686+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T14:39:43.262624+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "08", "status": "PASS", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:39:43.267255+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "09", "status": "START", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:39:57.744800+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "09", "status": "PASS", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:39:57.749074+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "10", "status": "START", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:39:57.758624+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "10", "status": "PASS", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:39:57.763305+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "11", "status": "START", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:40:03.508614+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T14:40:04.373303+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "11", "status": "PASS", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:40:04.380160+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "12", "status": "START", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:40:12.731917+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "12", "status": "PASS", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:40:12.752234+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "13", "status": "START", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:40:15.925025+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "13", "status": "PASS", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:40:15.931023+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "14", "status": "START", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:40:21.172338+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "14", "status": "PASS", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:40:21.180205+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "15", "status": "START", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T14:40:21.186209+03:00", "run_id": "20261101_143939_8b5117ef", "stage": "15", "status": "COMPLETED_WITH_LIMITATIONS", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T14:42:14.622481+03:00", "run_id": "20261101_144214_05af6409", "stage": "00", "status": "START", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:42:14.838479+03:00", "run_id": "20261101_144214_05af6409", "stage": "00", "status": "PASS", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:42:14.840034+03:00", "run_id": "20261101_144214_05af6409", "stage": "01", "status": "START", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:42:14.930684+03:00", "run_id": "20261101_144214_05af6409", "stage": "01", "status": "PASS", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:42:14.932128+03:00", "run_id": "20261101_144214_05af6409", "stage": "02", "status": "START", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:42:15.255058+03:00", "run_id": "20261101_144214_05af6409", "stage": "02", "status": "PASS", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:42:15.256605+03:00", "run_id": "20261101_144214_05af6409", "stage": "03", "status": "START", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:42:15.266168+03:00", "run_id": "20261101_144214_05af6409", "stage": "03", "status": "PASS", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:42:15.267870+03:00", "run_id": "20261101_144214_05af6409", "stage": "04", "status": "START", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:42:15.297459+03:00", "run_id": "20261101_144214_05af6409", "stage": "04", "status": "PASS", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:42:15.299417+03:00", "run_id": "20261101_144214_05af6409", "stage": "05", "status": "START", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:42:15.316382+03:00", "run_id": "20261101_144214_05af6409", "stage": "05", "status": "PASS", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:42:15.318219+03:00", "run_id": "20261101_144214_05af6409", "stage": "06", "status": "START", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:42:15.325409+03:00", "run_id": "20261101_144214_05af6409", "stage": "06", "status": "PASS", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:42:15.326865+03:00", "run_id": "20261101_144214_05af6409", "stage": "07", "status": "START", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:42:15.727798+03:00", "run_id": "20261101_144214_05af6409", "stage": "07", "status": "PASS", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:42:15.730106+03:00", "run_id": "20261101_144214_05af6409", "stage": "08", "status": "START", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:42:17.309110+03:00", "run_id": "20261101_144214_05af6409", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T14:42:17.471027+03:00", "run_id": "20261101_144214_05af6409", "stage": "08", "status": "PASS", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:42:17.478958+03:00", "run_id": "20261101_144214_05af6409", "stage": "09", "status": "START", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:42:32.093113+03:00", "run_id": "20261101_144214_05af6409", "stage": "09", "status": "PASS", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:42:32.096935+03:00", "run_id": "20261101_144214_05af6409", "stage": "10", "status": "START", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:42:32.107529+03:00", "run_id": "20261101_144214_05af6409", "stage": "10", "status": "PASS", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:42:32.111526+03:00", "run_id": "20261101_144214_05af6409", "stage": "11", "status": "START", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:42:36.933622+03:00", "run_id": "20261101_144214_05af6409", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T14:42:37.742638+03:00", "run_id": "20261101_144214_05af6409", "stage": "11", "status": "PASS", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:42:37.749556+03:00", "run_id": "20261101_144214_05af6409", "stage": "12", "status": "START", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:42:44.957803+03:00", "run_id": "20261101_144214_05af6409", "stage": "12", "status": "PASS", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:42:44.963733+03:00", "run_id": "20261101_144214_05af6409", "stage": "13", "status": "START", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:42:47.397585+03:00", "run_id": "20261101_144214_05af6409", "stage": "13", "status": "PASS", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:42:47.403656+03:00", "run_id": "20261101_144214_05af6409", "stage": "14", "status": "START", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:42:52.849880+03:00", "run_id": "20261101_144214_05af6409", "stage": "14", "status": "PASS", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:42:52.857178+03:00", "run_id": "20261101_144214_05af6409", "stage": "15", "status": "START", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T14:42:52.864740+03:00", "run_id": "20261101_144214_05af6409", "stage": "15", "status": "COMPLETED_WITH_LIMITATIONS", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T14:44:12.032350+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "00", "status": "START", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:44:12.296285+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "00", "status": "PASS", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T14:44:12.297956+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "01", "status": "START", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:44:12.397272+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "01", "status": "PASS", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T14:44:12.399722+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "02", "status": "START", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:44:12.741604+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "02", "status": "PASS", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T14:44:12.743109+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "03", "status": "START", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:44:12.752355+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "03", "status": "PASS", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T14:44:12.754470+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "04", "status": "START", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:44:12.765652+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "04", "status": "PASS", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T14:44:12.767328+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "05", "status": "START", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:44:12.783413+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "05", "status": "PASS", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T14:44:12.787008+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "06", "status": "START", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:44:12.794140+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "06", "status": "PASS", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T14:44:12.795627+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "07", "status": "START", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:44:13.295710+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "07", "status": "PASS", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T14:44:13.302677+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "08", "status": "START", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:44:14.906360+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T14:44:15.053779+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "08", "status": "PASS", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T14:44:15.061044+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "09", "status": "START", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:44:29.868741+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "09", "status": "PASS", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T14:44:29.873931+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "10", "status": "START", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:44:29.885826+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "10", "status": "PASS", "message": "Два стресса"}
+{"timestamp": "2026-11-01T14:44:29.890293+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "11", "status": "START", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:44:35.070451+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T14:44:35.899100+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "11", "status": "PASS", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T14:44:35.904638+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "12", "status": "START", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:44:43.318481+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "12", "status": "PASS", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T14:44:43.325013+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "13", "status": "START", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:44:46.197847+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "13", "status": "PASS", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T14:44:46.203073+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "14", "status": "START", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:44:51.160194+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "14", "status": "PASS", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T14:44:51.165453+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "15", "status": "START", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T14:44:51.170761+03:00", "run_id": "20261101_144411_ccf19f98", "stage": "15", "status": "COMPLETED_WITH_LIMITATIONS", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T15:05:53.982401+03:00", "run_id": "20261101_150553_2350c169", "stage": "00", "status": "START", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T15:05:54.269658+03:00", "run_id": "20261101_150553_2350c169", "stage": "00", "status": "PASS", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T15:05:54.272555+03:00", "run_id": "20261101_150553_2350c169", "stage": "01", "status": "START", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T15:05:54.364337+03:00", "run_id": "20261101_150553_2350c169", "stage": "01", "status": "PASS", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T15:05:54.365959+03:00", "run_id": "20261101_150553_2350c169", "stage": "02", "status": "START", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T15:05:54.693745+03:00", "run_id": "20261101_150553_2350c169", "stage": "02", "status": "PASS", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T15:05:54.695225+03:00", "run_id": "20261101_150553_2350c169", "stage": "03", "status": "START", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T15:05:54.705314+03:00", "run_id": "20261101_150553_2350c169", "stage": "03", "status": "PASS", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T15:05:54.709725+03:00", "run_id": "20261101_150553_2350c169", "stage": "04", "status": "START", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T15:05:54.737304+03:00", "run_id": "20261101_150553_2350c169", "stage": "04", "status": "PASS", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T15:05:54.738759+03:00", "run_id": "20261101_150553_2350c169", "stage": "05", "status": "START", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T15:05:54.752383+03:00", "run_id": "20261101_150553_2350c169", "stage": "05", "status": "PASS", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T15:05:54.754494+03:00", "run_id": "20261101_150553_2350c169", "stage": "06", "status": "START", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T15:05:54.763279+03:00", "run_id": "20261101_150553_2350c169", "stage": "06", "status": "PASS", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T15:05:54.765449+03:00", "run_id": "20261101_150553_2350c169", "stage": "07", "status": "START", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T15:05:55.178717+03:00", "run_id": "20261101_150553_2350c169", "stage": "07", "status": "PASS", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T15:05:55.180836+03:00", "run_id": "20261101_150553_2350c169", "stage": "08", "status": "START", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T15:06:00.413358+03:00", "run_id": "20261101_150553_2350c169", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T15:06:00.585609+03:00", "run_id": "20261101_150553_2350c169", "stage": "08", "status": "PASS", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T15:06:00.594709+03:00", "run_id": "20261101_150553_2350c169", "stage": "09", "status": "START", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T15:06:31.073706+03:00", "run_id": "20261101_150553_2350c169", "stage": "09", "status": "PASS", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T15:06:31.078290+03:00", "run_id": "20261101_150553_2350c169", "stage": "10", "status": "START", "message": "Два стресса"}
+{"timestamp": "2026-11-01T15:06:31.090097+03:00", "run_id": "20261101_150553_2350c169", "stage": "10", "status": "PASS", "message": "Два стресса"}
+{"timestamp": "2026-11-01T15:06:31.094676+03:00", "run_id": "20261101_150553_2350c169", "stage": "11", "status": "START", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T15:06:37.242361+03:00", "run_id": "20261101_150553_2350c169", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T15:06:38.031551+03:00", "run_id": "20261101_150553_2350c169", "stage": "11", "status": "PASS", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T15:06:38.036963+03:00", "run_id": "20261101_150553_2350c169", "stage": "12", "status": "START", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T15:06:45.584736+03:00", "run_id": "20261101_150553_2350c169", "stage": "12", "status": "PASS", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T15:06:45.592135+03:00", "run_id": "20261101_150553_2350c169", "stage": "13", "status": "START", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T15:07:07.204966+03:00", "run_id": "20261101_150553_2350c169", "stage": "13", "status": "PASS", "message": "WORD_PDF_RENDERED pages=47 version=16.0"}
+{"timestamp": "2026-11-01T15:07:07.218929+03:00", "run_id": "20261101_150553_2350c169", "stage": "13", "status": "PASS", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T15:07:07.227521+03:00", "run_id": "20261101_150553_2350c169", "stage": "14", "status": "START", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T15:07:13.611969+03:00", "run_id": "20261101_150553_2350c169", "stage": "14", "status": "PASS", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T15:07:13.614349+03:00", "run_id": "20261101_150553_2350c169", "stage": "15", "status": "START", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T15:07:13.616133+03:00", "run_id": "20261101_150553_2350c169", "stage": "15", "status": "COMPLETED_WITH_LIMITATIONS", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T15:10:44.775315+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "00", "status": "START", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T15:10:45.026940+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "00", "status": "PASS", "message": "Git, структура и источники"}
+{"timestamp": "2026-11-01T15:10:45.028424+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "01", "status": "START", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T15:10:45.115282+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "01", "status": "PASS", "message": "PDF/лекция и реестры"}
+{"timestamp": "2026-11-01T15:10:45.116858+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "02", "status": "START", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T15:10:45.425133+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "02", "status": "PASS", "message": "PDF → CSV"}
+{"timestamp": "2026-11-01T15:10:45.426956+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "03", "status": "START", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T15:10:45.435326+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "03", "status": "PASS", "message": "CSV → DTO"}
+{"timestamp": "2026-11-01T15:10:45.437086+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "04", "status": "START", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T15:10:45.452435+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "04", "status": "PASS", "message": "Валидация и проблемы источника"}
+{"timestamp": "2026-11-01T15:10:45.453774+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "05", "status": "START", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T15:10:45.467023+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "05", "status": "PASS", "message": "Страновые финансовые модели"}
+{"timestamp": "2026-11-01T15:10:45.468684+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "06", "status": "START", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T15:10:45.476945+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "06", "status": "PASS", "message": "Годовые потоки и метрики"}
+{"timestamp": "2026-11-01T15:10:45.478642+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "07", "status": "START", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T15:10:45.837566+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "07", "status": "PASS", "message": "Формульный Excel"}
+{"timestamp": "2026-11-01T15:10:45.840088+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "08", "status": "START", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T15:10:47.515910+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T15:10:47.571789+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "08", "status": "PASS", "message": "Реальный Excel и независимая сверка"}
+{"timestamp": "2026-11-01T15:10:47.573778+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "09", "status": "START", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T15:11:01.096699+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "09", "status": "PASS", "message": "Тесты и Edge Cases"}
+{"timestamp": "2026-11-01T15:11:01.098880+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "10", "status": "START", "message": "Два стресса"}
+{"timestamp": "2026-11-01T15:11:01.102660+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "10", "status": "PASS", "message": "Два стресса"}
+{"timestamp": "2026-11-01T15:11:01.104500+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "11", "status": "START", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T15:11:04.131095+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "08", "status": "PASS", "message": "EXCEL_RECALCULATED version=16.0"}
+{"timestamp": "2026-11-01T15:11:04.414436+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "11", "status": "PASS", "message": "Вероятностные сценарии и сверка расширенного Excel"}
+{"timestamp": "2026-11-01T15:11:04.416518+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "12", "status": "START", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T15:11:06.722486+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "12", "status": "PASS", "message": "Графики и аудит"}
+{"timestamp": "2026-11-01T15:11:06.724525+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "13", "status": "START", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T15:11:20.501604+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "13", "status": "PASS", "message": "WORD_PDF_RENDERED pages=48 version=16.0"}
+{"timestamp": "2026-11-01T15:11:20.505961+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "13", "status": "PASS", "message": "Word и машинный отчет"}
+{"timestamp": "2026-11-01T15:11:20.507523+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "14", "status": "START", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T15:11:22.454164+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "14", "status": "PASS", "message": "Аудит артефактов"}
+{"timestamp": "2026-11-01T15:11:22.455922+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "15", "status": "START", "message": "Итоговый статус и архив"}
+{"timestamp": "2026-11-01T15:11:22.457641+03:00", "run_id": "20261101_151044_c0ae218c", "stage": "15", "status": "COMPLETED_WITH_LIMITATIONS", "message": "Итоговый статус и архив"}

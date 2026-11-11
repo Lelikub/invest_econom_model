@@ -1,0 +1,55 @@
+[
+  {
+    "id": "DEV001",
+    "kind": "CODE_ERROR",
+    "stage": "calendar",
+    "observed": "test_calendar[SRB] failed: only t=0..12 returned instead of a common t=0..13 comparison axis",
+    "cause": "CashFlowCalculator used country.last as the reporting horizon",
+    "fix": "Project.calendar_end is derived from the extracted final years; post-closure years contain zero operating CF",
+    "retest": "PASS: current 53-test suite and full pipeline"
+  },
+  {
+    "id": "ENV001",
+    "kind": "ENVIRONMENT",
+    "stage": "setup",
+    "observed": "python alias cannot be accessed; global interpreter lacks dependencies",
+    "fix": "Prepared independent 4/app/.venv using existing installed dependency distributions; requirements.txt records versions",
+    "retest": "All dependencies imported"
+  },
+  {
+    "id": "DEV002",
+    "kind": "CODE_ERROR",
+    "stage": "14",
+    "observed": "Full pipeline failed writing Harness CSV: ValueError: dict contains fields not in fieldnames: retest",
+    "cause": "CSV inferred schema only from first source-issue row, but code-defect rows add retest",
+    "fix": "CSV writer builds ordered union of all diagnostic fields; added failing-then-passing regression test",
+    "retest": "PASS: current 53-test suite and full pipeline"
+  },
+  {
+    "id": "DEV003",
+    "kind": "CODE_ERROR",
+    "stage": "review",
+    "observed": "Negative unit test failed: gamma unit percent accepted instead of fraction/sigma",
+    "cause": "CSV boundary validated only ordinary rate units",
+    "fix": "Added strict unit registry for every remaining field including gamma, money, years, days and scenarios",
+    "retest": "PASS: current 53-test suite and full pipeline"
+  },
+  {
+    "id": "DEV_TEMPLATE_MEDIA",
+    "kind": "CODE_ERROR",
+    "stage": "report_template",
+    "observed": "Template tests failed: DOCX media count exceeded embedded figures by two",
+    "cause": "The provided template contains two orphan image relationships, without visible inline shapes",
+    "fix": "Remove only unused image relationships after extracting the template cover; retain referenced cover/header media and all generated plots",
+    "retest": "PASS: real-template chapter/style/media tests"
+  },
+  {
+    "id": "DEV_TEMPLATE_WORD",
+    "kind": "CODE_ERROR",
+    "stage": "report_template",
+    "observed": "Actual Word/PDF inspection: headings rendered with theme font and footer displayed duplicated page numbers (22,77)",
+    "cause": "Heading rFonts kept theme attributes overriding literal Times New Roman; footer.text is empty for an existing complex PAGE field",
+    "fix": "Remove only theme font overrides, set explicit script fonts; inspect field instructions before adding PAGE; keep formula and variable definitions together",
+    "retest": "PASS: Word theme/PAGE regression test; full pipeline and PDF review follow"
+  }
+]

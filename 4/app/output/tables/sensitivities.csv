@@ -1,0 +1,46 @@
+﻿country,parameter,x,parent_npv,unit_x,definition
+DEU,igpr,-50.0,-55407208.80327238,index increment,One input changed; all others fixed
+DEU,igpr,0.0,-58394722.404108524,index increment,One input changed; all others fixed
+DEU,igpr,50.0,-72549678.31978627,index increment,One input changed; all others fixed
+DEU,igpr,100.0,-85497068.71873783,index increment,One input changed; all others fixed
+DEU,wht,0.0,-58394722.404108524,fraction,One input changed; all others fixed
+DEU,wht,0.05,-68711346.19251019,fraction,One input changed; all others fixed
+DEU,wht,0.1,-79027969.98091187,fraction,One input changed; all others fixed
+DEU,wht,0.15,-89344593.76931348,fraction,One input changed; all others fixed
+DEU,cbam,0.0,-58394722.404108524,fraction,One input changed; all others fixed
+DEU,cbam,0.04,-70829345.84474684,fraction,One input changed; all others fixed
+DEU,cbam,0.08,-83263969.28538513,fraction,One input changed; all others fixed
+DEU,cbam,0.12,-95698592.72602344,fraction,One input changed; all others fixed
+DEU,delay_year,0.0,-58394722.404108524,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+DEU,delay_year,1.0,-75455469.1837839,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+DEU,delay_year,2.0,-91093183.92225811,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+SRB,igpr,-50.0,-90515653.51038934,index increment,One input changed; all others fixed
+SRB,igpr,0.0,-99350056.25274904,index increment,One input changed; all others fixed
+SRB,igpr,50.0,-107447635.76709944,index increment,One input changed; all others fixed
+SRB,igpr,100.0,-114882270.69862422,index increment,One input changed; all others fixed
+SRB,wht,0.0,-92414677.92597441,fraction,One input changed; all others fixed
+SRB,wht,0.05,-99350056.25274904,fraction,One input changed; all others fixed
+SRB,wht,0.1,-106285434.57952368,fraction,One input changed; all others fixed
+SRB,wht,0.15,-113220812.90629831,fraction,One input changed; all others fixed
+SRB,cbam,0.0,-99350056.25274904,fraction,One input changed; all others fixed
+SRB,cbam,0.04,-106238280.4006133,fraction,One input changed; all others fixed
+SRB,cbam,0.08,-113126504.54847753,fraction,One input changed; all others fixed
+SRB,cbam,0.12,-120014728.69634175,fraction,One input changed; all others fixed
+SRB,delay_year,0.0,-99350056.25274904,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+SRB,delay_year,1.0,-118254510.57023829,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+SRB,delay_year,2.0,-134398365.66630083,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+VNM,igpr,-50.0,-131383876.55983084,index increment,One input changed; all others fixed
+VNM,igpr,0.0,-138778007.32773504,index increment,One input changed; all others fixed
+VNM,igpr,50.0,-145564056.55257523,index increment,One input changed; all others fixed
+VNM,igpr,100.0,-151801433.4217451,index increment,One input changed; all others fixed
+VNM,wht,0.0,-126635999.72591582,fraction,One input changed; all others fixed
+VNM,wht,0.05,-132707003.5268254,fraction,One input changed; all others fixed
+VNM,wht,0.1,-138778007.32773504,fraction,One input changed; all others fixed
+VNM,wht,0.15,-144849011.12864462,fraction,One input changed; all others fixed
+VNM,cbam,0.0,-135974031.49397197,fraction,One input changed; all others fixed
+VNM,cbam,0.04,-138778007.32773504,fraction,One input changed; all others fixed
+VNM,cbam,0.08,-141581983.16149804,fraction,One input changed; all others fixed
+VNM,cbam,0.12,-144385958.99526113,fraction,One input changed; all others fixed
+VNM,delay_year,0.0,-138778007.32773504,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+VNM,delay_year,1.0,-153262720.20974976,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
+VNM,delay_year,2.0,-165784624.58149368,year,Shift operating/NWC/tax calendar; grant PV and CF0 fixed
