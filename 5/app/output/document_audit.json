@@ -1,0 +1,68 @@
+{
+  "Итоговый_отчет_ФИП_Практическая_5.docx": {
+    "status": "PASS",
+    "tables": 11,
+    "images": 10,
+    "sha256": "8d4dbf502f597c82675a807f7827c3ffd006373303a1bffd12b1889a10946600"
+  },
+  "Доклад_руководству_ФИП_Практическая_5.docx": {
+    "status": "PASS",
+    "tables": 3,
+    "images": 3,
+    "sha256": "10e4e1c20412cd7a75ecb1e845f4e6edac9c6fd9dd8778b7e44604130132fed3"
+  },
+  "Текст_доклада_и_вопросы.docx": {
+    "status": "PASS",
+    "tables": 0,
+    "images": 0,
+    "sha256": "439446c884327af77a23eacf1cadfa16bfe4edabf728436998634b899c286ce1"
+  },
+  "Защита_Инвесткомитет_5_слайдов.pptx": {
+    "status": "PASS",
+    "slides": 5,
+    "aspect_ratio": "16:9",
+    "sha256": "8295b61813f6d05756e1fc6e7d6029e661c60241a9d77da9b5f7468628cd9594"
+  },
+  "Ground_Truth.xlsx": {
+    "status": "PASS",
+    "sheets": [
+      "Source",
+      "Products",
+      "RawResources",
+      "Effective",
+      "Projects",
+      "Settings",
+      "Отчет об устойчивости 1",
+      "LP",
+      "MILP",
+      "Отчет об устойчивости 2",
+      "Fixed LP",
+      "PI",
+      "Greedy",
+      "Knapsack",
+      "Enumeration",
+      "All128",
+      "Comparison",
+      "Pareto",
+      "Epsilon",
+      "Weighted",
+      "Stress"
+    ],
+    "formulas": 2466,
+    "sha256": "227ce04f59c062e3af0b8088518e809c9059f15242c746e1c43ac7da21499206"
+  },
+  "HARNESS_LOG.xlsx": {
+    "status": "PASS",
+    "sheets": [
+      "Summary",
+      "Errors",
+      "Source_Issues",
+      "Tests",
+      "Reconciliation",
+      "Fixes",
+      "Assumptions"
+    ],
+    "formulas": 0,
+    "sha256": "4f2f31b166be2d1f57ae3026b0aa49524e593429311241e0409b6422325a382b"
+  }
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\work\invest_econom_model\5\app\src\controller.py", line 207, in execute
+    target.rename(previous)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\ildar\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 1076, in rename
+    os.rename(self, target)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\work\\invest_econom_model\\5\\app\\output' -> 'C:\\work\\invest_econom_model\\5\\app\\.run-v1sh_pyc\\previous_output'

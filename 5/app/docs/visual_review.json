@@ -1,0 +1,72 @@
+{
+    "production":  {
+                       "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                       "status":  "PASS",
+                       "sha256":  "e11347e0c8fe3836525a1f66ce7920148444fb689a4502ed62c26a24ffd261dc",
+                       "conclusion":  "Годный и валовый выпуск различимы. На правой панели видны обе исчерпанные квоты.",
+                       "reviewer":  "Codex"
+                   },
+    "effective":  {
+                      "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                      "status":  "PASS",
+                      "sha256":  "b3cfe6d1585d688a6256ab5028c5652efb7118ed5913914cf75835c78e43035a",
+                      "conclusion":  "Слои нормы и прибавки различимы. Подписи и легенда читаются.",
+                      "reviewer":  "Codex"
+                  },
+    "duals":  {
+                  "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                  "status":  "PASS",
+                  "sha256":  "2473f942b796619a3055d3039ce764ae01583e2c6eeb06ebf66529c6b9ad6d63",
+                  "conclusion":  "Физическая загрузка и цены имеют отдельные шкалы. Нулевые оценки видны.",
+                  "reviewer":  "Codex"
+              },
+    "operations":  {
+                       "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                       "status":  "PASS",
+                       "sha256":  "f5875de4fbebb7c258cded052efb2e1138337d638d6307fb92ed7c501c136751",
+                       "conclusion":  "Цели подписаны, шкала начинается с нуля.",
+                       "reviewer":  "Codex"
+                   },
+    "portfolio":  {
+                      "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                      "status":  "PASS",
+                      "sha256":  "05e5febe7531ab7153377a5af8ffa97eb6a69e2673dbffc5a32cd0edabf722e4",
+                      "conclusion":  "NPV и CAPEX сопоставимы. Легенда и все четыре варианта читаются.",
+                      "reviewer":  "Codex"
+                  },
+    "pareto":  {
+                   "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                   "status":  "PASS",
+                   "sha256":  "c67bbb737220942d68661d3d0fb1c8aafc07aac4bbc201fdcd0c1dc79e7d6044",
+                   "conclusion":  "Видны все классы точек. На MCDA 280 нет оранжевой отметки, остальные три точки поддерживаются.",
+                   "reviewer":  "Codex"
+               },
+    "mrt":  {
+                "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                "status":  "PASS",
+                "sha256":  "194050dad44953c2bb649dbbfb546322d101d9738e2c094108c04ede1ea496a2",
+                "conclusion":  "Три участка, ставки и отметка колена читаются.",
+                "reviewer":  "Codex"
+            },
+    "edges":  {
+                  "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                  "status":  "PASS",
+                  "sha256":  "4430fe74df62367e07ae031a44a9d9552206a27d28be65f098d72879e52dc798",
+                  "conclusion":  "Нулевой план обозначен в первой категории. Все три подписи читаются.",
+                  "reviewer":  "Codex"
+              },
+    "stress_portfolio":  {
+                             "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                             "status":  "PASS",
+                             "sha256":  "66da56689e99205de387de85fd9faf2eb6bd99c6f43c1bde78f75c4444fbda2b",
+                             "conclusion":  "Графики NPV и MCDA имеют собственные единицы. Все три сценария находятся в пределах осей.",
+                             "reviewer":  "Codex"
+                         },
+    "stress_carbon":  {
+                          "reviewed_at":  "2026-11-25T11:18:20.8317344+03:00",
+                          "status":  "PASS",
+                          "sha256":  "8f0941e38b5e117c464654e176b6ce28dd54948fa6b8ca0909ee3798bfbbcde4",
+                          "conclusion":  "Виден нулевой налог П-2 и начисления на два выпускаемых продукта.",
+                          "reviewer":  "Codex"
+                      }
+}

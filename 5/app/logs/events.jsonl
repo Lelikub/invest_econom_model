@@ -1,0 +1,12 @@
+{"date": "2026-11-25T11:20:40+03:00", "stage": "0", "status": "PASS", "artifact": "docs/, run_manifest.json", "detail": ""}
+{"date": "2026-11-25T11:20:40+03:00", "stage": "1", "status": "PASS", "artifact": "data/inputs.csv", "detail": "3 продукта, 3 агрегата, 2 материала, 7 проектов"}
+{"date": "2026-11-25T11:20:40+03:00", "stage": "2", "status": "PASS", "artifact": "src/", "detail": "Интерфейс → контроллер → сервисы"}
+{"date": "2026-11-25T11:20:40+03:00", "stage": "3", "status": "PASS", "artifact": "output/tables/operations.csv", "detail": "MILP gap=0"}
+{"date": "2026-11-25T11:21:18+03:00", "stage": "4A", "status": "PASS", "artifact": "output/tables/portfolio_comparison.csv, logs/excel_base.log", "detail": "Knapsack, 128 вариантов, CBC, Excel: PASS"}
+{"date": "2026-11-25T11:21:20+03:00", "stage": "5", "status": "PASS", "artifact": "logs/tests.log", "detail": "16 тестов PASS"}
+{"date": "2026-11-25T11:21:20+03:00", "stage": "6", "status": "PASS", "artifact": "output/tables/pareto_nondominated.csv", "detail": "4 точки фронта"}
+{"date": "2026-11-25T11:21:20+03:00", "stage": "7", "status": "PASS", "artifact": "output/tables/stress_portfolio.csv, mrt.csv, knee.csv", "detail": ""}
+{"date": "2026-11-25T11:21:40+03:00", "stage": "4B", "status": "PASS", "artifact": "output/Ground_Truth.xlsx, output/reconciliation.csv", "detail": "PASS"}
+{"date": "2026-11-25T11:21:42+03:00", "stage": "8", "status": "PASS", "artifact": "output/tables/chart_catalog.csv", "detail": "10 PNG, просмотр подтверждён"}
+{"date": "2026-11-25T11:21:50+03:00", "stage": "9", "status": "PASS", "artifact": "output/*.docx, output/*.pptx", "detail": "OPENED_AND_RENDERED"}
+{"date": "2026-11-25T11:21:50+03:00", "stage": "10", "status": "PASS", "artifact": "output/Практическая_5_ФИП_результаты.zip", "detail": "CRC и SHA256 вложений"}

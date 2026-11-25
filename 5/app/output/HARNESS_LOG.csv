@@ -1,0 +1,427 @@
+﻿section,date,stage,status,artifact,detail,code,kind,input,expected,observed,cause,fix,retest,traceback,id,source,decision,test,case,check,python_value,reference_value,difference,unit,tolerance,sheet,cell
+Summary,2026-11-25T11:20:40+03:00,0,PASS,"docs/, run_manifest.json",,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:20:40+03:00,1,PASS,data/inputs.csv,"3 продукта, 3 агрегата, 2 материала, 7 проектов",,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:20:40+03:00,2,PASS,src/,Интерфейс → контроллер → сервисы,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:20:40+03:00,3,PASS,output/tables/operations.csv,MILP gap=0,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:18+03:00,4A,PASS,"output/tables/portfolio_comparison.csv, logs/excel_base.log","Knapsack, 128 вариантов, CBC, Excel: PASS",,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:20+03:00,5,PASS,logs/tests.log,16 тестов PASS,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:20+03:00,6,PASS,output/tables/pareto_nondominated.csv,4 точки фронта,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:20+03:00,7,PASS,"output/tables/stress_portfolio.csv, mrt.csv, knee.csv",,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:40+03:00,4B,PASS,"output/Ground_Truth.xlsx, output/reconciliation.csv",PASS,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:42+03:00,8,PASS,output/tables/chart_catalog.csv,"10 PNG, просмотр подтверждён",,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:50+03:00,9,PASS,"output/*.docx, output/*.pptx",OPENED_AND_RENDERED,,,,,,,,,,,,,,,,,,,,,,
+Summary,2026-11-25T11:21:50+03:00,10,PASS,output/Практическая_5_ФИП_результаты.zip,CRC и SHA256 вложений,,,,,,,,,,,,,,,,,,,,,,
+Errors,,bootstrap,,,,ENV001,ENVIRONMENT,python -c …,Открытие Python из PATH,WindowsApps python.exe: Доступ к этому файлу из системы отсутствует,Псевдоним WindowsApps недоступен в песочнице,Пайплайн запущен явным путём к рабочему интерпретатору с зависимостями,"Python 3.14.6, unittest: 16 тестов PASS",,,,,,,,,,,,,,
+Errors,,PDF→CSV,,,,DEV001,CODE_ERROR,"Страницы 4, 5, 7; NFKC для математических символов",Извлечены все связи,ValueError: Expected PDF pattern not found: Проекты №(…) и №(…) представляют,NFKC заменяет знак № на No,Шаблоны сверены с нормализованным текстовым слоем PDF,"test_source, test_exclusion, test_portfolio: PASS","src/services/inputs.py, export → match → ValueError",,,,,,,,,,,,,
+Errors,,PDF→CSV,,,,DEV002,CODE_ERROR,"Страница 8, «с 140 до 91 млн»",Извлечён стресс-бюджет,ValueError: Expected PDF pattern not found: со … до … млн руб,Шаблон ожидал другой предлог,Шаблон использует предлог «с» из PDF,"test_source, test_stresses: PASS","src/services/inputs.py, export → match → ValueError",,,,,,,,,,,,,
+Errors,,PDF→CSV,,,,DEV003,CODE_ERROR,"Страница 6, 10⁻⁴","Доля 0,0001",ValueError: Out of range: MIP gap limit=0.001,10e-4 ошибочно умножало 10⁻⁴ на 10,"В CSV хранится запись 10^−4, нормализатор переводит её в долю",Проверка параметра на входе и 16 тестов PASS,"src/services/inputs.py, validate → number → ValueError",,,,,,,,,,,,,
+Errors,,Excel,,,,ENV002,ENVIRONMENT,DispatchEx('Excel.Application'),Отдельный COM-экземпляр Excel,pywintypes.com_error -2147023584: сеанс работы не существует,Изолированный сеанс PowerShell не видит пользовательский COM-сеанс,Запуск в доступном сеансе Office,Excel 16.0. Solver в контрольной книге вернул 0 для всех четырёх моделей и создал два нативных отчёта,win32com.client.DispatchEx → pythoncom.CoCreateInstanceEx,,,,,,,,,,,,,
+Errors,,Публикация ZIP,,,,DEV004,CODE_ERROR,Повторный прогон с Office после прогона в ограниченном сеансе,Завершённый output атомарно замещён,PermissionError [WinError 5] при переносе output в previous_output,"TemporaryDirectory в Python 3.14 на Windows задавал ограниченные ACL на дерево, использованное при публикации",Временное дерево создаётся в приложении с наследуемыми ACL,"Последовательные запуски из разных рабочих каталогов, результат в execution.log","src/controller.py, execute → target.rename(previous)",,,,,,,,,,,,,
+Errors,,bootstrap,,,,ENV003,ENVIRONMENT,pip install PuLP python-pptx,Доступны CBC и генератор PPTX,В песочнице pip не нашёл версии. Каталоги первого pip --target оказались недоступны для чтения,Ограничения сети и доступ к временным подпапкам pip,"Сохранены wheels из PyPI, распакованы в каталог приложения в текущем сеансе",Импорт PuLP 3.3.0 и python-pptx 1.0.2. CBC доступен,,,,,,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,В HEAD PDF хранится в 5/task. В текущей рабочей копии PDF доступен в 5/data,,,,,SRC_PATH,Путь в Git и локальная копия,"Проверяется 5/task, затем 5/data, затем переносимая копия внутри приложения. Использованную копию фиксирует manifest",,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,"В лекции встречаются обе знаковые конвенции, а PDF для отрицательной маржи ожидает RC<0",,,,,SRC_RC,"Стр. 7, лекция 9, 17 и 24","Для максимизации RC=c−Aᵀλ. Проверяются знак, допустимость двойственного решения и комплементарность",,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,Для нулевого NMP приводятся две ожидаемые реакции,,,,,SRC_ZERO,Стр. 7,Все нормы NMP положительны. Нулевой выпуск и все y=0 удовлетворяют модели,,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,Описана полная переброска ресурсов на Э-1,,,,,SRC_EXTRUDER,Стр. 7,Модель определяет фактическую загрузку и остатки каждого ресурса,,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,Сочетание связок названо несовместным,,,,,SRC_EXCLUSION,Стр. 7,Два ограничения запрещают z4. Остальные портфели проверяются в прежних рамках,,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,"Есть процентный шок NPV, денежных потоков и новой ставки нет",,,,,SRC_WACC,Стр. 8,"NPV умножается на 0,85 по заданию. Изменение WACC в процентах не оценивается",,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,"В марже уже учтена исходная утилизация, налог дан в рублях",,,,,SRC_CARBON,"Стр. 2, 8",Учитывается только приращение расходов в тыс. руб. NPV проектов в экологическом сценарии сохраняется,,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,Пример про десятки миллионов за балл и формула кривизны отсутствуют в данных задачи,,,,,SRC_KNEE,Стр. 9,Зоны описываются фактическими MRT. Угол поворота и чувствительность к выбору шкал фиксируются отдельно,,,,,,,,,,
+Source_Issues,,,DOCUMENTED,,,,,,,NPV и MCDA заданы в разных шкалах,,,,,SRC_SCALE,"Стр. 7, слайд 30",В weighted sum используются диапазоны допустимого множества. Равенства и точки смены оптимума проверяются явно,,,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_certificate,test_models.ModelsTest.test_certificate,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_csv_tamper,test_models.ModelsTest.test_csv_tamper,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_currency,test_models.ModelsTest.test_currency,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_duality,test_models.ModelsTest.test_duality,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_exclusion,test_models.ModelsTest.test_exclusion,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_extruder,test_models.ModelsTest.test_extruder,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_independent_certificate,test_models.ModelsTest.test_independent_certificate,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_invalid,test_models.ModelsTest.test_invalid,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_negative,test_models.ModelsTest.test_negative,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_operations,test_models.ModelsTest.test_operations,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_pareto,test_models.ModelsTest.test_pareto,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_portfolio,test_models.ModelsTest.test_portfolio,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_source,test_models.ModelsTest.test_source,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_stresses,test_models.ModelsTest.test_stresses,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_yield_and_zero,test_models.ModelsTest.test_yield_and_zero,,,,,,,,
+Tests,,,PASS,,,,,,,ok,,,,,,,,test_zero_nmp,test_models.ModelsTest.test_zero_nmp,,,,,,,,
+Reconciliation,,,PASS,,,,,,,,,,,,,PuLP/CBC,,,,LP objective,191335.1875,191335.1875,0.0,тыс. руб.,0.01,,
+Reconciliation,,,PASS,,,,,,,,,,,,,PuLP/CBC,,,,MILP objective,190800.0,190800.0,0.0,тыс. руб.,0.01,,
+Reconciliation,,,PASS,,,,,,,,,,,,,PuLP/CBC,,,,Fixed LP objective,190800.0,190800.0,0.0,тыс. руб.,0.01,,
+Reconciliation,,,PASS,,,,,,,,,,,,,8 Fixed LP modes,,,,MILP eight modes,190800.0,190800.0,0.0,тыс. руб.,1e-05,,
+Reconciliation,,,PASS,,,,,,,,,,,,,PuLP/CBC,,,,Knapsack CBC,110.0,110.0,0.0,млн руб.,1e-05,,
+Reconciliation,,,PASS,,,,,,,,,,,,,Combinatorial enumeration,,,,Knapsack 128 masks,110.0,110.0,0.0,млн руб.,1e-05,,
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!B2,5.0,5,0.0,ресурс/т,1e-05,Effective,B2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!C2,10.0,10,0.0,ресурс/т,1e-05,Effective,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!D2,3.0,3,0.0,ресурс/т,1e-05,Effective,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!G2,3.0,3,0.0,ресурс/т,1e-05,Effective,G2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!B3,6.0,6,0.0,ресурс/т,1e-05,Effective,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!C3,6.000000000000001,6.000000000000001,0.0,ресурс/т,1e-05,Effective,C3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!D3,2.0,2,0.0,ресурс/т,1e-05,Effective,D3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!G3,1.8000000000000003,1.8000000000000007,4.440892098500626e-16,ресурс/т,1e-05,Effective,G3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!B4,0.0,0,0.0,ресурс/т,1e-05,Effective,B4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!C4,7.000000000000001,7.000000000000001,0.0,ресурс/т,1e-05,Effective,C4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!D4,6.0,6,0.0,ресурс/т,1e-05,Effective,D4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!G4,2.1,2.1000000000000005,4.440892098500626e-16,ресурс/т,1e-05,Effective,G4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!B5,200.0,200,0.0,ресурс/т,1e-05,Effective,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!C5,300.0,300,0.0,ресурс/т,1e-05,Effective,C5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!D5,100.0,100,0.0,ресурс/т,1e-05,Effective,D5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!G5,90.0,90,0.0,ресурс/т,1e-05,Effective,G5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!B6,0.0,0,0.0,ресурс/т,1e-05,Effective,B6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!C6,40.0,40,0.0,ресурс/т,1e-05,Effective,C6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!D6,40.0,40,0.0,ресурс/т,1e-05,Effective,D6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Effective!G6,12.0,12,0.0,ресурс/т,1e-05,Effective,G6
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,LP!B2,41.25,41.249999999999986,-1.4210854715202004e-14,т,1e-05,LP,B2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,LP!C2,0.0,0,0.0,т,1e-05,LP,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,LP!D2,37.5,37.50000000000001,7.105427357601002e-15,т,1e-05,LP,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,LP!E2,0.53125,0.53125,0.0,доля,1e-05,LP,E2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,LP!F2,0.645,0.6449999999999999,-1.1102230246251565e-16,доля,1e-05,LP,F2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,LP!G2,0.5,0.49999999999999994,-5.551115123125783e-17,доля,1e-05,LP,G2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,LP!B3,191335.1875,191335.1875,0.0,тыс. руб.,1e-05,LP,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!B5,318.75,318.75,0.0,ед. ресурса,1e-05,LP,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!C5,318.75,318.75,0.0,ед. ресурса,1e-05,LP,C5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!D5,0.0,0,0.0,ед. ресурса,1e-05,LP,D5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!B6,322.5,322.49999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,LP,B6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!C6,322.5,322.49999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,LP,C6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!D6,0.0,0,0.0,ед. ресурса,1e-05,LP,D6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!B7,225.0,225.00000000000006,5.684341886080802e-14,ед. ресурса,1e-05,LP,B7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!C7,225.0,224.99999999999997,-2.842170943040401e-14,ед. ресурса,1e-05,LP,C7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!D7,0.0,0,0.0,ед. ресурса,1e-05,LP,D7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!B8,12000.0,11999.999999999996,-3.637978807091713e-12,ед. ресурса,1e-05,LP,B8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!C8,12000.0,12000,0.0,ед. ресурса,1e-05,LP,C8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!D8,0.0,0,0.0,ед. ресурса,1e-05,LP,D8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!B9,1500.0,1500.0000000000002,2.2737367544323206e-13,ед. ресурса,1e-05,LP,B9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!C9,1500.0,1500,0.0,ед. ресурса,1e-05,LP,C9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,LP!D9,0.0,0,0.0,ед. ресурса,1e-05,LP,D9
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,MILP!B2,41.25,41.249999999999986,-1.4210854715202004e-14,т,1e-05,MILP,B2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,MILP!C2,0.0,0,0.0,т,1e-05,MILP,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,MILP!D2,37.5,37.50000000000001,7.105427357601002e-15,т,1e-05,MILP,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,MILP!E2,1.0,1,0.0,доля,1e-05,MILP,E2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,MILP!F2,1.0,1,0.0,доля,1e-05,MILP,F2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,MILP!G2,1.0,1,0.0,доля,1e-05,MILP,G2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,MILP!B3,190800.0,190800,0.0,тыс. руб.,1e-05,MILP,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!B5,318.75,318.75,0.0,ед. ресурса,1e-05,MILP,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!C5,600.0,600,0.0,ед. ресурса,1e-05,MILP,C5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!D5,281.25,281.25,0.0,ед. ресурса,1e-05,MILP,D5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!B6,322.5,322.49999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,MILP,B6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!C6,500.0,500,0.0,ед. ресурса,1e-05,MILP,C6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!D6,177.5,177.50000000000006,5.684341886080802e-14,ед. ресурса,1e-05,MILP,D6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!B7,225.0,225.00000000000006,5.684341886080802e-14,ед. ресурса,1e-05,MILP,B7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!C7,450.0,450,0.0,ед. ресурса,1e-05,MILP,C7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!D7,225.0,224.99999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,MILP,D7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!B8,12000.0,11999.999999999996,-3.637978807091713e-12,ед. ресурса,1e-05,MILP,B8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!C8,12000.0,12000,0.0,ед. ресурса,1e-05,MILP,C8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!D8,0.0,0,0.0,ед. ресурса,1e-05,MILP,D8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!B9,1500.0,1500.0000000000002,2.2737367544323206e-13,ед. ресурса,1e-05,MILP,B9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!C9,1500.0,1500,0.0,ед. ресурса,1e-05,MILP,C9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,MILP!D9,0.0,0,0.0,ед. ресурса,1e-05,MILP,D9
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Fixed LP!B2,41.25000000000001,41.25,-7.105427357601002e-15,т,1e-05,Fixed LP,B2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Fixed LP!C2,0.0,0,0.0,т,1e-05,Fixed LP,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Fixed LP!D2,37.5,37.5,0.0,т,1e-05,Fixed LP,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Fixed LP!E2,1.0,1,0.0,доля,1e-05,Fixed LP,E2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Fixed LP!F2,1.0,1,0.0,доля,1e-05,Fixed LP,F2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Fixed LP!G2,1.0,1,0.0,доля,1e-05,Fixed LP,G2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Fixed LP!B3,190800.0,190800,0.0,тыс. руб.,1e-05,Fixed LP,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!B5,318.75,318.75,0.0,ед. ресурса,1e-05,Fixed LP,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!C5,600.0,600,0.0,ед. ресурса,1e-05,Fixed LP,C5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!D5,281.25,281.25,0.0,ед. ресурса,1e-05,Fixed LP,D5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!B6,322.50000000000006,322.5,-5.684341886080802e-14,ед. ресурса,1e-05,Fixed LP,B6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!C6,500.0,500,0.0,ед. ресурса,1e-05,Fixed LP,C6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!D6,177.49999999999994,177.5,5.684341886080802e-14,ед. ресурса,1e-05,Fixed LP,D6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!B7,225.0,225,0.0,ед. ресурса,1e-05,Fixed LP,B7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!C7,450.0,450,0.0,ед. ресурса,1e-05,Fixed LP,C7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!D7,225.0,225,0.0,ед. ресурса,1e-05,Fixed LP,D7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!B8,12000.000000000002,12000,-1.8189894035458565e-12,ед. ресурса,1e-05,Fixed LP,B8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!C8,12000.0,12000,0.0,ед. ресурса,1e-05,Fixed LP,C8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!D8,-1.8189894035458565e-12,0,1.8189894035458565e-12,ед. ресурса,1e-05,Fixed LP,D8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!B9,1500.0,1500,0.0,ед. ресурса,1e-05,Fixed LP,B9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!C9,1500.0,1500,0.0,ед. ресурса,1e-05,Fixed LP,C9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Fixed LP!D9,0.0,0,0.0,ед. ресурса,1e-05,Fixed LP,D9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,PI!D2,1.8,1.8,0.0,ratio,1e-05,PI,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,PI!D3,1.8727272727272726,1.8727272727272726,0.0,ratio,1e-05,PI,D3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,PI!D4,1.8199999999999998,1.8199999999999998,0.0,ratio,1e-05,PI,D4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,PI!D5,1.8,1.8,0.0,ratio,1e-05,PI,D5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,PI!D6,1.7333333333333334,1.7333333333333334,0.0,ratio,1e-05,PI,D6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,PI!D7,1.7428571428571429,1.7428571428571429,0.0,ratio,1e-05,PI,D7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,PI!D8,1.6,1.6,0.0,ratio,1e-05,PI,D8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B3,104.0,104,0.0,млн руб.,1e-05,Greedy,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B4,125.0,125,0.0,млн руб.,1e-05,Greedy,B4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B5,250.0,250,0.0,балл,1e-05,Greedy,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B6,15.0,15,0.0,млн руб.,1e-05,Greedy,B6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B8,1.0,1,0.0,bool,1e-05,Greedy,B8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B9,0.0,0,0.0,bool,1e-05,Greedy,B9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B10,0.0,0,0.0,bool,1e-05,Greedy,B10
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Greedy!B11,0.0,0,0.0,bool,1e-05,Greedy,B11
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!B3,110.0,110,0.0,млн руб.,1e-05,Knapsack,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!B4,135.0,135,0.0,млн руб.,1e-05,Knapsack,B4
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!B5,205.0,205,0.0,балл,1e-05,Knapsack,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!B6,5.0,5,0.0,млн руб.,1e-05,Knapsack,B6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Knapsack!B8,1.0,1,0.0,bool,1e-05,Knapsack,B8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Knapsack!B9,-1.0,-1,0.0,bool,1e-05,Knapsack,B9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Knapsack!B10,0.0,0,0.0,bool,1e-05,Knapsack,B10
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Knapsack!B11,0.0,0,0.0,bool,1e-05,Knapsack,B11
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!B2,1.0,1,0.0,bool,1e-05,Knapsack,B2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!C2,1.0,1,0.0,bool,1e-05,Knapsack,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!D2,0.0,0,0.0,bool,1e-05,Knapsack,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!E2,0.0,0,0.0,bool,1e-05,Knapsack,E2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!F2,0.0,0,0.0,bool,1e-05,Knapsack,F2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!G2,1.0,1,0.0,bool,1e-05,Knapsack,G2
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver,,,,Knapsack!H2,0.0,0,0.0,bool,1e-05,Knapsack,H2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B3,110.0,110,0.0,млн руб.,1e-05,Enumeration,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B4,135.0,135,0.0,млн руб.,1e-05,Enumeration,B4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B5,205.0,205,0.0,балл,1e-05,Enumeration,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B6,5.0,5,0.0,млн руб.,1e-05,Enumeration,B6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B8,1.0,1,0.0,bool,1e-05,Enumeration,B8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B9,-1.0,-1,0.0,bool,1e-05,Enumeration,B9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B10,0.0,0,0.0,bool,1e-05,Enumeration,B10
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Enumeration!B11,0.0,0,0.0,bool,1e-05,Enumeration,B11
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,All128!Q2,110.0,110,0.0,млн руб.,1e-05,All128,Q2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,All128!Q3,25.0,25,0.0,портфель,1e-05,All128,Q3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!B2,110.0,110,0.0,млн руб.,1e-05,Pareto,B2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!C2,205.0,205,0.0,балл,1e-05,Pareto,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!D2,135.0,135,0.0,млн руб.,1e-05,Pareto,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!F2,1.0,1,0.0,bool,1e-05,Pareto,F2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!B3,108.0,108,0.0,млн руб.,1e-05,Pareto,B3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!C3,260.0,260,0.0,балл,1e-05,Pareto,C3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!D3,140.0,140,0.0,млн руб.,1e-05,Pareto,D3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!F3,1.0,1,0.0,bool,1e-05,Pareto,F3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!E3,0.03636363636363636,0.03636363636363636,0.0,млн руб./балл,1e-05,Pareto,E3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!B4,101.0,101,0.0,млн руб.,1e-05,Pareto,B4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!C4,280.0,280,0.0,балл,1e-05,Pareto,C4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!D4,135.0,135,0.0,млн руб.,1e-05,Pareto,D4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!F4,1.0,1,0.0,bool,1e-05,Pareto,F4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!E4,0.35,0.35,0.0,млн руб./балл,1e-05,Pareto,E4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!B5,90.0,90,0.0,млн руб.,1e-05,Pareto,B5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!C5,320.0,320,0.0,балл,1e-05,Pareto,C5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!D5,120.0,120,0.0,млн руб.,1e-05,Pareto,D5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!F5,1.0,1,0.0,bool,1e-05,Pareto,F5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Pareto!E5,0.275,0.275,0.0,млн руб./балл,1e-05,Pareto,E5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C2,110.0,110,0.0,млн руб.,1e-05,Epsilon,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E2,1.0,1,0.0,bool,1e-05,Epsilon,E2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C3,110.0,110,0.0,млн руб.,1e-05,Epsilon,C3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E3,1.0,1,0.0,bool,1e-05,Epsilon,E3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C4,110.0,110,0.0,млн руб.,1e-05,Epsilon,C4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E4,1.0,1,0.0,bool,1e-05,Epsilon,E4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C5,110.0,110,0.0,млн руб.,1e-05,Epsilon,C5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E5,1.0,1,0.0,bool,1e-05,Epsilon,E5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C6,110.0,110,0.0,млн руб.,1e-05,Epsilon,C6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E6,1.0,1,0.0,bool,1e-05,Epsilon,E6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C7,110.0,110,0.0,млн руб.,1e-05,Epsilon,C7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E7,1.0,1,0.0,bool,1e-05,Epsilon,E7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C8,110.0,110,0.0,млн руб.,1e-05,Epsilon,C8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E8,1.0,1,0.0,bool,1e-05,Epsilon,E8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C9,110.0,110,0.0,млн руб.,1e-05,Epsilon,C9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E9,1.0,1,0.0,bool,1e-05,Epsilon,E9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C10,110.0,110,0.0,млн руб.,1e-05,Epsilon,C10
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E10,1.0,1,0.0,bool,1e-05,Epsilon,E10
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C11,110.0,110,0.0,млн руб.,1e-05,Epsilon,C11
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E11,1.0,1,0.0,bool,1e-05,Epsilon,E11
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C12,110.0,110,0.0,млн руб.,1e-05,Epsilon,C12
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E12,1.0,1,0.0,bool,1e-05,Epsilon,E12
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C13,110.0,110,0.0,млн руб.,1e-05,Epsilon,C13
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E13,1.0,1,0.0,bool,1e-05,Epsilon,E13
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C14,110.0,110,0.0,млн руб.,1e-05,Epsilon,C14
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E14,1.0,1,0.0,bool,1e-05,Epsilon,E14
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C15,110.0,110,0.0,млн руб.,1e-05,Epsilon,C15
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E15,1.0,1,0.0,bool,1e-05,Epsilon,E15
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C16,110.0,110,0.0,млн руб.,1e-05,Epsilon,C16
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E16,1.0,1,0.0,bool,1e-05,Epsilon,E16
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C17,110.0,110,0.0,млн руб.,1e-05,Epsilon,C17
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E17,1.0,1,0.0,bool,1e-05,Epsilon,E17
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C18,110.0,110,0.0,млн руб.,1e-05,Epsilon,C18
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E18,1.0,1,0.0,bool,1e-05,Epsilon,E18
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C19,110.0,110,0.0,млн руб.,1e-05,Epsilon,C19
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E19,1.0,1,0.0,bool,1e-05,Epsilon,E19
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C20,110.0,110,0.0,млн руб.,1e-05,Epsilon,C20
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E20,1.0,1,0.0,bool,1e-05,Epsilon,E20
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C21,110.0,110,0.0,млн руб.,1e-05,Epsilon,C21
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E21,1.0,1,0.0,bool,1e-05,Epsilon,E21
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C22,110.0,110,0.0,млн руб.,1e-05,Epsilon,C22
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E22,1.0,1,0.0,bool,1e-05,Epsilon,E22
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C23,108.0,108,0.0,млн руб.,1e-05,Epsilon,C23
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E23,1.0,1,0.0,bool,1e-05,Epsilon,E23
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C24,108.0,108,0.0,млн руб.,1e-05,Epsilon,C24
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E24,1.0,1,0.0,bool,1e-05,Epsilon,E24
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C25,108.0,108,0.0,млн руб.,1e-05,Epsilon,C25
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E25,1.0,1,0.0,bool,1e-05,Epsilon,E25
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C26,108.0,108,0.0,млн руб.,1e-05,Epsilon,C26
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E26,1.0,1,0.0,bool,1e-05,Epsilon,E26
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C27,108.0,108,0.0,млн руб.,1e-05,Epsilon,C27
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E27,1.0,1,0.0,bool,1e-05,Epsilon,E27
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C28,108.0,108,0.0,млн руб.,1e-05,Epsilon,C28
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E28,1.0,1,0.0,bool,1e-05,Epsilon,E28
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C29,101.0,101,0.0,млн руб.,1e-05,Epsilon,C29
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E29,1.0,1,0.0,bool,1e-05,Epsilon,E29
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C30,101.0,101,0.0,млн руб.,1e-05,Epsilon,C30
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E30,1.0,1,0.0,bool,1e-05,Epsilon,E30
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C31,90.0,90,0.0,млн руб.,1e-05,Epsilon,C31
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E31,1.0,1,0.0,bool,1e-05,Epsilon,E31
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C32,90.0,90,0.0,млн руб.,1e-05,Epsilon,C32
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E32,1.0,1,0.0,bool,1e-05,Epsilon,E32
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C33,90.0,90,0.0,млн руб.,1e-05,Epsilon,C33
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E33,1.0,1,0.0,bool,1e-05,Epsilon,E33
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!C34,90.0,90,0.0,млн руб.,1e-05,Epsilon,C34
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Epsilon!E34,1.0,1,0.0,bool,1e-05,Epsilon,E34
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E2,1.0,1,0.0,ratio,1e-05,Weighted,E2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E3,0.9981818181818182,0.9981818181818182,0.0,ratio,1e-05,Weighted,E3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E4,0.9963636363636363,0.9963636363636363,0.0,ratio,1e-05,Weighted,E4
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E5,0.9945454545454545,0.9945454545454545,0.0,ratio,1e-05,Weighted,E5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E6,0.9927272727272727,0.9927272727272727,0.0,ratio,1e-05,Weighted,E6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E7,0.990909090909091,0.9909090909090909,-1.1102230246251565e-16,ratio,1e-05,Weighted,E7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E8,0.9890909090909091,0.989090909090909,-1.1102230246251565e-16,ratio,1e-05,Weighted,E8
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E9,0.9872727272727273,0.9872727272727272,-1.1102230246251565e-16,ratio,1e-05,Weighted,E9
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E10,0.9854545454545455,0.9854545454545455,0.0,ratio,1e-05,Weighted,E10
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E11,0.9836363636363636,0.9836363636363636,0.0,ratio,1e-05,Weighted,E11
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E12,0.9818181818181818,0.9818181818181818,0.0,ratio,1e-05,Weighted,E12
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E13,0.98,0.98,0.0,ratio,1e-05,Weighted,E13
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E14,0.9781818181818182,0.9781818181818182,0.0,ratio,1e-05,Weighted,E14
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E15,0.9763636363636363,0.9763636363636363,0.0,ratio,1e-05,Weighted,E15
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E16,0.9745454545454545,0.9745454545454546,1.1102230246251565e-16,ratio,1e-05,Weighted,E16
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E17,0.9727272727272728,0.9727272727272727,-1.1102230246251565e-16,ratio,1e-05,Weighted,E17
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E18,0.9709090909090909,0.9709090909090909,0.0,ratio,1e-05,Weighted,E18
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E19,0.9690909090909091,0.969090909090909,-1.1102230246251565e-16,ratio,1e-05,Weighted,E19
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E20,0.9672727272727273,0.9672727272727273,0.0,ratio,1e-05,Weighted,E20
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E21,0.9654545454545455,0.9654545454545456,1.1102230246251565e-16,ratio,1e-05,Weighted,E21
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E22,0.9636363636363636,0.9636363636363637,1.1102230246251565e-16,ratio,1e-05,Weighted,E22
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E23,0.9618181818181818,0.9618181818181819,1.1102230246251565e-16,ratio,1e-05,Weighted,E23
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E24,0.96,0.9600000000000001,1.1102230246251565e-16,ratio,1e-05,Weighted,E24
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E25,0.9581818181818181,0.9581818181818182,1.1102230246251565e-16,ratio,1e-05,Weighted,E25
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E26,0.9563636363636364,0.9563636363636364,0.0,ratio,1e-05,Weighted,E26
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E27,0.954954954954955,0.954954954954955,0.0,ratio,1e-05,Weighted,E27
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E28,0.9545454545454546,0.9545454545454546,0.0,ratio,1e-05,Weighted,E28
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E29,0.9527272727272728,0.9527272727272728,0.0,ratio,1e-05,Weighted,E29
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E30,0.9509090909090909,0.9509090909090909,0.0,ratio,1e-05,Weighted,E30
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E31,0.9490909090909091,0.9490909090909091,0.0,ratio,1e-05,Weighted,E31
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E32,0.9472727272727273,0.9472727272727273,0.0,ratio,1e-05,Weighted,E32
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E33,0.9454545454545454,0.9454545454545454,0.0,ratio,1e-05,Weighted,E33
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E34,0.9436363636363636,0.9436363636363636,0.0,ratio,1e-05,Weighted,E34
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E35,0.9418181818181818,0.9418181818181818,0.0,ratio,1e-05,Weighted,E35
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E36,0.94,0.94,0.0,ratio,1e-05,Weighted,E36
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E37,0.9381818181818182,0.9381818181818181,-1.1102230246251565e-16,ratio,1e-05,Weighted,E37
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E38,0.9363636363636364,0.9363636363636364,0.0,ratio,1e-05,Weighted,E38
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E39,0.9345454545454546,0.9345454545454546,0.0,ratio,1e-05,Weighted,E39
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E40,0.9327272727272727,0.9327272727272727,0.0,ratio,1e-05,Weighted,E40
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E41,0.9309090909090909,0.9309090909090909,0.0,ratio,1e-05,Weighted,E41
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E42,0.9290909090909091,0.9290909090909092,1.1102230246251565e-16,ratio,1e-05,Weighted,E42
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E43,0.9272727272727272,0.9272727272727272,0.0,ratio,1e-05,Weighted,E43
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E44,0.9254545454545454,0.9254545454545455,1.1102230246251565e-16,ratio,1e-05,Weighted,E44
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E45,0.9236363636363636,0.9236363636363637,1.1102230246251565e-16,ratio,1e-05,Weighted,E45
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E46,0.9218181818181819,0.9218181818181819,0.0,ratio,1e-05,Weighted,E46
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E47,0.92,0.9200000000000002,1.1102230246251565e-16,ratio,1e-05,Weighted,E47
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E48,0.9181818181818182,0.9181818181818182,0.0,ratio,1e-05,Weighted,E48
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E49,0.9163636363636364,0.9163636363636365,1.1102230246251565e-16,ratio,1e-05,Weighted,E49
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E50,0.9145454545454546,0.9145454545454546,0.0,ratio,1e-05,Weighted,E50
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E51,0.9127272727272727,0.9127272727272728,1.1102230246251565e-16,ratio,1e-05,Weighted,E51
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E52,0.9109090909090909,0.9109090909090909,0.0,ratio,1e-05,Weighted,E52
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E53,0.9099099099099099,0.9099099099099099,0.0,ratio,1e-05,Weighted,E53
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E54,0.9090909090909091,0.9090909090909092,1.1102230246251565e-16,ratio,1e-05,Weighted,E54
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E55,0.9072727272727272,0.9072727272727272,0.0,ratio,1e-05,Weighted,E55
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E56,0.9064112656345666,0.9064112656345666,0.0,ratio,1e-05,Weighted,E56
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E57,0.9054545454545454,0.9054545454545455,1.1102230246251565e-16,ratio,1e-05,Weighted,E57
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E58,0.9036363636363637,0.9036363636363637,0.0,ratio,1e-05,Weighted,E58
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E59,0.9029126213592233,0.9029126213592233,0.0,ratio,1e-05,Weighted,E59
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E60,0.9029126213592233,0.9029126213592233,0.0,ratio,1e-05,Weighted,E60
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E61,0.9039318181818182,0.9039318181818181,-1.1102230246251565e-16,ratio,1e-05,Weighted,E61
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E62,0.90473913896244,0.90473913896244,0.0,ratio,1e-05,Weighted,E62
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E63,0.905625,0.905625,0.0,ratio,1e-05,Weighted,E63
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E64,0.9065656565656566,0.9065656565656566,0.0,ratio,1e-05,Weighted,E64
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E65,0.9073181818181818,0.9073181818181818,0.0,ratio,1e-05,Weighted,E65
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E66,0.9090113636363636,0.9090113636363637,1.1102230246251565e-16,ratio,1e-05,Weighted,E66
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E67,0.9107045454545455,0.9107045454545455,0.0,ratio,1e-05,Weighted,E67
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E68,0.9123977272727273,0.9123977272727273,0.0,ratio,1e-05,Weighted,E68
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E69,0.9140909090909091,0.9140909090909091,0.0,ratio,1e-05,Weighted,E69
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E70,0.9157500198838782,0.9157500198838782,0.0,ratio,1e-05,Weighted,E70
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E71,0.915784090909091,0.915784090909091,0.0,ratio,1e-05,Weighted,E71
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E72,0.9174772727272728,0.9174772727272726,-1.1102230246251565e-16,ratio,1e-05,Weighted,E72
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E73,0.9191704545454545,0.9191704545454544,-1.1102230246251565e-16,ratio,1e-05,Weighted,E73
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E74,0.9208636363636363,0.9208636363636363,0.0,ratio,1e-05,Weighted,E74
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E75,0.9225568181818182,0.9225568181818182,0.0,ratio,1e-05,Weighted,E75
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E76,0.92425,0.92425,0.0,ratio,1e-05,Weighted,E76
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E77,0.9249343832020998,0.9249343832020998,0.0,ratio,1e-05,Weighted,E77
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E78,0.9259431818181818,0.9259431818181818,0.0,ratio,1e-05,Weighted,E78
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E79,0.9276363636363636,0.9276363636363636,0.0,ratio,1e-05,Weighted,E79
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E80,0.9293295454545455,0.9293295454545455,0.0,ratio,1e-05,Weighted,E80
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E81,0.9310227272727273,0.9310227272727273,0.0,ratio,1e-05,Weighted,E81
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E82,0.9314698870188396,0.9314698870188396,0.0,ratio,1e-05,Weighted,E82
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E83,0.9327159090909091,0.9327159090909092,1.1102230246251565e-16,ratio,1e-05,Weighted,E83
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E84,0.9344090909090909,0.934409090909091,1.1102230246251565e-16,ratio,1e-05,Weighted,E84
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E85,0.9361022727272728,0.9361022727272726,-1.1102230246251565e-16,ratio,1e-05,Weighted,E85
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E86,0.9377954545454545,0.9377954545454545,0.0,ratio,1e-05,Weighted,E86
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E87,0.9380053908355795,0.9380053908355795,0.0,ratio,1e-05,Weighted,E87
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E88,0.9394886363636363,0.9394886363636363,0.0,ratio,1e-05,Weighted,E88
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E89,0.9411818181818182,0.9411818181818181,-1.1102230246251565e-16,ratio,1e-05,Weighted,E89
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E90,0.942875,0.942875,0.0,ratio,1e-05,Weighted,E90
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E91,0.9445681818181818,0.9445681818181818,0.0,ratio,1e-05,Weighted,E91
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E92,0.9462613636363636,0.9462613636363637,1.1102230246251565e-16,ratio,1e-05,Weighted,E92
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E93,0.9479545454545455,0.9479545454545455,0.0,ratio,1e-05,Weighted,E93
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E94,0.9496477272727273,0.9496477272727273,0.0,ratio,1e-05,Weighted,E94
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E95,0.9513409090909091,0.9513409090909091,0.0,ratio,1e-05,Weighted,E95
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E96,0.9518128598423039,0.9518128598423039,0.0,ratio,1e-05,Weighted,E96
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E97,0.9530340909090909,0.953034090909091,1.1102230246251565e-16,ratio,1e-05,Weighted,E97
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E98,0.9547272727272728,0.9547272727272726,-1.1102230246251565e-16,ratio,1e-05,Weighted,E98
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E99,0.9564204545454545,0.9564204545454544,-1.1102230246251565e-16,ratio,1e-05,Weighted,E99
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E100,0.9581136363636363,0.9581136363636363,0.0,ratio,1e-05,Weighted,E100
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E101,0.9598068181818182,0.9598068181818181,-1.1102230246251565e-16,ratio,1e-05,Weighted,E101
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E102,0.9615,0.9615,0.0,ratio,1e-05,Weighted,E102
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E103,0.9631931818181818,0.9631931818181818,0.0,ratio,1e-05,Weighted,E103
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E104,0.9648863636363636,0.9648863636363636,0.0,ratio,1e-05,Weighted,E104
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E105,0.9656203288490284,0.9656203288490284,0.0,ratio,1e-05,Weighted,E105
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E106,0.9656203288490284,0.9656203288490284,0.0,ratio,1e-05,Weighted,E106
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E107,0.96765625,0.96765625,0.0,ratio,1e-05,Weighted,E107
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E108,0.97125,0.9712500000000001,1.1102230246251565e-16,ratio,1e-05,Weighted,E108
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E109,0.97484375,0.97484375,0.0,ratio,1e-05,Weighted,E109
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E110,0.9784375,0.9784375,0.0,ratio,1e-05,Weighted,E110
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E111,0.98203125,0.98203125,0.0,ratio,1e-05,Weighted,E111
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E112,0.9828101644245142,0.9828101644245142,0.0,ratio,1e-05,Weighted,E112
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E113,0.985625,0.985625,0.0,ratio,1e-05,Weighted,E113
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E114,0.98921875,0.98921875,0.0,ratio,1e-05,Weighted,E114
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E115,0.9928125,0.9928125,0.0,ratio,1e-05,Weighted,E115
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E116,0.99640625,0.99640625,0.0,ratio,1e-05,Weighted,E116
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Weighted!E117,1.0,1,0.0,ratio,1e-05,Weighted,E117
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!C2,90.0,90,0.0,млн руб.,1e-05,Stress,C2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!D2,62.89999999999999,62.9,7.105427357601002e-15,млн руб.,1e-05,Stress,D2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!E2,120.0,120,0.0,балл,1e-05,Stress,E2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!F2,1.0,1,0.0,млн руб.,1e-05,Stress,F2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!G2,1.0,1,0.0,bool,1e-05,Stress,G2
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!C3,135.0,135,0.0,млн руб.,1e-05,Stress,C3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!D3,101.0,101,0.0,млн руб.,1e-05,Stress,D3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!E3,280.0,280,0.0,балл,1e-05,Stress,E3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!F3,5.0,5,0.0,млн руб.,1e-05,Stress,F3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!G3,1.0,1,0.0,bool,1e-05,Stress,G3
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!C5,1.4294117647058826,1.4294117647058826,0.0,тыс. руб./т,1e-05,Stress,C5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!D5,1198.570588235294,1198.570588235294,0.0,тыс. руб./т,1e-05,Stress,D5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!E5,7.279411764705884,7.279411764705884,0.0,т,1e-05,Stress,E5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!F5,58.96323529411766,58.963235294117666,7.105427357601002e-15,тыс. руб.,1e-05,Stress,F5
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!C6,3.4714285714285715,3.4714285714285715,0.0,тыс. руб./т,1e-05,Stress,C6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!D6,2396.5285714285715,2396.5285714285715,0.0,тыс. руб./т,1e-05,Stress,D6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!E6,0.0,0,0.0,т,1e-05,Stress,E6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!F6,0.0,0,0.0,тыс. руб.,1e-05,Stress,F6
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!C7,0.9000000000000004,0.9000000000000005,1.1102230246251565e-16,тыс. руб./т,1e-05,Stress,C7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!D7,3799.1,3799.1,0.0,тыс. руб./т,1e-05,Stress,D7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!E7,4.166666666666669,4.166666666666669,0.0,т,1e-05,Stress,E7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!F7,33.750000000000014,33.75000000000002,7.105427357601002e-15,тыс. руб.,1e-05,Stress,F7
+Reconciliation,,,PASS,,,,,,,,,,,,,worksheet,,,,Stress!B9,190707.28676470587,190707.28676470587,0.0,тыс. руб.,1e-05,Stress,B9
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $B$5,0.75,0.75,0.0,тыс. руб./ед.,1e-05,Отчет об устойчивости 1,E19
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $B$6,0.7,0.7000000000000455,4.551914400963142e-14,тыс. руб./ед.,1e-05,Отчет об устойчивости 1,E20
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $B$7,0.8888888888887929,0.8888888888889142,1.212363542890671e-13,тыс. руб./ед.,1e-05,Отчет об устойчивости 1,E21
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $B$8,5.9602499999999985,5.960250000000013,1.4210854715202004e-14,тыс. руб./ед.,1e-05,Отчет об устойчивости 1,E22
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $B$9,79.87479166666668,79.87479166666665,-2.842170943040401e-14,тыс. руб./ед.,1e-05,Отчет об устойчивости 1,E23
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $B$2,2.2737367544323206e-13,0,-2.2737367544323206e-13,тыс. руб./т,1e-05,Отчет об устойчивости 1,E9
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $C$2,-2600.988888888888,-2600.98888888889,-1.8189894035458565e-12,тыс. руб./т,1e-05,Отчет об устойчивости 1,E10
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 1: $D$2,0.0,0,0.0,тыс. руб./т,1e-05,Отчет об устойчивости 1,E11
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $B$5,0.0,0,0.0,тыс. руб./ед.,1e-05,Отчет об устойчивости 2,E16
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $B$6,0.0,0,0.0,тыс. руб./ед.,1e-05,Отчет об устойчивости 2,E17
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $B$7,0.0,0,0.0,тыс. руб./ед.,1e-05,Отчет об устойчивости 2,E18
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $B$8,6.000000000000001,6,-8.881784197001252e-16,тыс. руб./ед.,1e-05,Отчет об устойчивости 2,E19
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $B$9,80.0,80,0.0,тыс. руб./ед.,1e-05,Отчет об устойчивости 2,E20
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $B$2,-2.2737367544323206e-13,0,2.2737367544323206e-13,тыс. руб./т,1e-05,Отчет об устойчивости 2,E9
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $C$2,-2600.0,-2600,0.0,тыс. руб./т,1e-05,Отчет об устойчивости 2,E10
+Reconciliation,,,PASS,,,,,,,,,,,,,Excel Solver Sensitivity Report,,,,Отчет об устойчивости 2: $D$2,0.0,0,0.0,тыс. руб./т,1e-05,Отчет об устойчивости 2,E11
+Fixes,,,,,,ENV001,,,,,,Пайплайн запущен явным путём к рабочему интерпретатору с зависимостями,"Python 3.14.6, unittest: 16 тестов PASS",,,,,,,,,,,,,,
+Fixes,,,,,,DEV001,,,,,,Шаблоны сверены с нормализованным текстовым слоем PDF,"test_source, test_exclusion, test_portfolio: PASS",,,,,,,,,,,,,,
+Fixes,,,,,,DEV002,,,,,,Шаблон использует предлог «с» из PDF,"test_source, test_stresses: PASS",,,,,,,,,,,,,,
+Fixes,,,,,,DEV003,,,,,,"В CSV хранится запись 10^−4, нормализатор переводит её в долю",Проверка параметра на входе и 16 тестов PASS,,,,,,,,,,,,,,
+Fixes,,,,,,ENV002,,,,,,Запуск в доступном сеансе Office,Excel 16.0. Solver в контрольной книге вернул 0 для всех четырёх моделей и создал два нативных отчёта,,,,,,,,,,,,,,
+Fixes,,,,,,DEV004,,,,,,Временное дерево создаётся в приложении с наследуемыми ACL,"Последовательные запуски из разных рабочих каталогов, результат в execution.log",,,,,,,,,,,,,,
+Fixes,,,,,,ENV003,,,,,,"Сохранены wheels из PyPI, распакованы в каталог приложения в текущем сеансе",Импорт PuLP 3.3.0 и python-pptx 1.0.2. CBC доступен,,,,,,,,,,,,,,
+Assumptions,,,,,,,,,,,,,,,A01,,Квартальная операционная задача и независимый трёхлетний портфель.,,,,,,,,,,
+Assumptions,,,,,,,,,,,,,,,A02,,Weighted sum min–max по всему допустимому множеству. Для равных NPV в ε применяется приоритет MCDA.,,,,,,,,,,
+Assumptions,,,,,,,,,,,,,,,A03,,"Угол дискретного фронта проверяется при масштабах 0,8/1,0/1,25. Минимальное значение 1°.",,,,,,,,,,

@@ -1,0 +1,4 @@
+﻿case,budget,delta_npv,delta_score,removed,added,corequisite_active,ids,capex,npv,score,budget_slack,status,upper_bound,mip_gap
+База,140.0,0.0,0,∅,∅,False,1+2+6,135.0,110.0,205,5.0,OPTIMAL,110.0,0.0
+Секвестр,91.0,-47.10000000000001,-85,1,∅,False,2+6,90.0,62.89999999999999,120,1.0,OPTIMAL,62.89999999999999,0.0
+Порог MCDA,140.0,-9.0,75,1+2,3+5+7,True,3+5+6+7,135.0,101.0,280,5.0,OPTIMAL,101.0,0.0

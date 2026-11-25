@@ -1,0 +1,3 @@
+﻿angle_080,angle_100,angle_125,criterion,knee_status,ids,capex,npv,score,budget_slack,status,upper_bound,mip_gap
+48.658734378369786,51.767592386620336,53.67403558802265,"unique maximum above 1°, same point at scales 0.8,1,1.25",KNEE,2+5+6+7,140.0,108.0,260,0.0,FEASIBLE,,
+6.481697790831706,5.887188796183918,5.157575689947449,"unique maximum above 1°, same point at scales 0.8,1,1.25",OTHER,3+5+6+7,135.0,101.0,280,5.0,FEASIBLE,,

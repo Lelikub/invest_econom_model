@@ -1,0 +1,21 @@
+test_certificate (test_models.ModelsTest.test_certificate) ... ok
+test_csv_tamper (test_models.ModelsTest.test_csv_tamper) ... ok
+test_currency (test_models.ModelsTest.test_currency) ... ok
+test_duality (test_models.ModelsTest.test_duality) ... ok
+test_exclusion (test_models.ModelsTest.test_exclusion) ... ok
+test_extruder (test_models.ModelsTest.test_extruder) ... ok
+test_independent_certificate (test_models.ModelsTest.test_independent_certificate) ... ok
+test_invalid (test_models.ModelsTest.test_invalid) ... ok
+test_negative (test_models.ModelsTest.test_negative) ... ok
+test_operations (test_models.ModelsTest.test_operations) ... ok
+test_pareto (test_models.ModelsTest.test_pareto) ... ok
+test_portfolio (test_models.ModelsTest.test_portfolio) ... ok
+test_source (test_models.ModelsTest.test_source) ... ok
+test_stresses (test_models.ModelsTest.test_stresses) ... ok
+test_yield_and_zero (test_models.ModelsTest.test_yield_and_zero) ... ok
+test_zero_nmp (test_models.ModelsTest.test_zero_nmp) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.614s
+
+OK

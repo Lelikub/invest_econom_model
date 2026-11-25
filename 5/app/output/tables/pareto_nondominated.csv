@@ -1,0 +1,5 @@
+﻿epsilon_found,weighted_supported,ids,capex,npv,score,budget_slack,status,upper_bound,mip_gap
+True,True,1+2+6,135.0,110.0,205,5.0,FEASIBLE,,
+True,True,2+5+6+7,140.0,108.0,260,0.0,FEASIBLE,,
+True,False,3+5+6+7,135.0,101.0,280,5.0,FEASIBLE,,
+True,True,1+4+5+7,120.0,90.0,320,20.0,FEASIBLE,,

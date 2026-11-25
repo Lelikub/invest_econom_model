@@ -1,0 +1,12 @@
+2026-11-25T11:20:40+03:00 | 0 | PASS | docs/, run_manifest.json | 
+2026-11-25T11:20:40+03:00 | 1 | PASS | data/inputs.csv | 3 продукта, 3 агрегата, 2 материала, 7 проектов
+2026-11-25T11:20:40+03:00 | 2 | PASS | src/ | Интерфейс → контроллер → сервисы
+2026-11-25T11:20:40+03:00 | 3 | PASS | output/tables/operations.csv | MILP gap=0
+2026-11-25T11:21:18+03:00 | 4A | PASS | output/tables/portfolio_comparison.csv, logs/excel_base.log | Knapsack, 128 вариантов, CBC, Excel: PASS
+2026-11-25T11:21:20+03:00 | 5 | PASS | logs/tests.log | 16 тестов PASS
+2026-11-25T11:21:20+03:00 | 6 | PASS | output/tables/pareto_nondominated.csv | 4 точки фронта
+2026-11-25T11:21:20+03:00 | 7 | PASS | output/tables/stress_portfolio.csv, mrt.csv, knee.csv | 
+2026-11-25T11:21:40+03:00 | 4B | PASS | output/Ground_Truth.xlsx, output/reconciliation.csv | PASS
+2026-11-25T11:21:42+03:00 | 8 | PASS | output/tables/chart_catalog.csv | 10 PNG, просмотр подтверждён
+2026-11-25T11:21:50+03:00 | 9 | PASS | output/*.docx, output/*.pptx | OPENED_AND_RENDERED
+2026-11-25T11:21:50+03:00 | 10 | PASS | output/Практическая_5_ФИП_результаты.zip | CRC и SHA256 вложений

@@ -1,0 +1,8 @@
+.deps/
+.vendor/
+.wheels/
+.venv/
+.mplcache/
+__pycache__/
+.run-*/
+.pipeline.lock

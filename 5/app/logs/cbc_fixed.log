@@ -1,0 +1,25 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\work\invest_econom_model\5\app\.deps\pulp\apis\../solverdir/cbc/win/i64/cbc.exe C:\work\invest_econom_model\5\app\logs\tmp55ymlhkm\120246d4a46641dba47356b3c66bf067-pulp.mps -max -ratio 0.0001 -threads 1 -timeMode elapsed -branch -printingOptions all -solution C:\work\invest_econom_model\5\app\logs\tmp55ymlhkm\120246d4a46641dba47356b3c66bf067-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 10 COLUMNS
+At line 33 RHS
+At line 39 BOUNDS
+At line 43 ENDATA
+Problem MODEL has 5 rows, 6 columns and 16 elements
+Coin0008I MODEL read with 0 errors
+ratioGap was changed from 0 to 0.0001
+threads was changed from 0 to 1
+Option for timeMode changed from cpu to elapsed
+Presolve 5 (0) rows, 3 (-3) columns and 13 (-3) elements
+0  Obj -1200 Dual inf 7400 (3)
+3  Obj 190800
+Optimal - objective value 190800
+After Postsolve, objective 190800, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 190800 - 3 iterations time 0.002, Presolve 0.00
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
+

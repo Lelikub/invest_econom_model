@@ -1,0 +1,84 @@
+[
+  {
+    "code": "ENV001",
+    "kind": "ENVIRONMENT",
+    "stage": "bootstrap",
+    "input": "python -c …",
+    "expected": "Открытие Python из PATH",
+    "observed": "WindowsApps python.exe: Доступ к этому файлу из системы отсутствует",
+    "cause": "Псевдоним WindowsApps недоступен в песочнице",
+    "fix": "Пайплайн запущен явным путём к рабочему интерпретатору с зависимостями",
+    "retest": "Python 3.14.6, unittest: 16 тестов PASS"
+  },
+  {
+    "code": "DEV001",
+    "kind": "CODE_ERROR",
+    "stage": "PDF→CSV",
+    "input": "Страницы 4, 5, 7; NFKC для математических символов",
+    "expected": "Извлечены все связи",
+    "observed": "ValueError: Expected PDF pattern not found: Проекты №(…) и №(…) представляют",
+    "traceback": "src/services/inputs.py, export → match → ValueError",
+    "cause": "NFKC заменяет знак № на No",
+    "fix": "Шаблоны сверены с нормализованным текстовым слоем PDF",
+    "retest": "test_source, test_exclusion, test_portfolio: PASS"
+  },
+  {
+    "code": "DEV002",
+    "kind": "CODE_ERROR",
+    "stage": "PDF→CSV",
+    "input": "Страница 8, «с 140 до 91 млн»",
+    "expected": "Извлечён стресс-бюджет",
+    "observed": "ValueError: Expected PDF pattern not found: со … до … млн руб",
+    "traceback": "src/services/inputs.py, export → match → ValueError",
+    "cause": "Шаблон ожидал другой предлог",
+    "fix": "Шаблон использует предлог «с» из PDF",
+    "retest": "test_source, test_stresses: PASS"
+  },
+  {
+    "code": "DEV003",
+    "kind": "CODE_ERROR",
+    "stage": "PDF→CSV",
+    "input": "Страница 6, 10⁻⁴",
+    "expected": "Доля 0,0001",
+    "observed": "ValueError: Out of range: MIP gap limit=0.001",
+    "traceback": "src/services/inputs.py, validate → number → ValueError",
+    "cause": "10e-4 ошибочно умножало 10⁻⁴ на 10",
+    "fix": "В CSV хранится запись 10^−4, нормализатор переводит её в долю",
+    "retest": "Проверка параметра на входе и 16 тестов PASS"
+  },
+  {
+    "code": "ENV002",
+    "kind": "ENVIRONMENT",
+    "stage": "Excel",
+    "input": "DispatchEx('Excel.Application')",
+    "expected": "Отдельный COM-экземпляр Excel",
+    "observed": "pywintypes.com_error -2147023584: сеанс работы не существует",
+    "traceback": "win32com.client.DispatchEx → pythoncom.CoCreateInstanceEx",
+    "cause": "Изолированный сеанс PowerShell не видит пользовательский COM-сеанс",
+    "fix": "Запуск в доступном сеансе Office",
+    "retest": "Excel 16.0. Solver в контрольной книге вернул 0 для всех четырёх моделей и создал два нативных отчёта"
+  },
+  {
+    "code": "DEV004",
+    "kind": "CODE_ERROR",
+    "stage": "Публикация ZIP",
+    "input": "Повторный прогон с Office после прогона в ограниченном сеансе",
+    "expected": "Завершённый output атомарно замещён",
+    "observed": "PermissionError [WinError 5] при переносе output в previous_output",
+    "traceback": "src/controller.py, execute → target.rename(previous)",
+    "cause": "TemporaryDirectory в Python 3.14 на Windows задавал ограниченные ACL на дерево, использованное при публикации",
+    "fix": "Временное дерево создаётся в приложении с наследуемыми ACL",
+    "retest": "Последовательные запуски из разных рабочих каталогов, результат в execution.log"
+  },
+  {
+    "code": "ENV003",
+    "kind": "ENVIRONMENT",
+    "stage": "bootstrap",
+    "input": "pip install PuLP python-pptx",
+    "expected": "Доступны CBC и генератор PPTX",
+    "observed": "В песочнице pip не нашёл версии. Каталоги первого pip --target оказались недоступны для чтения",
+    "cause": "Ограничения сети и доступ к временным подпапкам pip",
+    "fix": "Сохранены wheels из PyPI, распакованы в каталог приложения в текущем сеансе",
+    "retest": "Импорт PuLP 3.3.0 и python-pptx 1.0.2. CBC доступен"
+  }
+]

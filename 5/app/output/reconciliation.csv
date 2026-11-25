@@ -1,0 +1,373 @@
+﻿check,python_value,reference_value,difference,unit,tolerance,source,status,sheet,cell
+LP objective,191335.1875,191335.1875,0.0,тыс. руб.,0.01,PuLP/CBC,PASS,,
+MILP objective,190800.0,190800.0,0.0,тыс. руб.,0.01,PuLP/CBC,PASS,,
+Fixed LP objective,190800.0,190800.0,0.0,тыс. руб.,0.01,PuLP/CBC,PASS,,
+MILP eight modes,190800.0,190800.0,0.0,тыс. руб.,1e-05,8 Fixed LP modes,PASS,,
+Knapsack CBC,110.0,110.0,0.0,млн руб.,1e-05,PuLP/CBC,PASS,,
+Knapsack 128 masks,110.0,110.0,0.0,млн руб.,1e-05,Combinatorial enumeration,PASS,,
+Effective!B2,5.0,5,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,B2
+Effective!C2,10.0,10,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,C2
+Effective!D2,3.0,3,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,D2
+Effective!G2,3.0,3,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,G2
+Effective!B3,6.0,6,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,B3
+Effective!C3,6.000000000000001,6.000000000000001,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,C3
+Effective!D3,2.0,2,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,D3
+Effective!G3,1.8000000000000003,1.8000000000000007,4.440892098500626e-16,ресурс/т,1e-05,worksheet,PASS,Effective,G3
+Effective!B4,0.0,0,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,B4
+Effective!C4,7.000000000000001,7.000000000000001,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,C4
+Effective!D4,6.0,6,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,D4
+Effective!G4,2.1,2.1000000000000005,4.440892098500626e-16,ресурс/т,1e-05,worksheet,PASS,Effective,G4
+Effective!B5,200.0,200,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,B5
+Effective!C5,300.0,300,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,C5
+Effective!D5,100.0,100,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,D5
+Effective!G5,90.0,90,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,G5
+Effective!B6,0.0,0,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,B6
+Effective!C6,40.0,40,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,C6
+Effective!D6,40.0,40,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,D6
+Effective!G6,12.0,12,0.0,ресурс/т,1e-05,worksheet,PASS,Effective,G6
+LP!B2,41.25,41.249999999999986,-1.4210854715202004e-14,т,1e-05,Excel Solver,PASS,LP,B2
+LP!C2,0.0,0,0.0,т,1e-05,Excel Solver,PASS,LP,C2
+LP!D2,37.5,37.50000000000001,7.105427357601002e-15,т,1e-05,Excel Solver,PASS,LP,D2
+LP!E2,0.53125,0.53125,0.0,доля,1e-05,Excel Solver,PASS,LP,E2
+LP!F2,0.645,0.6449999999999999,-1.1102230246251565e-16,доля,1e-05,Excel Solver,PASS,LP,F2
+LP!G2,0.5,0.49999999999999994,-5.551115123125783e-17,доля,1e-05,Excel Solver,PASS,LP,G2
+LP!B3,191335.1875,191335.1875,0.0,тыс. руб.,1e-05,Excel Solver,PASS,LP,B3
+LP!B5,318.75,318.75,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,B5
+LP!C5,318.75,318.75,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,C5
+LP!D5,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,D5
+LP!B6,322.5,322.49999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,LP,B6
+LP!C6,322.5,322.49999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,LP,C6
+LP!D6,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,D6
+LP!B7,225.0,225.00000000000006,5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,LP,B7
+LP!C7,225.0,224.99999999999997,-2.842170943040401e-14,ед. ресурса,1e-05,worksheet,PASS,LP,C7
+LP!D7,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,D7
+LP!B8,12000.0,11999.999999999996,-3.637978807091713e-12,ед. ресурса,1e-05,worksheet,PASS,LP,B8
+LP!C8,12000.0,12000,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,C8
+LP!D8,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,D8
+LP!B9,1500.0,1500.0000000000002,2.2737367544323206e-13,ед. ресурса,1e-05,worksheet,PASS,LP,B9
+LP!C9,1500.0,1500,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,C9
+LP!D9,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,LP,D9
+MILP!B2,41.25,41.249999999999986,-1.4210854715202004e-14,т,1e-05,Excel Solver,PASS,MILP,B2
+MILP!C2,0.0,0,0.0,т,1e-05,Excel Solver,PASS,MILP,C2
+MILP!D2,37.5,37.50000000000001,7.105427357601002e-15,т,1e-05,Excel Solver,PASS,MILP,D2
+MILP!E2,1.0,1,0.0,доля,1e-05,Excel Solver,PASS,MILP,E2
+MILP!F2,1.0,1,0.0,доля,1e-05,Excel Solver,PASS,MILP,F2
+MILP!G2,1.0,1,0.0,доля,1e-05,Excel Solver,PASS,MILP,G2
+MILP!B3,190800.0,190800,0.0,тыс. руб.,1e-05,Excel Solver,PASS,MILP,B3
+MILP!B5,318.75,318.75,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,B5
+MILP!C5,600.0,600,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,C5
+MILP!D5,281.25,281.25,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,D5
+MILP!B6,322.5,322.49999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,MILP,B6
+MILP!C6,500.0,500,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,C6
+MILP!D6,177.5,177.50000000000006,5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,MILP,D6
+MILP!B7,225.0,225.00000000000006,5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,MILP,B7
+MILP!C7,450.0,450,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,C7
+MILP!D7,225.0,224.99999999999994,-5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,MILP,D7
+MILP!B8,12000.0,11999.999999999996,-3.637978807091713e-12,ед. ресурса,1e-05,worksheet,PASS,MILP,B8
+MILP!C8,12000.0,12000,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,C8
+MILP!D8,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,D8
+MILP!B9,1500.0,1500.0000000000002,2.2737367544323206e-13,ед. ресурса,1e-05,worksheet,PASS,MILP,B9
+MILP!C9,1500.0,1500,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,C9
+MILP!D9,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,MILP,D9
+Fixed LP!B2,41.25000000000001,41.25,-7.105427357601002e-15,т,1e-05,Excel Solver,PASS,Fixed LP,B2
+Fixed LP!C2,0.0,0,0.0,т,1e-05,Excel Solver,PASS,Fixed LP,C2
+Fixed LP!D2,37.5,37.5,0.0,т,1e-05,Excel Solver,PASS,Fixed LP,D2
+Fixed LP!E2,1.0,1,0.0,доля,1e-05,Excel Solver,PASS,Fixed LP,E2
+Fixed LP!F2,1.0,1,0.0,доля,1e-05,Excel Solver,PASS,Fixed LP,F2
+Fixed LP!G2,1.0,1,0.0,доля,1e-05,Excel Solver,PASS,Fixed LP,G2
+Fixed LP!B3,190800.0,190800,0.0,тыс. руб.,1e-05,Excel Solver,PASS,Fixed LP,B3
+Fixed LP!B5,318.75,318.75,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,B5
+Fixed LP!C5,600.0,600,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,C5
+Fixed LP!D5,281.25,281.25,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,D5
+Fixed LP!B6,322.50000000000006,322.5,-5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,B6
+Fixed LP!C6,500.0,500,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,C6
+Fixed LP!D6,177.49999999999994,177.5,5.684341886080802e-14,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,D6
+Fixed LP!B7,225.0,225,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,B7
+Fixed LP!C7,450.0,450,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,C7
+Fixed LP!D7,225.0,225,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,D7
+Fixed LP!B8,12000.000000000002,12000,-1.8189894035458565e-12,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,B8
+Fixed LP!C8,12000.0,12000,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,C8
+Fixed LP!D8,-1.8189894035458565e-12,0,1.8189894035458565e-12,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,D8
+Fixed LP!B9,1500.0,1500,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,B9
+Fixed LP!C9,1500.0,1500,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,C9
+Fixed LP!D9,0.0,0,0.0,ед. ресурса,1e-05,worksheet,PASS,Fixed LP,D9
+PI!D2,1.8,1.8,0.0,ratio,1e-05,worksheet,PASS,PI,D2
+PI!D3,1.8727272727272726,1.8727272727272726,0.0,ratio,1e-05,worksheet,PASS,PI,D3
+PI!D4,1.8199999999999998,1.8199999999999998,0.0,ratio,1e-05,worksheet,PASS,PI,D4
+PI!D5,1.8,1.8,0.0,ratio,1e-05,worksheet,PASS,PI,D5
+PI!D6,1.7333333333333334,1.7333333333333334,0.0,ratio,1e-05,worksheet,PASS,PI,D6
+PI!D7,1.7428571428571429,1.7428571428571429,0.0,ratio,1e-05,worksheet,PASS,PI,D7
+PI!D8,1.6,1.6,0.0,ratio,1e-05,worksheet,PASS,PI,D8
+Greedy!B3,104.0,104,0.0,млн руб.,1e-05,worksheet,PASS,Greedy,B3
+Greedy!B4,125.0,125,0.0,млн руб.,1e-05,worksheet,PASS,Greedy,B4
+Greedy!B5,250.0,250,0.0,балл,1e-05,worksheet,PASS,Greedy,B5
+Greedy!B6,15.0,15,0.0,млн руб.,1e-05,worksheet,PASS,Greedy,B6
+Greedy!B8,1.0,1,0.0,bool,1e-05,worksheet,PASS,Greedy,B8
+Greedy!B9,0.0,0,0.0,bool,1e-05,worksheet,PASS,Greedy,B9
+Greedy!B10,0.0,0,0.0,bool,1e-05,worksheet,PASS,Greedy,B10
+Greedy!B11,0.0,0,0.0,bool,1e-05,worksheet,PASS,Greedy,B11
+Knapsack!B3,110.0,110,0.0,млн руб.,1e-05,Excel Solver,PASS,Knapsack,B3
+Knapsack!B4,135.0,135,0.0,млн руб.,1e-05,Excel Solver,PASS,Knapsack,B4
+Knapsack!B5,205.0,205,0.0,балл,1e-05,Excel Solver,PASS,Knapsack,B5
+Knapsack!B6,5.0,5,0.0,млн руб.,1e-05,Excel Solver,PASS,Knapsack,B6
+Knapsack!B8,1.0,1,0.0,bool,1e-05,worksheet,PASS,Knapsack,B8
+Knapsack!B9,-1.0,-1,0.0,bool,1e-05,worksheet,PASS,Knapsack,B9
+Knapsack!B10,0.0,0,0.0,bool,1e-05,worksheet,PASS,Knapsack,B10
+Knapsack!B11,0.0,0,0.0,bool,1e-05,worksheet,PASS,Knapsack,B11
+Knapsack!B2,1.0,1,0.0,bool,1e-05,Excel Solver,PASS,Knapsack,B2
+Knapsack!C2,1.0,1,0.0,bool,1e-05,Excel Solver,PASS,Knapsack,C2
+Knapsack!D2,0.0,0,0.0,bool,1e-05,Excel Solver,PASS,Knapsack,D2
+Knapsack!E2,0.0,0,0.0,bool,1e-05,Excel Solver,PASS,Knapsack,E2
+Knapsack!F2,0.0,0,0.0,bool,1e-05,Excel Solver,PASS,Knapsack,F2
+Knapsack!G2,1.0,1,0.0,bool,1e-05,Excel Solver,PASS,Knapsack,G2
+Knapsack!H2,0.0,0,0.0,bool,1e-05,Excel Solver,PASS,Knapsack,H2
+Enumeration!B3,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Enumeration,B3
+Enumeration!B4,135.0,135,0.0,млн руб.,1e-05,worksheet,PASS,Enumeration,B4
+Enumeration!B5,205.0,205,0.0,балл,1e-05,worksheet,PASS,Enumeration,B5
+Enumeration!B6,5.0,5,0.0,млн руб.,1e-05,worksheet,PASS,Enumeration,B6
+Enumeration!B8,1.0,1,0.0,bool,1e-05,worksheet,PASS,Enumeration,B8
+Enumeration!B9,-1.0,-1,0.0,bool,1e-05,worksheet,PASS,Enumeration,B9
+Enumeration!B10,0.0,0,0.0,bool,1e-05,worksheet,PASS,Enumeration,B10
+Enumeration!B11,0.0,0,0.0,bool,1e-05,worksheet,PASS,Enumeration,B11
+All128!Q2,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,All128,Q2
+All128!Q3,25.0,25,0.0,портфель,1e-05,worksheet,PASS,All128,Q3
+Pareto!B2,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,B2
+Pareto!C2,205.0,205,0.0,балл,1e-05,worksheet,PASS,Pareto,C2
+Pareto!D2,135.0,135,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,D2
+Pareto!F2,1.0,1,0.0,bool,1e-05,worksheet,PASS,Pareto,F2
+Pareto!B3,108.0,108,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,B3
+Pareto!C3,260.0,260,0.0,балл,1e-05,worksheet,PASS,Pareto,C3
+Pareto!D3,140.0,140,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,D3
+Pareto!F3,1.0,1,0.0,bool,1e-05,worksheet,PASS,Pareto,F3
+Pareto!E3,0.03636363636363636,0.03636363636363636,0.0,млн руб./балл,1e-05,worksheet,PASS,Pareto,E3
+Pareto!B4,101.0,101,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,B4
+Pareto!C4,280.0,280,0.0,балл,1e-05,worksheet,PASS,Pareto,C4
+Pareto!D4,135.0,135,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,D4
+Pareto!F4,1.0,1,0.0,bool,1e-05,worksheet,PASS,Pareto,F4
+Pareto!E4,0.35,0.35,0.0,млн руб./балл,1e-05,worksheet,PASS,Pareto,E4
+Pareto!B5,90.0,90,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,B5
+Pareto!C5,320.0,320,0.0,балл,1e-05,worksheet,PASS,Pareto,C5
+Pareto!D5,120.0,120,0.0,млн руб.,1e-05,worksheet,PASS,Pareto,D5
+Pareto!F5,1.0,1,0.0,bool,1e-05,worksheet,PASS,Pareto,F5
+Pareto!E5,0.275,0.275,0.0,млн руб./балл,1e-05,worksheet,PASS,Pareto,E5
+Epsilon!C2,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C2
+Epsilon!E2,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E2
+Epsilon!C3,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C3
+Epsilon!E3,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E3
+Epsilon!C4,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C4
+Epsilon!E4,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E4
+Epsilon!C5,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C5
+Epsilon!E5,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E5
+Epsilon!C6,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C6
+Epsilon!E6,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E6
+Epsilon!C7,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C7
+Epsilon!E7,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E7
+Epsilon!C8,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C8
+Epsilon!E8,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E8
+Epsilon!C9,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C9
+Epsilon!E9,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E9
+Epsilon!C10,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C10
+Epsilon!E10,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E10
+Epsilon!C11,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C11
+Epsilon!E11,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E11
+Epsilon!C12,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C12
+Epsilon!E12,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E12
+Epsilon!C13,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C13
+Epsilon!E13,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E13
+Epsilon!C14,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C14
+Epsilon!E14,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E14
+Epsilon!C15,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C15
+Epsilon!E15,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E15
+Epsilon!C16,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C16
+Epsilon!E16,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E16
+Epsilon!C17,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C17
+Epsilon!E17,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E17
+Epsilon!C18,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C18
+Epsilon!E18,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E18
+Epsilon!C19,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C19
+Epsilon!E19,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E19
+Epsilon!C20,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C20
+Epsilon!E20,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E20
+Epsilon!C21,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C21
+Epsilon!E21,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E21
+Epsilon!C22,110.0,110,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C22
+Epsilon!E22,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E22
+Epsilon!C23,108.0,108,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C23
+Epsilon!E23,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E23
+Epsilon!C24,108.0,108,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C24
+Epsilon!E24,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E24
+Epsilon!C25,108.0,108,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C25
+Epsilon!E25,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E25
+Epsilon!C26,108.0,108,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C26
+Epsilon!E26,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E26
+Epsilon!C27,108.0,108,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C27
+Epsilon!E27,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E27
+Epsilon!C28,108.0,108,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C28
+Epsilon!E28,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E28
+Epsilon!C29,101.0,101,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C29
+Epsilon!E29,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E29
+Epsilon!C30,101.0,101,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C30
+Epsilon!E30,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E30
+Epsilon!C31,90.0,90,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C31
+Epsilon!E31,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E31
+Epsilon!C32,90.0,90,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C32
+Epsilon!E32,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E32
+Epsilon!C33,90.0,90,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C33
+Epsilon!E33,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E33
+Epsilon!C34,90.0,90,0.0,млн руб.,1e-05,worksheet,PASS,Epsilon,C34
+Epsilon!E34,1.0,1,0.0,bool,1e-05,worksheet,PASS,Epsilon,E34
+Weighted!E2,1.0,1,0.0,ratio,1e-05,worksheet,PASS,Weighted,E2
+Weighted!E3,0.9981818181818182,0.9981818181818182,0.0,ratio,1e-05,worksheet,PASS,Weighted,E3
+Weighted!E4,0.9963636363636363,0.9963636363636363,0.0,ratio,1e-05,worksheet,PASS,Weighted,E4
+Weighted!E5,0.9945454545454545,0.9945454545454545,0.0,ratio,1e-05,worksheet,PASS,Weighted,E5
+Weighted!E6,0.9927272727272727,0.9927272727272727,0.0,ratio,1e-05,worksheet,PASS,Weighted,E6
+Weighted!E7,0.990909090909091,0.9909090909090909,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E7
+Weighted!E8,0.9890909090909091,0.989090909090909,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E8
+Weighted!E9,0.9872727272727273,0.9872727272727272,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E9
+Weighted!E10,0.9854545454545455,0.9854545454545455,0.0,ratio,1e-05,worksheet,PASS,Weighted,E10
+Weighted!E11,0.9836363636363636,0.9836363636363636,0.0,ratio,1e-05,worksheet,PASS,Weighted,E11
+Weighted!E12,0.9818181818181818,0.9818181818181818,0.0,ratio,1e-05,worksheet,PASS,Weighted,E12
+Weighted!E13,0.98,0.98,0.0,ratio,1e-05,worksheet,PASS,Weighted,E13
+Weighted!E14,0.9781818181818182,0.9781818181818182,0.0,ratio,1e-05,worksheet,PASS,Weighted,E14
+Weighted!E15,0.9763636363636363,0.9763636363636363,0.0,ratio,1e-05,worksheet,PASS,Weighted,E15
+Weighted!E16,0.9745454545454545,0.9745454545454546,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E16
+Weighted!E17,0.9727272727272728,0.9727272727272727,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E17
+Weighted!E18,0.9709090909090909,0.9709090909090909,0.0,ratio,1e-05,worksheet,PASS,Weighted,E18
+Weighted!E19,0.9690909090909091,0.969090909090909,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E19
+Weighted!E20,0.9672727272727273,0.9672727272727273,0.0,ratio,1e-05,worksheet,PASS,Weighted,E20
+Weighted!E21,0.9654545454545455,0.9654545454545456,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E21
+Weighted!E22,0.9636363636363636,0.9636363636363637,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E22
+Weighted!E23,0.9618181818181818,0.9618181818181819,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E23
+Weighted!E24,0.96,0.9600000000000001,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E24
+Weighted!E25,0.9581818181818181,0.9581818181818182,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E25
+Weighted!E26,0.9563636363636364,0.9563636363636364,0.0,ratio,1e-05,worksheet,PASS,Weighted,E26
+Weighted!E27,0.954954954954955,0.954954954954955,0.0,ratio,1e-05,worksheet,PASS,Weighted,E27
+Weighted!E28,0.9545454545454546,0.9545454545454546,0.0,ratio,1e-05,worksheet,PASS,Weighted,E28
+Weighted!E29,0.9527272727272728,0.9527272727272728,0.0,ratio,1e-05,worksheet,PASS,Weighted,E29
+Weighted!E30,0.9509090909090909,0.9509090909090909,0.0,ratio,1e-05,worksheet,PASS,Weighted,E30
+Weighted!E31,0.9490909090909091,0.9490909090909091,0.0,ratio,1e-05,worksheet,PASS,Weighted,E31
+Weighted!E32,0.9472727272727273,0.9472727272727273,0.0,ratio,1e-05,worksheet,PASS,Weighted,E32
+Weighted!E33,0.9454545454545454,0.9454545454545454,0.0,ratio,1e-05,worksheet,PASS,Weighted,E33
+Weighted!E34,0.9436363636363636,0.9436363636363636,0.0,ratio,1e-05,worksheet,PASS,Weighted,E34
+Weighted!E35,0.9418181818181818,0.9418181818181818,0.0,ratio,1e-05,worksheet,PASS,Weighted,E35
+Weighted!E36,0.94,0.94,0.0,ratio,1e-05,worksheet,PASS,Weighted,E36
+Weighted!E37,0.9381818181818182,0.9381818181818181,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E37
+Weighted!E38,0.9363636363636364,0.9363636363636364,0.0,ratio,1e-05,worksheet,PASS,Weighted,E38
+Weighted!E39,0.9345454545454546,0.9345454545454546,0.0,ratio,1e-05,worksheet,PASS,Weighted,E39
+Weighted!E40,0.9327272727272727,0.9327272727272727,0.0,ratio,1e-05,worksheet,PASS,Weighted,E40
+Weighted!E41,0.9309090909090909,0.9309090909090909,0.0,ratio,1e-05,worksheet,PASS,Weighted,E41
+Weighted!E42,0.9290909090909091,0.9290909090909092,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E42
+Weighted!E43,0.9272727272727272,0.9272727272727272,0.0,ratio,1e-05,worksheet,PASS,Weighted,E43
+Weighted!E44,0.9254545454545454,0.9254545454545455,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E44
+Weighted!E45,0.9236363636363636,0.9236363636363637,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E45
+Weighted!E46,0.9218181818181819,0.9218181818181819,0.0,ratio,1e-05,worksheet,PASS,Weighted,E46
+Weighted!E47,0.92,0.9200000000000002,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E47
+Weighted!E48,0.9181818181818182,0.9181818181818182,0.0,ratio,1e-05,worksheet,PASS,Weighted,E48
+Weighted!E49,0.9163636363636364,0.9163636363636365,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E49
+Weighted!E50,0.9145454545454546,0.9145454545454546,0.0,ratio,1e-05,worksheet,PASS,Weighted,E50
+Weighted!E51,0.9127272727272727,0.9127272727272728,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E51
+Weighted!E52,0.9109090909090909,0.9109090909090909,0.0,ratio,1e-05,worksheet,PASS,Weighted,E52
+Weighted!E53,0.9099099099099099,0.9099099099099099,0.0,ratio,1e-05,worksheet,PASS,Weighted,E53
+Weighted!E54,0.9090909090909091,0.9090909090909092,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E54
+Weighted!E55,0.9072727272727272,0.9072727272727272,0.0,ratio,1e-05,worksheet,PASS,Weighted,E55
+Weighted!E56,0.9064112656345666,0.9064112656345666,0.0,ratio,1e-05,worksheet,PASS,Weighted,E56
+Weighted!E57,0.9054545454545454,0.9054545454545455,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E57
+Weighted!E58,0.9036363636363637,0.9036363636363637,0.0,ratio,1e-05,worksheet,PASS,Weighted,E58
+Weighted!E59,0.9029126213592233,0.9029126213592233,0.0,ratio,1e-05,worksheet,PASS,Weighted,E59
+Weighted!E60,0.9029126213592233,0.9029126213592233,0.0,ratio,1e-05,worksheet,PASS,Weighted,E60
+Weighted!E61,0.9039318181818182,0.9039318181818181,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E61
+Weighted!E62,0.90473913896244,0.90473913896244,0.0,ratio,1e-05,worksheet,PASS,Weighted,E62
+Weighted!E63,0.905625,0.905625,0.0,ratio,1e-05,worksheet,PASS,Weighted,E63
+Weighted!E64,0.9065656565656566,0.9065656565656566,0.0,ratio,1e-05,worksheet,PASS,Weighted,E64
+Weighted!E65,0.9073181818181818,0.9073181818181818,0.0,ratio,1e-05,worksheet,PASS,Weighted,E65
+Weighted!E66,0.9090113636363636,0.9090113636363637,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E66
+Weighted!E67,0.9107045454545455,0.9107045454545455,0.0,ratio,1e-05,worksheet,PASS,Weighted,E67
+Weighted!E68,0.9123977272727273,0.9123977272727273,0.0,ratio,1e-05,worksheet,PASS,Weighted,E68
+Weighted!E69,0.9140909090909091,0.9140909090909091,0.0,ratio,1e-05,worksheet,PASS,Weighted,E69
+Weighted!E70,0.9157500198838782,0.9157500198838782,0.0,ratio,1e-05,worksheet,PASS,Weighted,E70
+Weighted!E71,0.915784090909091,0.915784090909091,0.0,ratio,1e-05,worksheet,PASS,Weighted,E71
+Weighted!E72,0.9174772727272728,0.9174772727272726,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E72
+Weighted!E73,0.9191704545454545,0.9191704545454544,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E73
+Weighted!E74,0.9208636363636363,0.9208636363636363,0.0,ratio,1e-05,worksheet,PASS,Weighted,E74
+Weighted!E75,0.9225568181818182,0.9225568181818182,0.0,ratio,1e-05,worksheet,PASS,Weighted,E75
+Weighted!E76,0.92425,0.92425,0.0,ratio,1e-05,worksheet,PASS,Weighted,E76
+Weighted!E77,0.9249343832020998,0.9249343832020998,0.0,ratio,1e-05,worksheet,PASS,Weighted,E77
+Weighted!E78,0.9259431818181818,0.9259431818181818,0.0,ratio,1e-05,worksheet,PASS,Weighted,E78
+Weighted!E79,0.9276363636363636,0.9276363636363636,0.0,ratio,1e-05,worksheet,PASS,Weighted,E79
+Weighted!E80,0.9293295454545455,0.9293295454545455,0.0,ratio,1e-05,worksheet,PASS,Weighted,E80
+Weighted!E81,0.9310227272727273,0.9310227272727273,0.0,ratio,1e-05,worksheet,PASS,Weighted,E81
+Weighted!E82,0.9314698870188396,0.9314698870188396,0.0,ratio,1e-05,worksheet,PASS,Weighted,E82
+Weighted!E83,0.9327159090909091,0.9327159090909092,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E83
+Weighted!E84,0.9344090909090909,0.934409090909091,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E84
+Weighted!E85,0.9361022727272728,0.9361022727272726,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E85
+Weighted!E86,0.9377954545454545,0.9377954545454545,0.0,ratio,1e-05,worksheet,PASS,Weighted,E86
+Weighted!E87,0.9380053908355795,0.9380053908355795,0.0,ratio,1e-05,worksheet,PASS,Weighted,E87
+Weighted!E88,0.9394886363636363,0.9394886363636363,0.0,ratio,1e-05,worksheet,PASS,Weighted,E88
+Weighted!E89,0.9411818181818182,0.9411818181818181,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E89
+Weighted!E90,0.942875,0.942875,0.0,ratio,1e-05,worksheet,PASS,Weighted,E90
+Weighted!E91,0.9445681818181818,0.9445681818181818,0.0,ratio,1e-05,worksheet,PASS,Weighted,E91
+Weighted!E92,0.9462613636363636,0.9462613636363637,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E92
+Weighted!E93,0.9479545454545455,0.9479545454545455,0.0,ratio,1e-05,worksheet,PASS,Weighted,E93
+Weighted!E94,0.9496477272727273,0.9496477272727273,0.0,ratio,1e-05,worksheet,PASS,Weighted,E94
+Weighted!E95,0.9513409090909091,0.9513409090909091,0.0,ratio,1e-05,worksheet,PASS,Weighted,E95
+Weighted!E96,0.9518128598423039,0.9518128598423039,0.0,ratio,1e-05,worksheet,PASS,Weighted,E96
+Weighted!E97,0.9530340909090909,0.953034090909091,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E97
+Weighted!E98,0.9547272727272728,0.9547272727272726,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E98
+Weighted!E99,0.9564204545454545,0.9564204545454544,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E99
+Weighted!E100,0.9581136363636363,0.9581136363636363,0.0,ratio,1e-05,worksheet,PASS,Weighted,E100
+Weighted!E101,0.9598068181818182,0.9598068181818181,-1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E101
+Weighted!E102,0.9615,0.9615,0.0,ratio,1e-05,worksheet,PASS,Weighted,E102
+Weighted!E103,0.9631931818181818,0.9631931818181818,0.0,ratio,1e-05,worksheet,PASS,Weighted,E103
+Weighted!E104,0.9648863636363636,0.9648863636363636,0.0,ratio,1e-05,worksheet,PASS,Weighted,E104
+Weighted!E105,0.9656203288490284,0.9656203288490284,0.0,ratio,1e-05,worksheet,PASS,Weighted,E105
+Weighted!E106,0.9656203288490284,0.9656203288490284,0.0,ratio,1e-05,worksheet,PASS,Weighted,E106
+Weighted!E107,0.96765625,0.96765625,0.0,ratio,1e-05,worksheet,PASS,Weighted,E107
+Weighted!E108,0.97125,0.9712500000000001,1.1102230246251565e-16,ratio,1e-05,worksheet,PASS,Weighted,E108
+Weighted!E109,0.97484375,0.97484375,0.0,ratio,1e-05,worksheet,PASS,Weighted,E109
+Weighted!E110,0.9784375,0.9784375,0.0,ratio,1e-05,worksheet,PASS,Weighted,E110
+Weighted!E111,0.98203125,0.98203125,0.0,ratio,1e-05,worksheet,PASS,Weighted,E111
+Weighted!E112,0.9828101644245142,0.9828101644245142,0.0,ratio,1e-05,worksheet,PASS,Weighted,E112
+Weighted!E113,0.985625,0.985625,0.0,ratio,1e-05,worksheet,PASS,Weighted,E113
+Weighted!E114,0.98921875,0.98921875,0.0,ratio,1e-05,worksheet,PASS,Weighted,E114
+Weighted!E115,0.9928125,0.9928125,0.0,ratio,1e-05,worksheet,PASS,Weighted,E115
+Weighted!E116,0.99640625,0.99640625,0.0,ratio,1e-05,worksheet,PASS,Weighted,E116
+Weighted!E117,1.0,1,0.0,ratio,1e-05,worksheet,PASS,Weighted,E117
+Stress!C2,90.0,90,0.0,млн руб.,1e-05,worksheet,PASS,Stress,C2
+Stress!D2,62.89999999999999,62.9,7.105427357601002e-15,млн руб.,1e-05,worksheet,PASS,Stress,D2
+Stress!E2,120.0,120,0.0,балл,1e-05,worksheet,PASS,Stress,E2
+Stress!F2,1.0,1,0.0,млн руб.,1e-05,worksheet,PASS,Stress,F2
+Stress!G2,1.0,1,0.0,bool,1e-05,worksheet,PASS,Stress,G2
+Stress!C3,135.0,135,0.0,млн руб.,1e-05,worksheet,PASS,Stress,C3
+Stress!D3,101.0,101,0.0,млн руб.,1e-05,worksheet,PASS,Stress,D3
+Stress!E3,280.0,280,0.0,балл,1e-05,worksheet,PASS,Stress,E3
+Stress!F3,5.0,5,0.0,млн руб.,1e-05,worksheet,PASS,Stress,F3
+Stress!G3,1.0,1,0.0,bool,1e-05,worksheet,PASS,Stress,G3
+Stress!C5,1.4294117647058826,1.4294117647058826,0.0,тыс. руб./т,1e-05,worksheet,PASS,Stress,C5
+Stress!D5,1198.570588235294,1198.570588235294,0.0,тыс. руб./т,1e-05,worksheet,PASS,Stress,D5
+Stress!E5,7.279411764705884,7.279411764705884,0.0,т,1e-05,worksheet,PASS,Stress,E5
+Stress!F5,58.96323529411766,58.963235294117666,7.105427357601002e-15,тыс. руб.,1e-05,worksheet,PASS,Stress,F5
+Stress!C6,3.4714285714285715,3.4714285714285715,0.0,тыс. руб./т,1e-05,worksheet,PASS,Stress,C6
+Stress!D6,2396.5285714285715,2396.5285714285715,0.0,тыс. руб./т,1e-05,worksheet,PASS,Stress,D6
+Stress!E6,0.0,0,0.0,т,1e-05,worksheet,PASS,Stress,E6
+Stress!F6,0.0,0,0.0,тыс. руб.,1e-05,worksheet,PASS,Stress,F6
+Stress!C7,0.9000000000000004,0.9000000000000005,1.1102230246251565e-16,тыс. руб./т,1e-05,worksheet,PASS,Stress,C7
+Stress!D7,3799.1,3799.1,0.0,тыс. руб./т,1e-05,worksheet,PASS,Stress,D7
+Stress!E7,4.166666666666669,4.166666666666669,0.0,т,1e-05,worksheet,PASS,Stress,E7
+Stress!F7,33.750000000000014,33.75000000000002,7.105427357601002e-15,тыс. руб.,1e-05,worksheet,PASS,Stress,F7
+Stress!B9,190707.28676470587,190707.28676470587,0.0,тыс. руб.,1e-05,worksheet,PASS,Stress,B9
+Отчет об устойчивости 1: $B$5,0.75,0.75,0.0,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E19
+Отчет об устойчивости 1: $B$6,0.7,0.7000000000000455,4.551914400963142e-14,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E20
+Отчет об устойчивости 1: $B$7,0.8888888888887929,0.8888888888889142,1.212363542890671e-13,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E21
+Отчет об устойчивости 1: $B$8,5.9602499999999985,5.960250000000013,1.4210854715202004e-14,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E22
+Отчет об устойчивости 1: $B$9,79.87479166666668,79.87479166666665,-2.842170943040401e-14,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E23
+Отчет об устойчивости 1: $B$2,2.2737367544323206e-13,0,-2.2737367544323206e-13,тыс. руб./т,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E9
+Отчет об устойчивости 1: $C$2,-2600.988888888888,-2600.98888888889,-1.8189894035458565e-12,тыс. руб./т,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E10
+Отчет об устойчивости 1: $D$2,0.0,0,0.0,тыс. руб./т,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 1,E11
+Отчет об устойчивости 2: $B$5,0.0,0,0.0,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E16
+Отчет об устойчивости 2: $B$6,0.0,0,0.0,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E17
+Отчет об устойчивости 2: $B$7,0.0,0,0.0,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E18
+Отчет об устойчивости 2: $B$8,6.000000000000001,6,-8.881784197001252e-16,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E19
+Отчет об устойчивости 2: $B$9,80.0,80,0.0,тыс. руб./ед.,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E20
+Отчет об устойчивости 2: $B$2,-2.2737367544323206e-13,0,2.2737367544323206e-13,тыс. руб./т,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E9
+Отчет об устойчивости 2: $C$2,-2600.0,-2600,0.0,тыс. руб./т,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E10
+Отчет об устойчивости 2: $D$2,0.0,0,0.0,тыс. руб./т,1e-05,Excel Solver Sensitivity Report,PASS,Отчет об устойчивости 2,E11

@@ -1,0 +1,5 @@
+﻿method,ids,capex,npv,score,budget_slack,status,upper_bound,mip_gap
+Жадный PI,1+2+4,125.0,104.0,250,15.0,GREEDY_FEASIBLE,,
+MILP,1+2+6,135.0,110.0,205,5.0,OPTIMAL,110.0,0.0
+Перебор,1+2+6,135.0,110.0,205,5.0,FEASIBLE,,
+Контроль,1+4+5+7,120.0,90.0,320,20.0,FEASIBLE,,
